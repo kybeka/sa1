@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <!-- author -->
+    <meta name="author" content="Jeferson Morales Mariciano">
+    <title>Security | HTTPS </title>
+    <link rel="stylesheet" href="../../general/index.css">
+    <link rel="stylesheet" href="../css/security.css">
+</head>
+
+<body>
+    <script type="text/javascript" src="../../general/index.js"></script>
+    <!-- WARNING: when you copy and paste the page, remember to change the paths to the external files (images, scripts, stylesheets,...)-->
+    <nav>
+      <ul id="main_nav_bar">
+        <!-- main navigation bar; these methods are used to move resize and move
+      the main content, without overlapping it with the sidebar -->
+        <li id='nav_img' class="icon-bg"
+        onmouseover="setStyle('main', 'width','calc(100% - 150px)');
+                      setStyle('main','left','150px');"
+        onmouseout="setStyle('main','width','calc(98% - 51px)');
+                    setStyle('main','left','50px')"
+        ondblclick="window.location = '../../index.html'">
+        <div id="sidebar">
+          <ul id="sidebar-cont">
+            <li> <a href='#1'>1</a></li>
+            <li> <a href='#2'>2</a></li>
+            <li> <a href='#3'>3</a></li>
+          </ul>
+          </div>
+        </li>
+        <!-- main header and navigation bar links of the rest of the page -->
+      <li id="main_header">
+        <a href="">
+          <header>
+            <b>About</b>
+          </header>
+        </a>
+      </li>
+      <li> <a href= "../../history/history.html">History</a> <br>
+      </li>
+      <li> <a href = "../../compvir/compvir.html">Computer Viruses</a> <br>
+        <ul class="dropdown">
+          <li><a href="../../compvir/compvir.html">Virus</a>
+            <ul class="dropdown2">
+              <li> <a href="../../compvir/html/BackDoor.html"> Backdoor</a></li>
+              <li> <a href="../../compvir/html/bug.html"> Bugs</a></li>
+              <li> <a href="../../compvir/html/bug2.html"> Bugs II</a></li>
+              <li> <a href="../../compvir/html/CompanionVirus.html"> Companion Virus</a></li>
+              <li> <a href="../../compvir/html/ComputerWorm.html"> Computer Worm</a></li>
+              <li> <a href="../../compvir/html/Directory Virus.html"> Directory Virus</a></li>
+              <li> <a href="../../compvir/html/MULTIPARTITE-VIRUS.html"> Multipartite Virus</a></li>
+              <li> <a href="../../compvir/html/MULTIPARTITE-VIRUS-2.html"> Multipartite Virus II</a></li>
+              <li> <a href="../../compvir/html/polymorphicvirus.html"> Polymorphic Virus</a></li>
+              <li> <a href="../../compvir/html/polyvirus2.html"> Polymorphic Virus II</a></li>
+              <li> <a href="../../compvir/html/residentvirus.html"> Resident Virus</a></li>
+              <li> <a href="../../compvir/html/Social Engineering and Phishing.html"> Social Engeeniring <br> & Phishing</a></li>
+              <li> <a href="../../malware/html/TROJANS.html"> Trojans</a></li>
+              <li> <a href="../../malware/html/TROJAN2.html"> Trojans II</a></li>
+              <li> <a href="../../malware/html/TROJAN3.html"> Trojans III</a></li>
+              <li> <a href="../../malware/html/TROJAN4.html"> Trojans IV</a></li>
+              <li> <a href="../../compvir/html/Web Scripting Virus.html"> WebScripting Virus</a></li>
+              <li> <a href="../../malware/html/Macrovirus.html"> MacroVirus</a></li>
+              <li> <a href="../../malware/html/overwritingvirus.html"> Overwrite virus</a></li>
+              <li> <a href="../../malware/html/Bootsector_viruses.html"> Bootsector Viruses</a></li>
+              <li> <a href="../../compvir/html/CarbanakAPT.html"> CarbanakAPT</a></li>
+              <li> <a href="../../compvir/html/WannaCryy-1.html"> WannaCry I</a></li>
+              <li> <a href="../../compvir/html/WannaCry-2.html"> WannaCry II</a></li>
+              <li> <a href="../../compvir/html/Zeus.html"> Zeus</a></li>
+            </ul>
+          </li>
+          <li><a href="../../malware/malware.html"> Malware</a>
+            <ul class="dropdown2">
+              <li> <a href="../../malware/html/Adware_Rerevisioned.html"> Adware Revisioned</a></li>
+              <li> <a href="../../malware/html/botnet.html"> Botnet</a></li>
+              <li> <a href="../../malware/html/botnet2.html"> Botnet II</a></li>
+              <li> <a href="../../malware/html/cryptojacking.html"> Cryptojacking</a></li>
+              <li> <a href="../../malware/html/cyberwarfare.html"> Cyberwarfare</a></li>
+              <li> <a href="../../malware/html/Data_Breach.html"> Data Breach</a></li>
+              <li> <a href="../../malware/html/Fileless_malware.html"> Fileless Malware</a></li>
+              <li> <a href="../../malware/html/Fileless_malware2.html"> Fileless Malware II</a></li>
+              <li> <a href="../../malware/html/Greyware.html"> Greyware</a></li>
+              <li> <a href="../../malware/html/keylogger.html"> Keylogger</a></li>
+              <li> <a href="../../compvir/html/ScareWare.html"> ScareWare</a></li>
+              <li> <a href="../../malware/html/maliciousapps.html"> Malicious Apps</a></li>
+              <li> <a href="../../malware/html/maliciousapps2.html"> Malicious Apps II</a></li>
+              <li> <a href="../../malware/html/Malware_Rerevisioned.html"> Malware re-revisioned</a></li>
+              <li> <a href="../../compvir/html/videogamesMalware.html"> Malware in videogames</a></li>
+              <li> <a href="../../malware/html/RAMscrapper.html"> RamScraper</a></li>
+              <li> <a href="../../malware/html/ransomware.html"> Ransomware</a></li>
+              <li> <a href="../../compvir/html/EffectRansomware.html"> EffectRansomWare</a></li>
+              <li> <a href="../../malware/html/rootkits.html"> Rootkit</a></li>
+              <li> <a href="../../malware/html/Spam.html"> Spam</a></li>
+              <li> <a href="../../malware/html/Spyware_Rerevisioned.html"> Spyware Revisioned</a></li>
+              <li> <a href="../../malware/html/Trickbot.html"> Trickbot</a></li>
+              <li> <a href="../../compvir/html/appliance-based malware.html"> Appliance-Based Malware</a></li>
+              <li> <a href="../../malware/html/DDoS.html"> DDOS</a></li>
+              <li> <a href="../../malware/html/Emotet.html"> Emotet</a></li>
+              <li> <a href="../../malware/html/cyberwarfare.html"> Cryptocurrency scam</a></li>
+              <li> <a href="../../malware/html/twitchhack.html"> Twitch Hack</a></li>
+              <li> <a href="../../malware/html/malware_in_cars.html"> Malware in cars</a></li>
+              <li> <a href="../../malware/html/yahoohack.html"> Yahoo Hack</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li> <a href = "../../security/security.html"> Security </a> </li>
+      <li id="Search" class="icon-bg">
+        <input type="search" id=searchBar class="icon-bg"
+        incremental="incremental" onsearch="search()">
+        <ul id="search_results"></ul>
+      </li>
+      <li id="sidetoggle" class="icon-bg">
+        <label for="chmode" id="chmode-cont">
+          <input type="checkbox" id="chmode" name="chmode"
+          value="dark" onclick="toggleRoot('chmode','--main-col', '--dark-main-cl', '--light-main-cl');
+                              toggleRoot('chmode','--second-col', '--dark-second-cl', '--light-second-cl')">
+          <span id="mark" class="icon-bg"></span>
+        </label>
+      </li>
+    </ul>
+    </nav>
+
+    <!-- init page content -->
+    <main id="main">
+        <!-- first head paragraph with synopsis of HTTPS -->
+        <table>
+            <tr>
+                <th class="imghead">
+                    <!-- page title HTTPS -->
+                    <h1 class="title">
+                        <abbr title="HyperText Transfer Protocol over TLS/SSL">HTTPS</abbr> protocol
+                    </h1>
+
+                    <!-- subtitle and synopsis regarding HTTPS -->
+                    <p class="subsubtitle"> <u>What does it mean?</u> </p>
+                    <p class="text">
+                        HyperText Transfer Protocol over Transport Socket Layer / Secure Socket Layer.
+                        <br>
+                        It's a web communication-oriented protocol placed on the application level of the ISO/OSI stack,
+                        which uses the HTTP protocol and SSL/TLS for supporting encryption and increasing safety.
+                        HTTPS, which is also shortened in HTTP Secure, is specified by
+                        <a href="https://datatracker.ietf.org/doc/html/rfc2818">RFC 2818</a> (May 2000).
+                        It is used to encrypt and send data between the browser and the connected website, thus preventing from cyber
+                        attacks where an unknown listener is between the two legit endpoints. This kind of attack is called Man In The Middle (MITM).
+                        HTTPS is a mandatory standard for highly protected data and confidential online transactions like online banking and e-commerce.
+                        Its default port is the 443, instead of port 80 reserved to HTTP protocol.
+                        Let's see how the SSL/TSL protocols secure information more in detail.
+                    </p>
+                </th>
+                <!-- main image about HTTPS -->
+                <th style="width: 30%;"> <img src="../images/jeferson/main_https.png" alt="security"> </th>
+            </tr>
+        </table>
+
+        <!-- double line and spacing between main article and sub articles-->
+        <hr><br>
+        <hr><br>
+        <br><br>
+        <!-- end of double line and spacing -->
+
+        <table>
+            <!-- argument regarding the security of the https protocol with 2 paragraphs and an image -->
+            <tr>
+                <th class="imghead2">
+                    <!-- title security -->
+                    <h2 class="subtitle">Security</h2>
+                    <br>
+
+                    <!-- subtitle and paragraph regarding HTTP protocol -->
+                    <h3 class="subsubtitle">
+                        <i> <u><abbr title="HyperText Tranfer Protocol">HTTP</abbr></u></i>
+                    </h3>
+                    <p class="text2">
+                    HyperText Tranfer Protocol is an application level protocol in the ISO/OSI stack,
+                    which includes a set of rules to send and receive text-based messages,
+                    allowing users to communicate data on the World Wide Web.
+                    It is not an encrypted protocol, so it is widely vulnerable to MITM attacks and interception.
+                    HTTP transfer the text, which the browser interprets and transforms in hypertext, and its default port is the number 80.
+                    </p>
+
+                    <!-- subtitle and paragraph regarding SSL -->
+                    <h3 class="subsubtitle">
+                        <i><u><abbr title="Secure Socket Layer">SSL</abbr></u></i>
+                    </h3>
+
+                    <p class="text2">
+                        Acronym of Secure Socket Layer, is a secure protocol with the purpose of sending information securely over the internet.
+                        It is known websites uses it for creating a secure session area in order to host sensible information, such as login pages or online checkouts.
+                        The purpose of SSL is to avoid eavesdropping on the trasmission, so another person not included in the conversation can't know what you are
+                        communicating with a secured website.
+                        Only the two authenticated users by the protocol can recognize the data, all the others will see just meaningless encrypted trasmissions.
+                        Exempli gratia, SSL keeps your credentials and bank details between you and the authorized server, making possible and practical to do
+                        online business, as e-commerce websites.
+                        Moreover, all servers started to use an SSL certificate given by a Certificate Authority (CA),
+                        to validate their authenticity within the internet.
+                    </p>
+
+                    <!-- subtitle and paragraph regarding TLS -->
+                    <h3 class="subsubtitle">
+                        <i><u><abbr title="Transport Layer Security">TLS</abbr></u></i>
+                    </h3>
+
+                    <p class="text2">
+                        Acronym of Transport Layer Security, is the protocol providing authentication, privacy and data integrity between
+                        the two communicating endpoints.
+                        Is the most widely spread and used protocol nowadays, due to its evolution from the SSL protocol, which has
+                        been largely suppresed, although the terminology SSL/TLS openly says that it could possibly be used one or the other,
+                        making them interoperable.
+                        Also, the vastly fields of usage TLS has, makes it better to use compared to SSL.
+                        A couple of examples by just thinking about securely data exchanging by web applications are in the following paragraph.
+                        Key differences that make TLS more secure and efficient as a protocol are:
+                        message authentication, key material generation and the supported cipher suite containing newer and safer algorithms.
+                    </p>
+                </th>
+                <th style="width: 30%;">
+                    <!-- image about differences between HTTP & HTTPS protocols-->
+                    <img src="../images/jeferson/http_https.png"></img>
+                </th>
+            </tr>
+
+            <!-- argument regarding the usage of the https protocol with a paragraphs and an image -->
+            <tr>
+                <th class="imghead2">
+                    <!-- title deployment -->
+                    <h2 class="subtitle">Deployment</h2>
+                    <br>
+                    <!-- subtitle and paragraph regarding the useage of HTTPS -->
+                    <h3 class="subsubtitle"> <i> <u> Where is it used? </u></i></h3>
+
+                    <!-- paragraph about where is the protocol used (web surfing, voice call, meetings, ...) -->
+                    <p class="text2">
+                        Nowadays, HTTPS is almost ubiquitous.
+                        Most people don't really realize that in the URL address of mostly all pages visited there is a recurrent logo.
+                        The always present lock logo that appears in every browser has an important meaning.
+                        Not only it reassures us about the privacy our data has in that website, but tells us that we are
+                        connected to the server with the HTTPS protocol and a valid SSL certificate.
+                        Then, people could argue that surfing the web is not sufficient to define a protocol ubiquitous.
+                        Moreover, TLS is present in each web browsing session, Voice over IP (VOIP) as WhatsApp calls,
+                        remote desktop sessions like TeamViewer, file transfering, Virtual Private Network (VPN) connections, email, instant messaging ...<br>
+                        Real examples contain big company names like Skype to keep conversations private, Google to keep its software suite trasmission
+                        secure (Drive, Calendar, Pay, ...) and many more.<br>
+                        Thanks to HTTPS, our Personal Info (PI) and Sensitive Personal Info (SPI) is obscured thought the internet.
+                    </p>
+                </th>
+                <th>
+                    <!-- image about https lock symbol -->
+                    <img src="../images/jeferson/https_lock.png" alt="https lock symbol in browsers"></img>
+                </th>
+            </tr>
+        </table>
+
+        <!-- footer -->
+        <hr>
+        <table width="100%;" class="footer">
+            <th class="space" width="33%"> <h1 class="chapter">Chapter Security</h1></th>
+            <th class="name" width="33%">  <h1>Jeferson Morales Mariciano</h1></th>
+            <th width="33%">
+                <a href="../html/network_security.html#https" class="arrow" title="next article">
+                    <img src="../../general/icons/arrow.svg" height="45" width="125" alt="next article" class="icon-img">
+                </a>
+            </th>
+        </table>
+    </main>
+</body>
+
+</html>

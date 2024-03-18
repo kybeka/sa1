@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Francesco Caglianone">
+  <title>Group 1 project | Security | Network Security</title>
+  <link rel="icon" type="image/x-icon" href="../../favicon.png">
+  <link rel="stylesheet" href="../../general/index.css">
+  <link rel="stylesheet" href="../css/security.css">
+</head>
+<body id="Network Security">
+  <script type="text/javascript" src="../../general/index.js"></script>
+  <!-- WARNING: when you copy and paste the page, remember to change the paths to the external files (images, scripts, stylesheets,...)-->
+
+<!----------------------------------------------------------------------------->
+<!--________________________ NAVIGATION BAR _________________________________-->
+  <nav>
+    <ul id="main_nav_bar">
+      <!-- main navigation bar; these methods are used to move resize and move
+      the main content, without overlapping it with the sidebar -->
+      <li id='nav_img' class="icon-bg"
+      onmouseover="setStyle('main', 'width','calc(100% - 150px)');
+      setStyle('main','left','150px');"
+      onmouseout="setStyle('main','width','calc(98% - 51px)');
+      setStyle('main','left','50px')"
+      ondblclick="window.location = '../../index.html'">
+      <div id="sidebar">
+        <ul id="sidebar-cont">
+          <li> <a href='#vpn'>VPN</a></li>
+          <li> <a href='#firewall'>Firewall</a></li>
+          <li> <a href='#https'>Https</a></li>
+          <li> <a href='#pragmatic_network_analysis'>Pragmatic Net Analysis</a></li>
+        </ul>
+      </div>
+    </li>
+    <!-- main header and navigation bar links of the rest of the page -->
+    <li id="main_header">
+      <a href="">
+        <header>
+          <b>About</b>
+        </header>
+      </a>
+    </li>
+    <li> <a href= "../../history/history.html">History</a> <br>
+    </li>
+    <li> <a href = "../../compvir/compvir.html">Computer Viruses</a> <br>
+      <ul class="dropdown">
+        <li><a href="../../compvir/compvir.html">Virus</a>
+          <ul class="dropdown2">
+            <li> <a href="../../compvir/html/BackDoor.html"> Backdoor</a></li>
+            <li> <a href="../../compvir/html/bug.html"> Bugs</a></li>
+            <li> <a href="../../compvir/html/bug2.html"> Bugs II</a></li>
+            <li> <a href="../../compvir/html/CompanionVirus.html"> Companion Virus</a></li>
+            <li> <a href="../../compvir/html/ComputerWorm.html"> Computer Worm</a></li>
+            <li> <a href="../../compvir/html/Directory Virus.html"> Directory Virus</a></li>
+            <li> <a href="../../compvir/html/MULTIPARTITE-VIRUS.html"> Multipartite Virus</a></li>
+            <li> <a href="../../compvir/html/MULTIPARTITE-VIRUS-2.html"> Multipartite Virus II</a></li>
+            <li> <a href="../../compvir/html/polymorphicvirus.html"> Polymorphic Virus</a></li>
+            <li> <a href="../../compvir/html/polyvirus2.html"> Polymorphic Virus II</a></li>
+            <li> <a href="../../compvir/html/residentvirus.html"> Resident Virus</a></li>
+            <li> <a href="../../compvir/html/Social Engineering and Phishing.html"> Social Engineering <br> & Phishing</a></li>
+            <li> <a href="../../malware/html/TROJANS.html"> Trojans</a></li>
+            <li> <a href="../../malware/html/TROJAN2.html"> Trojans II</a></li>
+            <li> <a href="../../malware/html/TROJAN3.html"> Trojans III</a></li>
+            <li> <a href="../../malware/html/TROJAN4.html"> Trojans IV</a></li>
+            <li> <a href="../../compvir/html/Web Scripting Virus.html"> WebScripting Virus</a></li>
+            <li> <a href="../../malware/html/Macrovirus.html"> MacroVirus</a></li>
+            <li> <a href="../../malware/html/overwritingvirus.html"> Overwrite virus</a></li>
+            <li> <a href="../../malware/html/Bootsector_viruses.html"> Bootsector Viruses</a></li>
+            <li> <a href="../../compvir/html/CarbanakAPT.html"> CarbanakAPT</a></li>
+            <li> <a href="../../compvir/html/WannaCryy-1.html"> WannaCry I</a></li>
+            <li> <a href="../../compvir/html/WannaCry-2.html"> WannaCry II</a></li>
+            <li> <a href="../../compvir/html/Zeus.html"> Zeus</a></li>
+          </ul>
+        </li>
+        <li><a href="../../malware/malware.html"> Malware</a>
+          <ul class="dropdown2">
+            <li> <a href="../../malware/html/Adware_Rerevisioned.html"> Adware Revisioned</a></li>
+            <li> <a href="../../malware/html/botnet.html"> Botnet</a></li>
+            <li> <a href="../../malware/html/botnet2.html"> Botnet II</a></li>
+            <li> <a href="../../malware/html/cryptojacking.html"> Cryptojacking</a></li>
+            <li> <a href="../../malware/html/cyberwarfare.html"> Cyberwarfare</a></li>
+            <li> <a href="../../malware/html/Data_Breach.html"> Data Breach</a></li>
+            <li> <a href="../../malware/html/Fileless_malware.html"> Fileless Malware</a></li>
+            <li> <a href="../../malware/html/Fileless_malware2.html"> Fileless Malware II</a></li>
+            <li> <a href="../../malware/html/Greyware.html"> Greyware</a></li>
+            <li> <a href="../../malware/html/keylogger.html"> Keylogger</a></li>
+            <li> <a href="../../compvir/html/ScareWare.html"> ScareWare</a></li>
+            <li> <a href="../../malware/html/maliciousapps.html"> Malicious Apps</a></li>
+            <li> <a href="../../malware/html/maliciousapps2.html"> Malicious Apps II</a></li>
+            <li> <a href="../../malware/html/Malware_Rerevisioned.html"> Malware re-revisioned</a></li>
+            <li> <a href="../../compvir/html/videogamesMalware.html"> Malware in videogames</a></li>
+            <li> <a href="../../malware/html/RAMscrapper.html"> RamScraper</a></li>
+            <li> <a href="../../malware/html/ransomware.html"> Ransomware</a></li>
+            <li> <a href="../../compvir/html/EffectRansomware.html"> EffectRansomWare</a></li>
+            <li> <a href="../../malware/html/rootkits.html"> Rootkit</a></li>
+            <li> <a href="../../malware/html/Spam.html"> Spam</a></li>
+            <li> <a href="../../malware/html/Spyware_Rerevisioned.html"> Spyware Revisioned</a></li>
+            <li> <a href="../../malware/html/Trickbot.html"> Trickbot</a></li>
+            <li> <a href="../../compvir/html/appliance-based malware.html"> Appliance-Based Malware</a></li>
+            <li> <a href="../../malware/html/DDoS.html"> DDOS</a></li>
+            <li> <a href="../../malware/html/Emotet.html"> Emotet</a></li>
+            <li> <a href="../../malware/html/cyberwarfare.html"> Cryptocurrency scam</a></li>
+            <li> <a href="../../malware/html/twitchhack.html"> Twitch Hack</a></li>
+            <li> <a href="../../malware/html/malware_in_cars.html"> Malware in cars</a></li>
+            <li> <a href="../../malware/html/yahoohack.html"> Yahoo Hack</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li> <a href = "../../security/security.html"> Security </a> </li>
+    <li id="Search" class="icon-bg">
+      <input type="search" id=searchBar class="icon-bg"
+      incremental="incremental" onsearch="search()">
+      <ul id="search_results"></ul>
+    </li>
+    <li id="sidetoggle" class="icon-bg">
+      <label for="chmode" id="chmode-cont">
+        <input type="checkbox" id="chmode" name="chmode"
+        value="dark" onclick="toggleRoot('chmode','--main-col', '--dark-main-cl', '--light-main-cl');
+        toggleRoot('chmode','--second-col', '--dark-second-cl', '--light-second-cl')">
+        <span id="mark" class="icon-bg"></span>
+      </label>
+    </li>
+  </ul>
+</nav>
+
+<!----------------------------------------------------------------------------->
+<!--___________________________ STARTING PAGE _______________________________-->
+
+<main id="main">
+
+<!----------------------------------------------------------------------------->
+<!--___________________________ FIRST PARAGRAPH  ____________________________-->
+
+<!-- TABLE -->
+<table>
+  <tr>
+    <th class="imghead">
+      <h1 class="title">Network Security</h1>
+      <p class="text"> Network security is a term that includes an extended
+        multitude of technologies, devices and processes; for example:
+        access control, application security, network analytics, firewalls,
+        VPN encryption and more. <br><br>
+        In an easy way we could say that, it is a set of rules specifically
+        designed to protect the integrity, confidentiality and accessibility
+        of computers and computer networks whith all their data using both
+        software and hardware technologies.
+        <th> <img src="../images/Francesco-Caglianone-Images/network_gif.gif" alt="security"> </th>
+      </tr>
+</table>
+
+<!----------------------------------------------------------------------------->
+<!--_____________________________ SEPARE' ___________________________________-->
+
+                                    <hr>
+                                    <br>
+                                    <hr>
+                                    <br>
+                                    <br>
+                                    <br>
+
+<!----------------------------------------------------------------------------->
+<!--_________________________ SECOND PARAGRAPH ______________________________-->
+
+<!-- TABLE -->
+<table id="vpn">
+  <tr>
+    <th class="imghead2">
+      <h2 class="subtitle"><a href="./vpn.html"> <u> VPN (Virtual Private Network) </u> </a> </h2>
+      <h3 class="subsubtitle"> <i> what is a vpn? </i> </h3>
+      <p> A VPN (short term for virtual private network) is a type of
+        Network Security which hides your IP (short term for internet
+        protocol) address, providing your device with online privacy and
+        anonymity by building a secured private network from a public
+        internet connection, which makes your IP appear in another country.
+        For more informations
+        <a href="./vpn.html"> (click here) </a> </p>
+      </th>
+      <th> <img src="../images/yasemink_images/vpn.png" ></img> </th>
+    </tr>
+</table>
+
+<!----------------------------------------------------------------------------->
+<!--_____________________________ SEPARE' ___________________________________-->
+
+
+                                  <hr>
+
+
+<!----------------------------------------------------------------------------->
+<!--__________________________ THIRD PARAGRAPH  _____________________________-->
+
+<!-- TABLE -->
+<table id="firewall">
+  <tr>
+    <th> <img src="../images/yasemink_images/firewall1.jpg" ></img> </th>
+    <th class="imghead2">
+      <h2 class="subtitle"> <a href="./firewall.html"> <u> Firewall </u> </a> </h2>
+      <h3 class="subsubtitle"> <i> what is a firewall? </i></h3>
+      <p>A firewall is a network security system that monitors incoming and
+        outgoing network traffic. Its objective is to generate a wall between
+        your internal network and incoming traffic from external sources
+        (for example the internet), preventing malicious traffic such as viruses
+        and hackers. For more informations
+        <a href="./firewall.html"> (click here) </a> </p>
+      </th>
+    </tr>
+  </table>
+
+
+<!----------------------------------------------------------------------------->
+<!--_____________________________ SEPARE' ___________________________________-->
+
+                                   <hr>
+
+<!----------------------------------------------------------------------------->
+<!--_________________________ FOURTH PARAGRAPH ______________________________-->
+
+<!-- TABLE -->
+<table id="https">
+  <tr>
+    <th class="imghead2">
+      <h2 class="subtitle"><a href="./https.html"> <u> HTTPS </u> </a> </h2>
+      <h3 class="subsubtitle"> <i> what is https? </i> </h3>
+      <p> HyperText Transfer Protocol Secure, it's a web communication protocol
+        which uses the HTTP protocol and SSL/TLS for supporting encryption
+        and increase safety. For more informations
+        <a href="./https.html"> (click here) </a> </p>
+      </th>
+      <th style="width:20%;"> <img src="../images/jeferson/main_https.png"></img> </th>
+    </tr>
+  </table>
+
+<!----------------------------------------------------------------------------->
+<!--_____________________________ SEPARE' ___________________________________-->
+
+                                   <hr>
+
+
+<!----------------------------------------------------------------------------->
+<!--_________________________ FITH PARAGRAPH ______________________________-->
+
+<!-- TABLE -->
+<table id="pragmatic_network_analysis">
+  <tr>
+    <th style="width:30%;"> <img src="../images/jeferson/network_analysis.jpg"></img> </th>
+    <th class="imghead2">
+      <h2 class="subtitle"><a href="./pragmatic_network_analysis.html"> <u> Pragmatic Network Analysis </u> </a> </h2>
+      <h3 class="subsubtitle"> <i> How can we know pragmatically more about a network? </i> </h3>
+      <p>
+        Nowadays, every device is connected, but connected to what?<br>
+        Smartphone, tablets, computers, etc, are connected to a network in order to
+        communicate with one another. Networks can be also connected to other networks.
+        Internet itself is the biggest network of all, including every public network available. <br>
+        But what is actually navigating through the network? How messages, videos, images are represented
+        in the communication?<br><br>
+        Let's dive into a pragmatic way of discovering these interesting curiosities!
+        <a href="./pragmatic_network_analysis.html"> (click here) </a> </p>
+      </th>
+    </tr>
+  </table>
+
+
+<!----------------------------------------------------------------------------->
+<!--_____________________________ SEPARE' ___________________________________-->
+
+                                   <hr>
+
+<!----------------------------------------------------------------------------->
+<!--__________________________ FOOT NOTE  ___________________________________-->
+
+<table width="100%;">
+  <th class="space" width="33%"><h1 class="chapter">..//Network_Security</h1></th>
+  <th class="name" width="33%"> <a href="../../general/about-us.html#Francesco Caglianone"><h1>Francesco Caglianone</h1></a></th>
+  <th width="33%"> <a href="../security.html" class="arrow" title="back to main page"> Back to Security Homepage</a></th>
+  <address hidden>
+  <a href="caglif@usi.ch">caglif@usi.ch</a><br>
+  <a href="tel:+41764796543">+41764796543</a>
+ </address>
+</table>
+
+
+
+
+
+</main>
+</body>
+</html>

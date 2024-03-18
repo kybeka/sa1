@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Francesco Caglianone">
+  <title>Group 1 project | Security | Homepage</title>
+  <link rel="icon" type="image/x-icon" href="../favicon.png">
+  <link rel="stylesheet" href="../general/index.css">
+  <link rel="stylesheet" href="css/security.css">
+</head>
+
+<!--_________________________________________________________________________-->
+
+<body>
+  <script type="text/javascript" src="../general/index.js"></script>
+
+  <!----------------------------------------------------------------------------->
+  <!--___________________________ NAVIGATION BAR ______________________________-->
+  <nav>
+    <ul id="main_nav_bar">
+      <!-- main navigation bar; these methods are used to move resize and move
+      the main content, without overlapping it with the sidebar -->
+      <li id='nav_img' class="icon-bg"
+      onmouseover="setStyle('main', 'width','calc(100% - 150px)');
+      setStyle('main','left','150px');"
+      onmouseout="setStyle('main','width','calc(98% - 51px)');
+      setStyle('main','left','50px')"
+      ondblclick="window.location = '../index.html'">
+      <div id="sidebar">
+        <ul id="sidebar-cont">
+          <li> <a href='#whatiscs?'>What is Cyber Sec?</a></li>
+          <li> <a href='#Hardware'>Hardware Security</a></li>
+          <li> <a href='#Software'>Software Security</a></li>
+          <li> <a href='#Network'>Network Security</a></li>
+          <li> <a href='#Differences'>Differences in Security</a></li>
+        </ul>
+      </div>
+    </li>
+    <!-- main header and navigation bar links of the rest of the page -->
+    <li id="main_header">
+      <a href="">
+        <header>
+          <b>About</b>
+        </header>
+      </a>
+    </li>
+    <li> <a href= "../history/history.html">History</a> <br>
+    </li>
+    <li> <a href = "../compvir/compvir.html">Computer Viruses</a> <br>
+      <ul class="dropdown">
+        <li><a href="../compvir/compvir.html">Virus</a>
+          <ul class="dropdown2">
+            <li> <a href="../compvir/html/BackDoor.html"> Backdoor</a></li>
+            <li> <a href="../compvir/html/bug.html"> Bugs</a></li>
+            <li> <a href="../compvir/html/bug2.html"> Bugs II</a></li>
+            <li> <a href="../compvir/html/CompanionVirus.html"> Companion Virus</a></li>
+            <li> <a href="../compvir/html/ComputerWorm.html"> Computer Worm</a></li>
+            <li> <a href="../compvir/html/Directory Virus.html"> Directory Virus</a></li>
+            <li> <a href="../compvir/html/MULTIPARTITE-VIRUS.html"> Multipartite Virus</a></li>
+            <li> <a href="../compvir/html/MULTIPARTITE-VIRUS-2.html"> Multipartite Virus II</a></li>
+            <li> <a href="../compvir/html/polymorphicvirus.html"> Polymorphic Virus</a></li>
+            <li> <a href="../compvir/html/polyvirus2.html"> Polymorphic Virus II</a></li>
+            <li> <a href="../compvir/html/residentvirus.html"> Resident Virus</a></li>
+            <li> <a href="../compvir/html/Social Engineering and Phishing.html"> Social Engineering <br> & Phishing</a></li>
+            <li> <a href="../malware/html/TROJANS.html"> Trojans</a></li>
+            <li> <a href="../malware/html/TROJAN2.html"> Trojans II</a></li>
+            <li> <a href="../malware/html/TROJAN3.html"> Trojans III</a></li>
+            <li> <a href="../malware/html/TROJAN4.html"> Trojans IV</a></li>
+            <li> <a href="../compvir/html/Web Scripting Virus.html"> WebScripting Virus</a></li>
+            <li> <a href="../malware/html/Macrovirus.html"> MacroVirus</a></li>
+            <li> <a href="../malware/html/overwritingvirus.html"> Overwrite virus</a></li>
+            <li> <a href="../malware/html/Bootsector_viruses.html"> Bootsector Viruses</a></li>
+            <li> <a href="../compvir/html/CarbanakAPT.html"> CarbanakAPT</a></li>
+            <li> <a href="../compvir/html/WannaCryy-1.html"> WannaCry I</a></li>
+            <li> <a href="../compvir/html/WannaCry-2.html"> WannaCry II</a></li>
+            <li> <a href="../compvir/html/Zeus.html"> Zeus</a></li>
+          </ul>
+        </li>
+        <li><a href="../malware/malware.html"> Malware</a>
+          <ul class="dropdown2">
+            <li> <a href="../malware/html/Adware_Rerevisioned.html"> Adware Revisioned</a></li>
+            <li> <a href="../malware/html/botnet.html"> Botnet</a></li>
+            <li> <a href="../malware/html/botnet2.html"> Botnet 2</a></li>
+            <li> <a href="../malware/html/cryptojacking.html"> Cryptojacking</a></li>
+            <li> <a href="../malware/html/cyberwarfare.html"> Cyberwarfare</a></li>
+            <li> <a href="../malware/html/Data_Breach.html"> Data Breach</a></li>
+            <li> <a href="../malware/html/Fileless_malware.html"> Fileless Malware</a></li>
+            <li> <a href="../malware/html/Fileless_malware2.html"> Fileless Malware II</a></li>
+            <li> <a href="../malware/html/Greyware.html"> Greyware</a></li>
+            <li> <a href="../malware/html/keylogger.html"> Keylogger</a></li>
+            <li> <a href="../compvir/html/ScareWare.html"> ScareWare</a></li>
+            <li> <a href="../malware/html/maliciousapps.html"> Malicious Apps</a></li>
+            <li> <a href="../malware/html/maliciousapps2.html"> Malicious Apps II</a></li>
+            <li> <a href="../malware/html/Malware_Rerevisioned.html"> Malware re-revisioned</a></li>
+            <li> <a href="../compvir/html/videogamesMalware.html"> Malware in Videogames</a></li>
+            <li> <a href="../malware/html/RAMscrapper.html"> RamScraper</a></li>
+            <li> <a href="../malware/html/ransomware.html"> Ransomware</a></li>
+            <li> <a href="../compvir/html/EffectRansomware.html"> Effect RansomWare</a></li>
+            <li> <a href="../malware/html/rootkits.html"> Rootkit</a></li>
+            <li> <a href="../malware/html/Spam.html"> Spam</a></li>
+            <li> <a href="../malware/html/Spyware_Rerevisioned.html"> Spyware Revisioned</a></li>
+            <li> <a href="../malware/html/Trickbot.html"> Trickbot</a></li>
+            <li> <a href="../compvir/html/appliance-based malware.html"> Appliance-Based Malware</a></li>
+            <li> <a href="../malware/html/DDoS.html"> DDOS</a></li>
+            <li> <a href="../malware/html/Emotet.html"> Emotet</a></li>
+            <li> <a href="../malware/html/cyberwarfare.html"> Cryptocurrency scam</a></li>
+            <li> <a href="../malware/html/twitchhack.html"> Twich Hack</a></li>
+            <li> <a href="../malware/html/malware_in_cars.html"> Malaware in Cars</a></li>
+            <li> <a href="../malware/html/yahoohack.html"> Yahoo Hack</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li> <a href = "../security/security.html"> Security </a> </li>
+    <li id="Search" class="icon-bg">
+      <input type="search" id=searchBar class="icon-bg"
+      incremental="incremental" onsearch="search()">
+      <ul id="search_results"></ul>
+    </li>
+    <li id="sidetoggle" class="icon-bg">
+      <label for="chmode" id="chmode-cont">
+        <input type="checkbox" id="chmode" name="chmode"
+        value="dark" onclick="toggleRoot('chmode','--main-col', '--dark-main-cl', '--light-main-cl');
+        toggleRoot('chmode','--second-col', '--dark-second-cl', '--light-second-cl')">
+        <span id="mark" class="icon-bg"></span>
+      </label>
+    </li>
+  </ul>
+</nav>
+
+<!----------------------------------------------------------------------------->
+<!--_________________________ FIRST PARAGRAPH  ______________________________-->
+
+<main id="main">
+
+<!-- TABLE -->
+<table id="whatiscs">
+  <th class="imghead">
+    <h2 class="title">Types of Cyber Security</h2>
+    <h1 class="subsubtitle"> <i> What is Cyber Security ? </i></h1>
+    <p class="text"> Cyber Security, even called electronic information security
+        is used to protect computers, networks, servers, cellphones, data and all
+        types of computers devices from hacking attacks. <br><br>
+        It serves as a security gate in order to make sure that all your personal
+        informations isn't hackable; and with cybercrimes exponentially growing it's
+        fundamental to have cyber security in place for personal, military and
+        business use.</p>
+    </th>
+
+      <th> <img src="./images/Francesco-Caglianone-Images/main_page_gif.gif" alt="security"> </th>
+</table>
+
+
+<!----------------------------------------------------------------------------->
+<!--______________________________ SEPARE' __________________________________-->
+
+
+                                  <hr><hr>
+                                    <br>
+
+
+<!----------------------------------------------------------------------------->
+
+<!-- LIST -->
+<h1 class="subsubtitle">
+    <i> There are mainly 3 different types of Cyber Security: </i>
+</h1>
+
+<ul>
+   <li> Hardware Security </li>
+   <li> Software Security </li>
+   <li> Network Security </li>
+</ul>
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------->
+<!--___________________________ SECOND PARAGRAPH ____________________________-->
+
+<!-- TABLE -->
+<table id="Hardware">
+    <th class="imghead2">
+      <h3 class="subtitle"><a href="./html/hardware_security.html"> <u> Hardware Security </u> </a> </h3>
+      <h1 class="subsubtitle"> <i> What is Hardware Security ? </i></h1>
+      <p class="text2"> Hardware Security is vulnerability for all types
+        of physical devices, so rather than the software it's the hardware of a
+        computer system the one affected. it may also refer to the protection of
+        physical sistems from a physical harm like equipment destruction attacks. </p>
+    </th>
+
+    <th> <img src="./images/Francesco-Caglianone-Images/hardware_security_image.jpeg" ></img> </th>
+</table>
+
+<!----------------------------------------------------------------------------->
+<!--______________________________ SEPARE' __________________________________-->
+
+                                    <hr>
+
+<!----------------------------------------------------------------------------->
+<!--_________________________ THIRD PARAGRAPH________________________________-->
+
+<!-- TABLE -->
+<table id="Software">
+    <th class="imghead2">
+      <h3 class="subtitle"><a href="./html/software_security.html"> <u> Software Security </u> </a></h3>
+      <h1 class="subsubtitle"> <i> What is Software Security ? </i></h1>
+      <p class="text2"> Software Security is the application of every type of
+       technique that can asses, mitigate and protect software systems from all
+       hacking vulnerabilities. Techniques used to ensure that the softwares
+       continues to function and are safe from any kind of malicious attacks.</p>
+    </th>
+    <th> <img src="./images/Francesco-Caglianone-Images/software_security_image.jpg" ></img> </th>
+</table>
+
+
+
+
+<!----------------------------------------------------------------------------->
+<!--______________________________ SEPARE' __________________________________-->
+
+                                    <hr>
+
+
+
+<!----------------------------------------------------------------------------->
+<!--___________________________ FOURTH PARAGRAPH  ___________________________-->
+
+
+<!-- TABLE -->
+<table id="Network">
+  <th class="imghead2">
+    <h3 class="subtitle"><a href="./html/network_security.html"> <u> Network Security </u> </a></h3>
+    <h1 class="subsubtitle"> <i> What is Network Security ? </i></h1>
+    <p class="text2"> Network Security is used to protect networks and data
+      from breaches, intrusions and other threats. This term gathers hardware
+      and software solutions and also includes rules and configurations relating
+      to network usability, accessibility, and threat protection for all subsections.</p>
+    </th>
+    <th> <img src="./images/Francesco-Caglianone-Images/network_security_image.jpg" ></img> </th>
+
+  </table>
+
+<!----------------------------------------------------------------------------->
+<!--______________________________ SEPARE' __________________________________-->
+
+                                    <hr>
+                                    <hr>
+                                    <hr>
+
+
+<!----------------------------------------------------------------------------->
+<!--___________________________ FITH PARAGRAPH ______________________________-->
+
+                                  <br><br>
+
+  <!-- Paolo Deidda interlinks -->
+  <table>
+    <th class="imghead">
+      <h1 class="subtitle"> Security is not the same for all just by knowing the disease (virus) and the cure (solution) </h1>
+      <p class="text">
+        That's because different people have different needs.<br>
+        Bank people can't just install an antivirus because if it fails, the consequences would be fatal.<br>
+        A middle school student doesn't need to have multiple copies of the hard-drive delocalized around the world.<br>
+        We present 3 main points of view regarding security:
+      </p>
+   </th>
+</table>
+
+
+          <table>
+            <tr>
+              <th style="width: 33%;">
+                <!-- link to average users dataprotection -->
+                <a href="html/averageuser_dataprotection.html">
+                  <table id="averageuser_dataprotection">
+                    <tr><th><img src="./images/jeferson/averageuser_icon.png" width="530" height="315"></th></tr>
+                    <tr><th class="subtitle" style="text-align: center;">Average Users</th></tr>
+                  </table>
+                </a>
+              </th>
+
+              <th style="width: 33%;">
+                <a href="html/companies_dataprotection.html">
+                  <!-- link to companies dataprotection -->
+                  <table id="companies_dataprotection">
+                    <tr><th><img src="./images/jeferson/company_icon.png" width="530" height="315"></th></tr>
+                    <tr><th class="subtitle" style="text-align: center;">Companies</th></tr>
+                  </table>
+                </a>
+              </th>
+
+              <th style="width: 33%;">
+                <a href="html/govagencies_cyberdefense.html">
+                  <!-- link to government agencies cyberdefense -->
+                  <table id="govagencies_cyberdefense">
+                    <tr><th><img src="./images/jeferson/agency_icon.png" width="530" height="315"></th></tr>
+                    <tr><th class="subtitle" style="text-align: center;">Government Agencies</th></tr>
+                  </table>
+                </a>
+              </th>
+            </tr>
+          </table>
+
+<!----------------------------------------------------------------------------->
+<!--______________________________ SEPARE' __________________________________-->
+
+                                    <hr>
+                                    <hr>
+
+<!----------------------------------------------------------------------------->
+<!--___________________________ FOOT-NOTE __________________________________-->
+
+<!-- TABLE -->
+
+<table width="100%;">
+   <th class="space" width="33%"><h1 class="chapter">../Security</h1></th>
+   <th class="name" width="33%"> <a href="../general/about-us.html#Francesco Caglianone"><h1>Francesco Caglianone</h1></a></th>
+   <th width="33%"> <a href="../index.html" class="arrow" title="back to top"> Back to Home </a></th>
+   <th width="33%"></th>
+   <address hidden>
+   <a href="caglif@usi.ch">caglif@usi.ch</a><br>
+   <a href="tel:+41764796543">+41764796543</a>
+  </address>
+</table>
+
+<!-- ________________________________________________________________________-->
+</main>
+</body>
+</html>

@@ -1,0 +1,26 @@
+TODO:
+
+- generalize css templates (more classes instead of ids)
+
+- add these classes to the guide
+
+- DONE! prepare for merge by looking through css files;
+
+- DONE! delete repetitions in css templates;
+
+- merge css templates, by looking at the custom templates and see what's missing;
+
+- add mini-guides and resources on how to do some custom elements (eg the checkbox);
+
+- DONE! put place for images in history main page;
+
+- fix left margin/padding for dropdowns;
+
+- DONE! investigate dropdown problems (font-dimensions?) in some pages;
+
+
+-SUGGESTION
+
+- DONE! rotate logo on click
+
+- custom mouse pointer

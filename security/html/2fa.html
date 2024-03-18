@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Francesco Caglianone">
+  <title>Group 1 project | Security | 2FA</title>
+  <link rel="icon" type="image/x-icon" href="../../favicon.png">
+  <link rel="stylesheet" href="../../general/index.css">
+  <link rel="stylesheet" href="../css/security.css">
+  <style>
+  /* prevents image from overlapping text */
+  .img2{
+    width: 180%;
+    position: relative;
+    right: 85%;
+  }
+  </style>
+</head>
+<body>
+  <script type="text/javascript" src="../../general/index.js"></script>
+  <!-- WARNING: when you copy and paste the page, remember to change the paths to the external files (images, scripts, stylesheets,...)-->
+
+<!----------------------------------------------------------------------------->
+<!--________________________ NAVIGATION BAR _________________________________-->
+<nav>
+    <ul id="main_nav_bar">
+      <!-- main navigation bar; these methods are used to move resize and move
+      the main content, without overlapping it with the sidebar -->
+      <li id='nav_img' class="icon-bg"
+      onmouseover="setStyle('main', 'width','calc(100% - 150px)');
+      setStyle('main','left','150px');"
+      onmouseout="setStyle('main','width','calc(98% - 51px)');
+      setStyle('main','left','50px')"
+      ondblclick="window.location = '../../index.html'">
+      <div id="sidebar">
+        <ul id="sidebar-cont">
+          <li> <a href='#explanation'>Explanation</a></li>
+          <li> <a href='#typesoffa'>Types of Factor Auth</a></li>
+        </ul>
+      </div>
+    </li>
+    <!-- main header and navigation bar links of the rest of the page -->
+    <li id="main_header">
+      <a href="">
+        <header>
+          <b>About</b>
+        </header>
+      </a>
+    </li>
+    <li> <a href= "../../history/history.html">History</a> <br>
+    </li>
+    <li> <a href = "../../compvir/compvir.html">Computer Viruses</a> <br>
+      <ul class="dropdown">
+        <li><a href="../../compvir/compvir.html">Virus</a>
+          <ul class="dropdown2">
+            <li> <a href="../../compvir/html/BackDoor.html"> Backdoor</a></li>
+            <li> <a href="../../compvir/html/bug.html"> Bugs</a></li>
+            <li> <a href="../../compvir/html/bug2.html"> Bugs II</a></li>
+            <li> <a href="../../compvir/html/CompanionVirus.html"> Companion Virus</a></li>
+            <li> <a href="../../compvir/html/ComputerWorm.html"> Computer Worm</a></li>
+            <li> <a href="../../compvir/html/Directory Virus.html"> Directory Virus</a></li>
+            <li> <a href="../../compvir/html/MULTIPARTITE-VIRUS.html"> Multipartite Virus</a></li>
+            <li> <a href="../../compvir/html/MULTIPARTITE-VIRUS-2.html"> Multipartite Virus II</a></li>
+            <li> <a href="../../compvir/html/polymorphicvirus.html"> Polymorphic Virus</a></li>
+            <li> <a href="../../compvir/html/polyvirus2.html"> Polymorphic Virus II</a></li>
+            <li> <a href="../../compvir/html/residentvirus.html"> Resident Virus</a></li>
+            <li> <a href="../../compvir/html/Social Engineering and Phishing.html"> Social Engineering <br> & Phishing</a></li>
+            <li> <a href="../../malware/html/TROJANS.html"> Trojans</a></li>
+            <li> <a href="../../malware/html/TROJAN2.html"> Trojans II</a></li>
+            <li> <a href="../../malware/html/TROJAN3.html"> Trojans III</a></li>
+            <li> <a href="../../malware/html/TROJAN4.html"> Trojans IV</a></li>
+            <li> <a href="../../compvir/html/Web Scripting Virus.html"> WebScripting Virus</a></li>
+            <li> <a href="../../malware/html/Macrovirus.html"> MacroVirus</a></li>
+            <li> <a href="../../malware/html/overwritingvirus.html"> Overwrite virus</a></li>
+            <li> <a href="../../malware/html/Bootsector_viruses.html"> Bootsector Viruses</a></li>
+            <li> <a href="../../compvir/html/CarbanakAPT.html"> CarbanakAPT</a></li>
+            <li> <a href="../../compvir/html/WannaCryy-1.html"> WannaCry I</a></li>
+            <li> <a href="../../compvir/html/WannaCry-2.html"> WannaCry II</a></li>
+            <li> <a href="../../compvir/html/Zeus.html"> Zeus</a></li>
+          </ul>
+        </li>
+        <li><a href="../../malware/malware.html"> Malware</a>
+          <ul class="dropdown2">
+            <li> <a href="../../malware/html/Adware_Rerevisioned.html"> Adware Revisioned</a></li>
+            <li> <a href="../../malware/html/botnet.html"> Botnet</a></li>
+            <li> <a href="../../malware/html/botnet2.html"> Botnet II</a></li>
+            <li> <a href="../../malware/html/cryptojacking.html"> Cryptojacking</a></li>
+            <li> <a href="../../malware/html/cyberwarfare.html"> Cyberwarfare</a></li>
+            <li> <a href="../../malware/html/Data_Breach.html"> Data Breach</a></li>
+            <li> <a href="../../malware/html/Fileless_malware.html"> Fileless Malware</a></li>
+            <li> <a href="../../malware/html/Fileless_malware2.html"> Fileless Malware II</a></li>
+            <li> <a href="../../malware/html/Greyware.html"> Greyware</a></li>
+            <li> <a href="../../malware/html/keylogger.html"> Keylogger</a></li>
+            <li> <a href="../../compvir/html/ScareWare.html"> ScareWare</a></li>
+            <li> <a href="../../malware/html/maliciousapps.html"> Malicious Apps</a></li>
+            <li> <a href="../../malware/html/maliciousapps2.html"> Malicious Apps II</a></li>
+            <li> <a href="../../malware/html/Malware_Rerevisioned.html"> Malware re-revisioned</a></li>
+            <li> <a href="../../compvir/html/videogamesMalware.html"> Malware in videogames</a></li>
+            <li> <a href="../../malware/html/RAMscrapper.html"> RamScraper</a></li>
+            <li> <a href="../../malware/html/ransomware.html"> Ransomware</a></li>
+            <li> <a href="../../compvir/html/EffectRansomware.html"> EffectRansomWare</a></li>
+            <li> <a href="../../malware/html/rootkits.html"> Rootkit</a></li>
+            <li> <a href="../../malware/html/Spam.html"> Spam</a></li>
+            <li> <a href="../../malware/html/Spyware_Rerevisioned.html"> Spyware Revisioned</a></li>
+            <li> <a href="../../malware/html/Trickbot.html"> Trickbot</a></li>
+            <li> <a href="../../compvir/html/appliance-based malware.html"> Appliance-Based Malware</a></li>
+            <li> <a href="../../malware/html/DDoS.html"> DDOS</a></li>
+            <li> <a href="../../malware/html/Emotet.html"> Emotet</a></li>
+            <li> <a href="../../malware/html/cyberwarfare.html"> Cryptocurrency scam</a></li>
+            <li> <a href="../../malware/html/twitchhack.html"> Twitch Hack</a></li>
+            <li> <a href="../../malware/html/malware_in_cars.html"> Malware in cars</a></li>
+            <li> <a href="../../malware/html/yahoohack.html"> Yahoo Hack</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li> <a href = "../../security/security.html"> Security </a> </li>
+    <li id="Search" class="icon-bg">
+      <input type="search" id=searchBar class="icon-bg"
+      incremental="incremental" onsearch="search()">
+      <ul id="search_results"></ul>
+    </li>
+    <li id="sidetoggle" class="icon-bg">
+      <label for="chmode" id="chmode-cont">
+        <input type="checkbox" id="chmode" name="chmode"
+        value="dark" onclick="toggleRoot('chmode','--main-col', '--dark-main-cl', '--light-main-cl');
+        toggleRoot('chmode','--second-col', '--dark-second-cl', '--light-second-cl')">
+        <span id="mark" class="icon-bg"></span>
+      </label>
+    </li>
+  </ul>
+</nav>
+
+
+<!----------------------------------------------------------------------------->
+<!--_________________________ STARTING PAGE  ________________________________-->
+
+<main id="main">
+
+<!----------------------------------------------------------------------------->
+<!--_________________________ FIRST PARAGRAPH _______________________________-->
+
+<!-- TABLE -->
+<table>
+  <tr>
+    <th class="imghead">
+      <h1 class="title"> 2FA (Two-Factor Authentication) </h1>
+      <p class="text"> Two-factor authentication (2FA) is a specific type
+        of multi-factor authentication (MFA) that restricts access security
+        requiring two methods (also known as authentication factors) to verify
+        your identity. These authentication factors, for example can be
+        something you know: like a username and password; plus something you
+        have, like a smartphone app to approve authentication requests.</p>
+      </th>
+     <th> <img src="../images/Francesco-Caglianone-Images/2fa.png " alt="security"> </th>
+    </tr>
+</table>
+
+<!----------------------------------------------------------------------------->
+<!--_____________________________ SEPARE' ___________________________________-->
+
+                                    <hr>
+                                    <br>
+                                    <hr>
+
+<!----------------------------------------------------------------------------->
+<!--_________________________ SECOND PARAGRAPH ______________________________-->
+
+    <!-- TABLE -->
+    <table id="explanation">
+      <tr>
+        <th class="imghead2">
+          <h2 class="subtitle"> <i> Explanation </i> </h2>
+          <p>Given how readily cybercriminals can steal login details; it's
+            no surprise that company data breaches occur frequently. If they
+            do, two-factor authentication is the most effective approach to
+            keep your sensitive data safe.
+            Two-factor authentication (2FA) protects your online accounts by
+            adding an extra layer of security.
+            <br><br>To get account access, you'll need a second login
+            credential in addition to your username and password, and getting
+            that second credential will require access to anything you own.
+            <br><br>
+            It is almost impossible to enter the account without this additional
+            access method, making it impossible for hackers to gain access to
+            your account using only stolen passwords and login information. </p>
+          </th>
+        </tr>
+      </table>
+
+      <!-- VIDEO -->
+      <iframe src="https://fast.wistia.net/embed/iframe/fw0z8xvrtz" width="650" height="360" allowFullscreen ></iframe>
+
+
+<!----------------------------------------------------------------------------->
+<!--_____________________________ SEPARE' ___________________________________-->
+
+                                <br><br>
+                                  <hr>
+
+<!----------------------------------------------------------------------------->
+<!--_________________________ THIRD PARAGRAPH _______________________________-->
+
+
+<!--______________ TABLE ___________-->
+<table id="typesoffa">
+
+<!--______ ROW 1 ______-->
+<tr>
+  <th>
+    <h2 class="subtitle"> <i> Types of Factor Authentication </i> </h2>
+    <p class="text"> Someone can be authenticated in a variety of ways,
+      including using several authentication methods. The vast majority of
+      authentication methods rely on some knowledge factors, such as a password,
+      but as we sai befpre the two-factor authentication approaches include even
+      a possession or an inherence component.
+    </p>
+  </th>
+  <th><img src="../images/Francesco-Caglianone-Images/common_2FA.png" width="400" class="img2"></img></th>
+</tr>
+
+
+<!-- _____ ROW 2 ______-->
+<tr>
+  <th>
+    <!-- PARAGRAPH -->
+    <p> For example we have: </p>
+    <!-- LIST -->
+    <ul>
+      <!-- item 1 -->
+      <li>
+        <u><i> A knowledge factor </i></u> that is something the user knows,
+        such as a password or a PIN (personal identification number)
+      </li>
+
+      <!-- line break -->
+      <br><br>
+
+      <!-- item 2 -->
+      <li>
+        <u><i> A possession factor </i></u> that is something the user has,
+        such as an ID card, a security token, or a smartphone app, to approve
+        authentication requests.
+      </li>
+
+      <!-- line break -->
+      <br><br>
+
+      <!-- item 3 -->
+      <li>
+        <u><i> A biometric factor </i></u>, also known as an inherence factor,
+        that is the user's physical self; physical characteristics, such as
+        fingerprints, facial recognition or voice recognition.
+      </li>
+
+      <!-- line break -->
+      <br><br>
+
+      <!-- item 4 -->
+      <li>
+        <u><i> A location factor </i></u> denoted by the location from which
+        an authentication attempt is being made. For example it can be
+        limit the authentication attempts to specific devices in a specific
+        area or by tracking the source of an authentication attempt based on
+        the geopositioning informations, such as the GPS (Global Positioning
+        System) data, derived from the user's mobile phone or other device.
+      </li>
+
+      <!-- line break -->
+      <br><br>
+
+      <!-- item 5 -->
+      <li> <u><i> A time factor </i></u> that restricts user authentication
+        in a specific time window in which logging on is permitted.
+      </li>
+    </ul>
+  </th>
+</tr>
+</table>
+
+
+<!----------------------------------------------------------------------------->
+<!--_____________________________ SEPARE' ___________________________________-->
+
+<hr>
+
+<!----------------------------------------------------------------------------->
+<!--____________________________ FOOT-NOTE __________________________________-->
+
+<table width="100%;" class="footer">
+  <th class="space" width="33%"><h1 class="chapter">..//2FA</h1></th>
+  <th class="name" width="33%"> <a href="../../general/about-us.html#Francesco Caglianone"><h1>Francesco Caglianone</h1></a></th>
+  <th width="33%"> <a href="software_security.html#2fa" class="arrow" title="next article"><img src="../../general/icons/arrow.svg" height="45" width="125" alt="next article" class="icon-img"></a></th>
+  <address hidden>
+  <a href="caglif@usi.ch">caglif@usi.ch</a><br>
+  <a href="tel:+41764796543">+41764796543</a>
+ </address>
+</table>
+
+
+
+
+
+</main>
+</body>
+</html>

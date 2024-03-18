@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Group 1 progect | homepage</title>
+    <link rel="stylesheet" href="general/index.css">
+    <link rel="stylesheet" href="general/homepage.css">
+
+  </head>
+  <body>
+    <script type="text/javascript" src="general/index.js"></script>
+
+    <nav>
+      <ul id="main_nav_bar">
+        <!-- main navigation bar; these methods are used to move resize and move
+      the main content, without overlapping it with the sidebar -->
+        <li id='nav_img' class="icon-bg"
+        onmouseover="setStyle('main', 'width','calc(100% - 150px)');
+                      setStyle('main','left','150px');"
+        onmouseout="setStyle('main','width','calc(98% - 51px)');
+                    setStyle('main','left','50px')"
+        ondblclick="window.location = 'index.html'">
+
+          <ul id="sidebar">
+            <li><a href='#History'>History</a></li>
+            <li><a href='#Computer Viruses'>Computer Viruses</a></li>
+            <li><a href='#Security'>Security</a></li>
+
+          </ul>
+        </li>
+        <!-- main header and navigation bar links of the rest of the page -->
+      <li id="main_header">
+        <a href="">
+          <header>
+            <b>Home</b>
+          </header>
+        </a>
+      </li>
+      <li> <a href= "history/history.html"> History </a> <br>
+        <ul class="dropdown">
+          <li> <a href="#"> dropdown1</a> </li>
+          <li><a href="#"> dropdown1</a></li>
+        </ul>
+      </li>
+      <li> <a href = "compvir/compvir.html"> Computer Viruses </a> <br>
+        <ul class="dropdown">
+          <li><a href="#"> dropdown1</a></li>
+          <li><a href="#"> dropdown1</a></li>
+          <li><a href="#"> dropdown1</a></li>
+        </ul>
+      </li>
+      <li> <a href = "security/security.html"> Security </a> </li>
+      <li id="sidetoggle" class="icon-bg">
+        <label for="chmode" id="chmode-cont">
+        <input type="checkbox" id="chmode" name="chmode"
+        value="dark" onclick="toggleRoot('chmode','--main-col', '--dark-main-cl', '--light-main-cl');
+                              toggleRoot('chmode','--second-col', '--dark-second-cl', '--light-second-cl')">
+                              <span id="mark" class="icon-bg"></span>
+                              </label>
+        <input type="search" id=searchBar class="icon-bg"></li>
+    </ul>
+    </nav>
+<!-- TODO: if we change the tag to a div, we could avoid problems with footer tag in the main tag and similar -->
+    <main id="main">
+      <h2>Group 1 project</h2>
+      <div class="text-cont">
+        <section class="sect" >
+          <h3>History</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a href="history/history.html" class="arrow" title="go to History"><img class="icon-img" src="general/icons/arrow.svg" height="45" width="125" alt="arrow"></a>
+          <hr>
+        </section>
+
+        <section class="sect" >
+          <h3>Computer viruses</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a href="compvir/compvir.html" class="arrow" title="go to Computer viruses"><img class="icon-img" src="general/icons/arrow.svg" height="45" width="125" alt="arrow"></a>
+
+          <hr>
+        </section>
+
+        <section class="sect" >
+          <h3>Security</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a href="security/security.html" class="arrow" title="go to Security"><img class="icon-img" src="general/icons/arrow.svg" height="45" width="125" alt="arrow"></a>
+          <hr>
+        </section>
+      </div>
+
+      <table width="100%;" class="footer">
+      <th class="space" width="33%"></th>
+      <th class="name" width="33%"> <h2>Name Surname</h2></th>
+      <th width="33%"></th>
+      </table>
+    </main>
+  </body>
+</html>

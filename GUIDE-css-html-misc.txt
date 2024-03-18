@@ -1,0 +1,139 @@
+
+Mainly, you'll be using the files named "article_template.html", which are the
+templates used for writing your articles, based on the group you're part of;
+
+The way you'll use them is by copying and pasting the file into the "html"
+folder, and renaming it according to your article name;
+Once you've done that, give a look at the template given; try changing some of
+the filler we put in (Lorem Ipsum, Title, Subtitle,...), and the Images;
+remember: each template is slightly different according to your subject.
+
+IMPORTANT NOTE:
+  for any suggestions, I've created a CSS-TODO-and-SUGGESTION
+  file, where you can put any suggestion that comes to mind
+
+---Ids and classes:-------------------------------------------------------------
+~~~navigation bar:
+  It will be rare that you have to change stuff in the navigation bar, but this
+  should help to get around.
+  #sidebar:
+    the sidebar on the left, which slides to the right on hover, and shows a list;
+    that list is supposed to be containing internals anchors to the page (either
+    individuals articles )
+
+  .dropdown:
+    the dropdowns bar with links to the sub-sections
+
+  #main:
+    the main content of the page, where all the article(s) and article related
+    content will be
+
+~~~article:
+  The articles are organized in a table, where there is a title, a text
+  paragraph and space for an image on each row:
+  .imghead, .imghead2:
+    main containers for each combination of text containers (title header and
+    paragraph); different widths
+
+  .title:
+    title of the article/article section
+
+  <img>:
+    tag for the image(s) relative to the article(s)
+
+  .subtitle:
+    subtitle for an article section
+
+  .subsubtitle:
+    subtitle for an article subsection
+
+  .text, .text2:
+    text paragraphs the article's content
+
+~~~footer
+  The footer is organized to show information about the current page, and a link
+  to the following ones; here you'll have to edit the "Chapter n", the "Name
+  Surname", "href" and title of the .arrow link.
+  NOTE: if the footer table doesn't have a .footer class, please add it in
+  (forgot to put it in), as it will allow us to make small changes on its style
+  as needed.
+
+  .footer:
+    footer for the page; contains info regarding the author
+
+---images and custom CSS--------------------------------------------------------
+~~~images:
+  You'll probably want to put your own images on your page; to do that, create
+  a sub-folder named the same as your page. This will allow a clear structure
+  for the webiste, as well as easy traceability in case of problems.
+
+~~~css and custom main proprieties:
+  You already have a general purpose stylesheet, but maybe you also want some
+  particular style, or maybe elements that we didn't cover; if so, you can
+  implement them yourself; Create a css file in the css folder of your topic,
+  and name it as your html file. This way, you'll allow also other to take
+  advantage of your newly created style.
+
+  ++color and background-color:
+    when you want to access the main colors (black and white), DON'T write them
+    like this:
+      color:            white;  #fff;   rgb(255,255,255);   ...
+      background-color: black;  #000;   rgb(0,0,0);         ...
+    BUT DO write them like this:
+      color: inherit
+      color: var(--second-cl)
+
+      background-color: inherit; (parent color);
+      background-color: var(--main-cl);
+
+    This allows to change 1 time the color in the root of the page, and have it
+    cascade down to all elements as needed, especially with javascript;
+    NOTE: the repetition of the proprieties is needed in case the custom css
+    variables are not supported;
+    Also, instead of declaring the colors, we can just inherit them from the
+    parents elements, which allows for more consistency, even if we change the
+    colors;
+
+---JAAAAAAAAAAAAAAAAAAAAAAvascript--------------------------------------------
+    This is the part I'm most proud about: the javascript functions you can use
+    to customize proprieties and behaviors of your web page;
+
+    HOW TO USE them:
+      html elements can trigger certain events, like onclick, onhover,...
+      (SEE https://www.w3schools.com/tags/ref_eventattributes.asp)
+
+      the way you can use these events is  with the following syntax:
+        <button id="btn" onclick="func(arg1, arg2, arg3,...)"></button>
+      Once clicked, the element "button" will call the function "func", with
+      argouments "arg1", "arg2", and so on;
+
+
+    FUNCTION toggleStyle(elid, prop, defStyle, secondStyle):
+      this functions allows you to toggle between 2 style on a certain element;
+      - "elid": string which allows you to select which element (if it has an
+        id) to apply the proprieties to;
+      - "prop": string which selects which propriety to change (either if it
+        exists already or not)
+      - defStyle: string which defines the default style of the element; this is
+        the style to which it will return after the second toggle;
+      - secondStyle: string which defines the second style of the element; this
+        is the style to which it will toggle at firs;
+      WARNING: this can be used only 1 time par element
+
+
+    FUNCTION setStyle(elid, prop, style):
+      - "elid": string which allows you to select which element (if it has an
+        id) to apply the proprieties to;
+      - "prop": string which selects which propriety to change (either if it
+        exists already or not);
+      - "style": string of target style to change the element to;
+
+    FUNCTION toggleRoot(elid, prop, defstyle, secStyle):
+      this function allows you to change root proprietis of the webpage, using
+      a checkbox (required)
+      - "elid": string of the id of the checkbox, which will trigger the
+        function
+      - "prop": string which selects which of the proprieties to change;
+      - "defStyle": string which selects the default propriety. This is the
+        propriety it will fall back to on the second click;
+      - "secStyle": secondary style, which will be selected on the first click;

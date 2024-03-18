@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Paolo Deidda">
+  <title>Group 1 project | Security | Average User Security</title>
+  <link rel="icon" type="image/x-icon" href="../../favicon.png">
+  <link rel="stylesheet" href="../../general/index.css">
+  <link rel="stylesheet" href="../css/security.css">
+</head>
+<body>
+  <script type="text/javascript" src="../../general/index.js"></script>
+  <!-- WARNING: when you copy and paste the page, remember to change the paths to the external files (images, scripts, stylesheets,...)-->
+  <nav>
+    <ul id="main_nav_bar">
+      <!-- main navigation bar; these methods are used to move resize and move
+      the main content, without overlapping it with the sidebar -->
+      <li id='nav_img' class="icon-bg"
+      onmouseover="setStyle('main', 'width','calc(100% - 150px)');
+      setStyle('main','left','150px');"
+      onmouseout="setStyle('main','width','calc(98% - 51px)');
+      setStyle('main','left','50px')"
+      ondblclick="window.location = '../../index.html'">
+      <div id="sidebar">
+        <ul id="sidebar-cont">
+          <li> <a href='#Backup'>Backup</a></li>
+          <li> <a href='#Password manager'>Password manager</a></li>
+          <li> <a href='#VPN'>VPN</a></li>
+          <li> <a href='#Log Off'>Log Off</a></li>
+          <li> <a href='#Ad Blocker'>Ad Blocker</a></li>
+        </ul>
+      </div>
+    </li>
+    <!-- main header and navigation bar links of the rest of the page -->
+    <li id="main_header">
+      <a href="">
+        <header>
+          <b>About</b>
+        </header>
+      </a>
+    </li>
+    <li> <a href= "../../history/history.html">History</a> <br>
+    </li>
+    <li> <a href = "../../compvir/compvir.html">Computer Viruses</a> <br>
+      <ul class="dropdown">
+        <li><a href="../../compvir/compvir.html">Virus</a>
+          <ul class="dropdown2">
+            <li> <a href="../../compvir/html/BackDoor.html"> Backdoor</a></li>
+            <li> <a href="../../compvir/html/bug.html"> Bugs</a></li>
+            <li> <a href="../../compvir/html/bug2.html"> Bugs II</a></li>
+            <li> <a href="../../compvir/html/CompanionVirus.html"> Companion Virus</a></li>
+            <li> <a href="../../compvir/html/ComputerWorm.html"> Computer Worm</a></li>
+            <li> <a href="../../compvir/html/Directory Virus.html"> Directory Virus</a></li>
+            <li> <a href="../../compvir/html/MULTIPARTITE-VIRUS.html"> Multipartite Virus</a></li>
+            <li> <a href="../../compvir/html/MULTIPARTITE-VIRUS-2.html"> Multipartite Virus II</a></li>
+            <li> <a href="../../compvir/html/polymorphicvirus.html"> Polymorphic Virus</a></li>
+            <li> <a href="../../compvir/html/polyvirus2.html"> Polymorphic Virus II</a></li>
+            <li> <a href="../../compvir/html/residentvirus.html"> Resident Virus</a></li>
+            <li> <a href="../../compvir/html/Social Engineering and Phishing.html"> Social Engeeniring <br> & Phishing</a></li>
+            <li> <a href="../../malware/html/TROJANS.html"> Trojans</a></li>
+            <li> <a href="../../malware/html/TROJAN2.html"> Trojans II</a></li>
+            <li> <a href="../../malware/html/TROJAN3.html"> Trojans III</a></li>
+            <li> <a href="../../malware/html/TROJAN4.html"> Trojans IV</a></li>
+            <li> <a href="../../compvir/html/Web Scripting Virus.html"> WebScripting Virus</a></li>
+            <li> <a href="../../malware/html/Macrovirus.html"> MacroVirus</a></li>
+            <li> <a href="../../malware/html/overwritingvirus.html"> Overwrite virus</a></li>
+            <li> <a href="../../malware/html/Bootsector_viruses.html"> Bootsector Viruses</a></li>
+            <li> <a href="../../compvir/html/CarbanakAPT.html"> CarbanakAPT</a></li>
+            <li> <a href="../../compvir/html/WannaCryy-1.html"> WannaCry I</a></li>
+            <li> <a href="../../compvir/html/WannaCry-2.html"> WannaCry II</a></li>
+            <li> <a href="../../compvir/html/Zeus.html"> Zeus</a></li>
+          </ul>
+        </li>
+        <li><a href="../../malware/malware.html"> Malware</a>
+          <ul class="dropdown2">
+            <li> <a href="../../malware/html/Adware_Rerevisioned.html"> Adware Revisioned</a></li>
+            <li> <a href="../../malware/html/botnet.html"> Botnet</a></li>
+            <li> <a href="../../malware/html/botnet2.html"> Botnet II</a></li>
+            <li> <a href="../../malware/html/cryptojacking.html"> Cryptojacking</a></li>
+            <li> <a href="../../malware/html/cyberwarfare.html"> Cyberwarfare</a></li>
+            <li> <a href="../../malware/html/Data_Breach.html"> Data Breach</a></li>
+            <li> <a href="../../malware/html/Fileless_malware.html"> Fileless Malware</a></li>
+            <li> <a href="../../malware/html/Fileless_malware2.html"> Fileless Malware II</a></li>
+            <li> <a href="../../malware/html/Greyware.html"> Greyware</a></li>
+            <li> <a href="../../malware/html/keylogger.html"> Keylogger</a></li>
+            <li> <a href="../../compvir/html/ScareWare.html"> ScareWare</a></li>
+            <li> <a href="../../malware/html/maliciousapps.html"> Malicious Apps</a></li>
+            <li> <a href="../../malware/html/maliciousapps2.html"> Malicious Apps II</a></li>
+            <li> <a href="../../malware/html/Malware_Rerevisioned.html"> Malware re-revisioned</a></li>
+            <li> <a href="../../compvir/html/videogamesMalware.html"> Malware in videogames</a></li>
+            <li> <a href="../../malware/html/RAMscrapper.html"> RamScraper</a></li>
+            <li> <a href="../../malware/html/ransomware.html"> Ransomware</a></li>
+            <li> <a href="../../compvir/html/EffectRansomware.html"> EffectRansomWare</a></li>
+            <li> <a href="../../malware/html/rootkits.html"> Rootkit</a></li>
+            <li> <a href="../../malware/html/Spam.html"> Spam</a></li>
+            <li> <a href="../../malware/html/Spyware_Rerevisioned.html"> Spyware Revisioned</a></li>
+            <li> <a href="../../malware/html/Trickbot.html"> Trickbot</a></li>
+            <li> <a href="../../compvir/html/appliance-based malware.html"> Appliance-Based Malware</a></li>
+            <li> <a href="../../malware/html/DDoS.html"> DDOS</a></li>
+            <li> <a href="../../malware/html/Emotet.html"> Emotet</a></li>
+            <li> <a href="../../malware/html/cyberwarfare.html"> Cryptocurrency scam</a></li>
+            <li> <a href="../../malware/html/twitchhack.html"> Twitch Hack</a></li>
+            <li> <a href="../../malware/html/malware_in_cars.html"> Malware in cars</a></li>
+            <li> <a href="../../malware/html/yahoohack.html"> Yahoo Hack</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li> <a href = "../../security/security.html"> Security </a> </li>
+    <li id="Search" class="icon-bg">
+      <input type="search" id=searchBar class="icon-bg"
+      incremental="incremental" onsearch="search()">
+      <ul id="search_results"></ul>
+    </li>
+    <li id="sidetoggle" class="icon-bg">
+      <label for="chmode" id="chmode-cont">
+        <input type="checkbox" id="chmode" name="chmode"
+        value="dark" onclick="toggleRoot('chmode','--main-col', '--dark-main-cl', '--light-main-cl');
+        toggleRoot('chmode','--second-col', '--dark-second-cl', '--light-second-cl')">
+        <span id="mark" class="icon-bg"></span>
+      </label>
+    </li>
+  </ul>
+</nav>
+<main id="main">
+  <h1 class="title">CYBER PROTECTION OF THE AVERAGE USER</h1>
+  <div style="width: 72%; left: 0px;">
+    <p class="deidda_resize text">Security can seem very complex especially when we have
+      mainstream media portraying cyber security as someone who is either
+      working with green lines of binary code or the stereotypical hacking
+      scene where a hacker is wearing a hoodie with the dark background behind
+      him. There are five simple practices that everyone can use as prevention
+      and also have overall better security habits.</p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <br>
+
+    <!--____________________________________________________________________________two columns set up-->
+    <table>
+      <td><h2 class="subtitle"  style="font-size: 3em"><strong class="deidda_cap">5</strong> good habits to improve security</h2></td>
+      <tr id="Backup">
+        <td style=" width: 70%">
+          <h3 class="subsubtitle"> <i class="deidda_cap"> BACKING UP THE DATA </i></h3>
+          <p class="deidda_resize text2">One of the most popular incumbent practices given by security
+            experts is to simply backup your data. If you get hit by potentially malicious
+            or devastating programs which could either delete or encrypt all of your data
+            it's important to have a backup and recommended using an external hard drive.
+            Here you can backup any personal file, Word, document, school document or
+            anything else. After creating this backup, place it in a secure location that
+            you only know. It will also be important to get in the habit of backing up
+            your data every short period not to make this practice useless.  </p>
+          </td>
+          <td><img class="deidda_img" src="../images/Deidda_Images/backup.png" alt="driver picture"></td>
+        </tr>
+        <tr id="Password manager">
+          <td>
+            <h3 class="subsubtitle"> <i class="deidda_cap">USING A PASSWORD MANAGER</i></h3>
+            <p class="deidda_resize text2">Within the last few years password managers have become a
+              popular recommendation for better security, many security experts within
+              the industry have often recommended the use of password managers as a way
+              to combat either password retention as for reuse or weak passwords. Basically
+              a password manager is a system that generates and stores random passwords
+              generated by the same software. Everytime you create a new account you have
+              to input your name and also a password: instead of having to create the password
+              by yourself the password manager does this for you and these passwords will be
+              seemingly random with characters and digits. This is why they are much safer,
+              they are unpredictable and differentiate between one account and another avoiding
+              patterns that could help an attacker to guess the key.</p>
+            </td>
+            <td></td>
+          </tr>
+          <tr id="VPN">
+            <td>
+              <h3 class="subsubtitle"> <i class="deidda_cap">UTILIZING A VPN</i></h3>
+              <p class="deidda_resize text2">VPN stands for Virtual Private Networks. VPNs provide
+                two key aspects which are privacy and security. A VPN is basically a
+                toned communication between your local network and an exit node in a
+                different location allowing you to appear as if you were connecting
+                from a different location. It is recommended using a VPN especially
+                when accessing any type of public Wi-Fi, this will allow you to have
+                an encrypted communication between the public router and the service
+                that you are communicating with. Trying to connect without using a VPN
+                on a public Wi-Fi network will expose the user to many types of network
+                attacks. An attacker could intercept in between you and the communication
+                or the service that you are communicating with and he can see what is
+                going on in plaintext. There's an added layer of privacy that makes you
+                appear that you are logging in from a different country when you are
+                actually not.</p>
+              </td>
+              <td><img class="deidda_img" src="../images/Deidda_Images/vpn.jpeg" alt="vpn picture"></td>
+            </tr>
+            <tr id="Log Off">
+              <td>
+                <h3 class="subsubtitle"> <i class="deidda_cap"> LOGGIN OFF WHEN WALKING AWAY FROM THE COMPUTER </i></h3>
+                <p class="deidda_resize text2">This can seem very simple but it is very effective.
+                  When you leave your computer with your personal account still logged
+                  on anyone has access to your computer computer files and the data on
+                  that computer. It's really important that you log off your computer when
+                  leaving your desk no matter how long you are planning to leave your desk
+                  whether it's for two minutes or it's for an hour it's always important to
+                  log off. If you're a student at a university who is working on a university
+                  computer and you have to get up (e.g. go to the restroom) make sure that
+                  you log off your account because even in a university setting you never
+                  know who’s around you. It comes down to this simple practice: whenever
+                  you plan to walk away from your machine leaving it unattended, go ahead
+                  and log off because it's a good practice and implementing this good habit
+                  takes less than two seconds.</p>
+                </td>
+                <td></td>
+              </tr>
+              <tr id="Ad Blocker">
+                <td>
+                  <h3 class="subsubtitle"> <i class="deidda_cap"> USING AN AD BLOCKER </i></h3>
+                  <p class="deidda_resize text2">It’s useful for the average user to implement ad blockers
+                    to avoid those annoying pop-ups or ads while surfing the web. An ad blocker
+                    can provide a good security benefit since they prevent you from accidentally
+                    or intentionally clicking on potentially malicious advertisements. These
+                    dodgy banners are often loaded with bloatware and spyware, all things that
+                    you really don't want on your computer. To get an ad blocker you can go into
+                    the browser plugins store and just look up at an updated ad blocker. </p>
+                  </td>
+                  <td><img class="deidda_img" src="../images/Deidda_Images/adblock.jpg" alt="ad block picture"></td>
+                </tr>
+              </table>
+              <br>
+              <br>
+              <br>
+              <hr>
+              <table width="100%;" class="footer">
+                <th class="space" width="33%"><h1 class="chapter">..//Average_User_Security</h1></th>
+                <th class="name" width="33%"> <a href="../../general/about-us.html#Paolo Deidda"><h1>Paolo Deidda</h1></a></th>
+                <th>
+                  <a href="../security.html#govagencies_cyberdefense" class="arrow" title="next article">
+                    <th> <a href="../security.html" class="arrow" title="back to main page"> Back to Security Home Page </a> </th>
+                  </a>
+                </th>
+              </table>
+            </main>
+          </body>
+          </html>

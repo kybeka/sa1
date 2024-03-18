@@ -1,0 +1,206 @@
+
+
+.title{
+    color: #fff;
+    color: var(--second-col);
+    font-size: 3.5em;
+    font-style: bold;
+    text-align: justify;
+
+}
+.subtitle{
+    color: #fff;
+    color: var(--second-col);
+    font-size: 2em;
+    font-style: bold;
+    text-align: justify;
+}
+.subsubtitle{
+    color: #fff;
+    color: var(--second-col);
+    font-size: 1.2em;
+    font-style: italic;
+    text-align: justify;
+}
+
+.title > a, .subtitle > a, .subsubtitle > a {
+  color: inherit;
+  color: var(--second-col);
+  text-decoration: none;
+}
+.chapter{
+    color: #fff;
+    color: var(--second-col);
+    font-size: 1.7em;
+}
+
+.space{
+
+}
+ .name{
+    color: #fff;
+    color: var(--second-col);
+    font-size: 0.5em;
+}
+
+
+
+p{
+    color: #fff;
+    color: var(--second-col);
+    font-size: 1.1em;
+    text-align: justify;
+
+}
+.arrow{
+    float: right;
+}
+
+
+hr{
+    height: 0.02em;
+    border: 0.1em solid white;
+    background: #fff;
+
+    border: 0.1em solid var(--second-col);
+    background: var(--second-col);
+}
+
+.half{
+    width: 40%;
+    float: left;
+    border: 0.1em solid white;
+    background: #fff;
+}
+/*
+.vertical{
+    transform:rotate(90deg);
+    top: 100em;
+    width:40em;
+    border: 0.1em solid white;
+    background: #fff;
+
+}
+*/
+img{
+    width: 100%;
+}
+
+.img2{
+    width: 200%;
+    position: relative;
+    right: 95%;
+}
+
+.text{
+    width: 80%;
+    padding-right: 1em;
+}
+.w-80{
+    width: 80%;
+}
+
+.w-75{
+    width: 75%;
+}
+
+.w-70{
+    width: 72%;
+}
+
+.w-50{
+    width: 50%;
+}
+
+.w-60{
+    width: 60%;
+}
+
+.w-65{
+    width: 65%;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.text2{
+    width: 80%;
+    padding-right: 1em;
+}
+
+.text-70{
+    width: 70%;
+    padding-right: 1em;
+}
+
+.text-75{
+    width: 75%;
+    padding-right: 1em;
+}
+
+.justify{
+  text-align: justify;
+}
+
+.imghead{
+    width: 60%;
+    padding-right: 1em;
+}
+
+.imghead2{
+
+    width: 70%;
+    padding-right: 1em;
+}
+
+
+
+
+
+/*
+table, th{
+    border: 1px solid white;
+}
+
+  righe tabella */
+
+
+/* WARNING: probably generates conflicts with nav bar */
+ul:not(#main_nav_bar, #sidebar, .dropdown){
+  color: #fff;
+  color: var(--second-col);
+  font-size: 1.1em;
+  text-align: justify;
+}
+
+/* WARNING: probably generates conflicts with nav bar */
+ol{
+  color: #fff;
+  color: var(--second-col);
+  font-size: 1.1em;
+  text-align: justify;
+}
+
+/* NOTE: shouldn't generate conflicts , but may*/
+th{
+    padding: 1em;
+}
+
+/*__Deidda___*/
+.deidda_cap{
+    font-size: 1.2em;
+    border: solid 1px white;
+    border-radius: 3px;
+    padding: 1px 3px 1px 3px;
+    background-color: white;
+    color: black;
+}
+
+.deidda_img{
+    border-radius: 4px;
+}
+
+.deidda_resize{
+    font-size: 1.4em;
+}

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <!-- author -->
+    <meta name="author" content="Jeferson Morales Mariciano">
+    <title>Security | Network Analysis </title>
+    <link rel="stylesheet" href="../../general/index.css">
+    <link rel="stylesheet" href="../css/security.css">
+</head>
+
+<body>
+    <script type="text/javascript" src="../../general/index.js"></script>
+    <!-- WARNING: when you copy and paste the page, remember to change the paths to the external files (images, scripts, stylesheets,...)-->
+    <nav>
+      <ul id="main_nav_bar">
+        <!-- main navigation bar; these methods are used to move resize and move
+      the main content, without overlapping it with the sidebar -->
+        <li id='nav_img' class="icon-bg"
+        onmouseover="setStyle('main', 'width','calc(100% - 150px)');
+                      setStyle('main','left','150px');"
+        onmouseout="setStyle('main','width','calc(98% - 51px)');
+                    setStyle('main','left','50px')"
+        ondblclick="window.location = '../../index.html'">
+        <div id="sidebar">
+          <ul id="sidebar-cont">
+            <li> <a href='#1'>1</a></li>
+            <li> <a href='#2'>2</a></li>
+            <li> <a href='#3'>3</a></li>
+          </ul>
+          </div>
+        </li>
+        <!-- main header and navigation bar links of the rest of the page -->
+      <li id="main_header">
+        <a href="">
+          <header>
+            <b>About</b>
+          </header>
+        </a>
+      </li>
+      <li> <a href= "../../history/history.html">History</a> <br>
+      </li>
+      <li> <a href = "../../compvir/compvir.html">Computer Viruses</a> <br>
+        <ul class="dropdown">
+          <li><a href="../../compvir/compvir.html">Virus</a>
+            <ul class="dropdown2">
+              <li> <a href="../../compvir/html/BackDoor.html"> Backdoor</a></li>
+              <li> <a href="../../compvir/html/bug.html"> Bugs</a></li>
+              <li> <a href="../../compvir/html/bug2.html"> Bugs II</a></li>
+              <li> <a href="../../compvir/html/CompanionVirus.html"> Companion Virus</a></li>
+              <li> <a href="../../compvir/html/ComputerWorm.html"> Computer Worm</a></li>
+              <li> <a href="../../compvir/html/Directory Virus.html"> Directory Virus</a></li>
+              <li> <a href="../../compvir/html/MULTIPARTITE-VIRUS.html"> Multipartite Virus</a></li>
+              <li> <a href="../../compvir/html/MULTIPARTITE-VIRUS-2.html"> Multipartite Virus II</a></li>
+              <li> <a href="../../compvir/html/polymorphicvirus.html"> Polymorphic Virus</a></li>
+              <li> <a href="../../compvir/html/polyvirus2.html"> Polymorphic Virus II</a></li>
+              <li> <a href="../../compvir/html/residentvirus.html"> Resident Virus</a></li>
+              <li> <a href="../../compvir/html/Social Engineering and Phishing.html"> Social Engeeniring <br> & Phishing</a></li>
+              <li> <a href="../../malware/html/TROJANS.html"> Trojans</a></li>
+              <li> <a href="../../malware/html/TROJAN2.html"> Trojans II</a></li>
+              <li> <a href="../../malware/html/TROJAN3.html"> Trojans III</a></li>
+              <li> <a href="../../malware/html/TROJAN4.html"> Trojans IV</a></li>
+              <li> <a href="../../compvir/html/Web Scripting Virus.html"> WebScripting Virus</a></li>
+              <li> <a href="../../malware/html/Macrovirus.html"> MacroVirus</a></li>
+              <li> <a href="../../malware/html/overwritingvirus.html"> Overwrite virus</a></li>
+              <li> <a href="../../malware/html/Bootsector_viruses.html"> Bootsector Viruses</a></li>
+              <li> <a href="../../compvir/html/CarbanakAPT.html"> CarbanakAPT</a></li>
+              <li> <a href="../../compvir/html/WannaCryy-1.html"> WannaCry I</a></li>
+              <li> <a href="../../compvir/html/WannaCry-2.html"> WannaCry II</a></li>
+              <li> <a href="../../compvir/html/Zeus.html"> Zeus</a></li>
+            </ul>
+          </li>
+          <li><a href="../../malware/malware.html"> Malware</a>
+            <ul class="dropdown2">
+              <li> <a href="../../malware/html/Adware_Rerevisioned.html"> Adware Revisioned</a></li>
+              <li> <a href="../../malware/html/botnet.html"> Botnet</a></li>
+              <li> <a href="../../malware/html/botnet2.html"> Botnet II</a></li>
+              <li> <a href="../../malware/html/cryptojacking.html"> Cryptojacking</a></li>
+              <li> <a href="../../malware/html/cyberwarfare.html"> Cyberwarfare</a></li>
+              <li> <a href="../../malware/html/Data_Breach.html"> Data Breach</a></li>
+              <li> <a href="../../malware/html/Fileless_malware.html"> Fileless Malware</a></li>
+              <li> <a href="../../malware/html/Fileless_malware2.html"> Fileless Malware II</a></li>
+              <li> <a href="../../malware/html/Greyware.html"> Greyware</a></li>
+              <li> <a href="../../malware/html/keylogger.html"> Keylogger</a></li>
+              <li> <a href="../../compvir/html/ScareWare.html"> ScareWare</a></li>
+              <li> <a href="../../malware/html/maliciousapps.html"> Malicious Apps</a></li>
+              <li> <a href="../../malware/html/maliciousapps2.html"> Malicious Apps II</a></li>
+              <li> <a href="../../malware/html/Malware_Rerevisioned.html"> Malware re-revisioned</a></li>
+              <li> <a href="../../compvir/html/videogamesMalware.html"> Malware in videogames</a></li>
+              <li> <a href="../../malware/html/RAMscrapper.html"> RamScraper</a></li>
+              <li> <a href="../../malware/html/ransomware.html"> Ransomware</a></li>
+              <li> <a href="../../compvir/html/EffectRansomware.html"> EffectRansomWare</a></li>
+              <li> <a href="../../malware/html/rootkits.html"> Rootkit</a></li>
+              <li> <a href="../../malware/html/Spam.html"> Spam</a></li>
+              <li> <a href="../../malware/html/Spyware_Rerevisioned.html"> Spyware Revisioned</a></li>
+              <li> <a href="../../malware/html/Trickbot.html"> Trickbot</a></li>
+              <li> <a href="../../compvir/html/appliance-based malware.html"> Appliance-Based Malware</a></li>
+              <li> <a href="../../malware/html/DDoS.html"> DDOS</a></li>
+              <li> <a href="../../malware/html/Emotet.html"> Emotet</a></li>
+              <li> <a href="../../malware/html/cyberwarfare.html"> Cryptocurrency scam</a></li>
+              <li> <a href="../../malware/html/twitchhack.html"> Twitch Hack</a></li>
+              <li> <a href="../../malware/html/malware_in_cars.html"> Malware in cars</a></li>
+              <li> <a href="../../malware/html/yahoohack.html"> Yahoo Hack</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li> <a href = "../../security/security.html"> Security </a> </li>
+      <li id="Search" class="icon-bg">
+        <input type="search" id=searchBar class="icon-bg"
+        incremental="incremental" onsearch="search()">
+        <ul id="search_results"></ul>
+      </li>
+      <li id="sidetoggle" class="icon-bg">
+        <label for="chmode" id="chmode-cont">
+          <input type="checkbox" id="chmode" name="chmode"
+          value="dark" onclick="toggleRoot('chmode','--main-col', '--dark-main-cl', '--light-main-cl');
+                              toggleRoot('chmode','--second-col', '--dark-second-cl', '--light-second-cl')">
+          <span id="mark" class="icon-bg"></span>
+        </label>
+      </li>
+    </ul>
+    </nav>
+
+    <!-- init page content -->
+    <main id="main">
+        <!-- first head paragraph with synopsis Network analysis -->
+        <table>
+            <tr>
+                <th class="imghead">
+                    <!-- page title pragmatic network analysis -->
+                    <h1 class="title">
+                        Pragmatic Network Traffic Analysis
+                    </h1>
+
+                    <!-- subtitle and synopsis regarding tools available for network analysis -->
+                    <p class="subsubtitle"> <u><abbr title="Network Traffic Analysis">NTA</abbr></u> </p>
+                    <p class="text">
+                        Acronym for Network Traffic Analysis, its a branch of Computer Science focused in Computer Networking.
+                        It consist of methods for monitoring the network, in order to identify anomalies,
+                        such as security and operational issues.
+                        It is widely used in companies to:
+                        <ul>
+                            <li>Collect real-time and chronological record of data transferred over the network</li>
+                            <li>Detect malware and computer viruses that operate over the network to spread themselves</li>
+                            <li>Detect protocols and ciphers classified as highly vulnerable</li>
+                            <li>Troubleshoot network issues</li>
+                            <li>Enhanced network topology and delete blind spots</li>
+                        </ul>
+                        <br>
+                        The implementation of a solution which continuously monitor the network traffic helps to spot where to optimize the network
+                        performance, minimize the attack surface and enhance the security overall.
+                        Hereby, a couple of the best known tools for network analysis are describeb briefly.
+                    </p>
+                </th>
+                <!-- main image about network analysis -->
+                <th style="width: 40%;"> <img src="../images/jeferson/network_analysis.jpg" alt="security"> </th>
+            </tr>
+        </table>
+
+        <!-- double line and spacing between main article and sub articles-->
+        <hr><br>
+        <hr><br>
+        <br><br>
+        <!-- end of double line and spacing -->
+
+        <table>
+            <!-- argument regarding the nmap tool with 2 paragraphs and an image -->
+            <tr>
+                <th class="imghead2">
+                    <!-- title nmap -->
+                    <h2 class="subtitle">
+                        <abbr title="Network Mapper">NMAP</abbr>
+                    </h2>
+                    <br>
+
+                    <!-- subtitle and paragraph regarding nmap tool history and fun facts -->
+                    <h3 class="subsubtitle">
+                        <i> <u>History</u></i>
+                    </h3>
+                    <p class="text2">
+                        The NMAP project is an open-source software distributed by <a href="https://insecure.org/">Insecure.org</a>.
+                        It's a port scanning tool which purpose is to spot available ports in a target machine(s) given an IP address
+                        or range of IP addresses; in order to identify which services are running over the network.
+                        It is widely used in cyber security by network administrators and crackers.
+                        The former use it to identify possible threads over the network, e.g. unauthorized server applications.
+                        The latter for analyse their target to collect as many information as possible.
+                        This features make nmap a must tool for pentesting.
+                        <br>
+                        Fun Fact: in the movie <cite>Matrix Reloaded</cite> Trinity use Nmap to get into the electric central system,
+                        by bruteforce the <abbr title="Secure Shell">SSH</abbr> service and the
+                        <a href="https://www.exploit-db.com/exploits/20617">bug CRC32</a> discovered in 2001.
+                    </p>
+
+                    <!-- subtitle and paragraph about nmap and usage -->
+                    <h3 class="subsubtitle">
+                        <i><u>Usage</u></i>
+                    </h3>
+
+                    <p class="text2">
+                        Nmap is available for all Operating System platforms: Windows, Mac, GNU/Linux are the most important.
+                        It can be easily donwloaded from the <a href="https://insecure.org/">Insecure.org</a> webpage.
+                        Linux distros keep also a copy of the latest supported release in their own managed repositories,
+                        as an example, in Debian based distributions, it's can be installed by just digit the following commands
+                        on the terminal:
+                        <br><code>$ sudo apt install nmap;</code><br>
+                        <ul>
+                        <li>In order to perform a ping scan, hence scan the list of devices up and running on a given subnet:
+                        <br><code>$ nmap -sp 192.168.1.1/24</code></li>
+                        <li>To perform a version scanning for finding application versions:
+                        <br><code>$ nmap -sV ip_address</code></li>
+                        <li>To perform OS scanning:
+                        <br><code>$ nmap -sV ip_address</code></li>
+                        <li>To perform an aggressive scan, which includes OS detection, version detection, script scanning and traceroute:
+                        <br><code>$ nmap -A ip_address</code></li>
+                        </ul>
+                        Further information about how to use Nmap is available at <a href="https://nmap.org/book/man.html">nmap.org</a>
+                        and in its man page on the terminal.
+                    </p>
+                </th>
+                <th style="width: 30%;">
+                    <!-- image about nmap logo -->
+                    <img src="../images/jeferson/nmap.png"></img>
+                </th>
+            </tr>
+
+            <!-- argument regarding the wireshark tool with a paragraphs and an image -->
+            <tr>
+                <th class="imghead2">
+                    <!-- title wireshark -->
+                    <h2 class="subtitle">Wireshark</h2>
+                    <br>
+                    <!-- subtitle and paragraph regarding wireshark history and fun facts -->
+                    <h3 class="subsubtitle">
+                        <i> <u>History</u></i>
+                    </h3>
+                    <p class="text2">
+                        Wireshark is an open-source software distributed by
+                        <a href="https://www.wireshark.org/">wireshark.org</a>.
+                        It's a <i>packet sniffer</i> used to analyse standard network packet protocols.
+                        It was previously named Ethereal, its functionalities are similar to a tcpdump and incorporates a GUI to interact with.
+                        It is capable to recognize the structure of several network protocols, encapsulation, packet fields and is also able to
+                        reveal the content (if not encrypted).
+                        It's founder Gerald Combs needed a tool to capture and analyse network packets in 1998, then the software became popular
+                        and supported from global organization of network specialists and software developers.
+                        Government agencies, corporations, non-profits, and educational institutions use Wireshark for troubleshooting and teaching purposes.
+                    </p>
+
+                    <!-- subtitle and paragraph regarding wireshark usage -->
+                    <h3 class="subsubtitle">
+                        <i><u>Usage</u></i>
+                    </h3>
+
+                    <p class="text2">
+                        Wireshark is available for all Operating System platforms: Windows, Mac, GNU/Linux as nmap.
+                        It can be easily donwloaded from the <a href="https://www.wireshark.org/">wireshark.org</a> webpage.
+                        Linux distributions have the software available in their repositories.
+                        The principal features of Wireshark are:
+                        <ul>
+                            <li>Capturing data packets</li>
+                            <li>Analyzing data packets</li>
+                            <li>Filtering based on protocols, ip addresses, content, headers, byte lenght, ...</li>
+                            <li>Metric and statistic about the network packets dump</li>
+                            <li>Wireshark command line (CLI) to automate scripts without the GUI</li>
+                        </ul>
+                        <br>
+                        Further information about how to use efficiently Wireshark is available at the official
+                        <a href="https://www.wireshark.org/docs/wsug_html_chunked/">documentation</a> website.
+                    </p>
+                </th>
+                <th>
+                    <!-- image about wireshark logo -->
+                    <img src="../images/jeferson/wireshark.jpg" alt="https lock symbol in browsers"></img>
+                </th>
+            </tr>
+        </table>
+
+        <!-- footer -->
+        <hr>
+        <table width="100%;" class="footer">
+            <th class="space" width="33%"> <h1 class="chapter">Chapter Security</h1></th>
+            <th class="name" width="33%">  <h1>Jeferson Morales Mariciano</h1></th>
+            <th width="33%">
+                <a href="../html/network_security.html#pragmatic_network_analysis" class="arrow" title="next article">
+                    <img src="../../general/icons/arrow.svg" height="45" width="125" alt="next article" class="icon-img">
+                </a>
+            </th>
+        </table>
+    </main>
+</body>
+
+</html>
