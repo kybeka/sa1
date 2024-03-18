@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Group 1 progect | homepage</title>
+    <link rel="stylesheet" href="../../general/index.css">
+    <link rel="stylesheet" href="../css/article.css">
+
+  </head>
+  <body>
+    <script type="text/javascript" src="../../general/index.js"></script>
+    <nav>
+      <ul id="main_nav_bar">
+        <li id='nav_img' class="icon-bg"
+        onmouseover="setStyle('main', 'width','calc(100% - 150px)');
+                      setStyle('main','left','150px')"
+        onmouseout="setStyle('main','width','calc(98% - 51px)');
+                    setStyle('main','left','50px')"
+        onclick="window.location = '../../index.html'">
+
+          <ul id="sidebar">
+            <li><a href='#History'>History</a></li>
+            <li><a href='#Computer Viruses'>Computer Viruses</a></li>
+            <li><a href='#Security'>Security</a></li>
+
+          </ul>
+        </li>
+      <li id="main_header">
+        <a href="">
+          <header>
+            <b>Home</b>
+          </header>
+        </a>
+      </li>
+      <li> <a href= "../../history/history.html"> History </a> <br>
+        <ul class="dropdown">
+          <li> <a href="#"> dropdown1</a> </li>
+          <li><a href="#"> dropdown1</a></li>
+        </ul>
+      </li>
+      <li> <a href = "../malware.html"> Computer Viruses </a> <br>
+        <ul class="dropdown">
+          <li><a href="#"> dropdown1</a></li>
+          <li><a href="#"> dropdown1</a></li>
+          <li><a href="#"> dropdown1</a></li>
+        </ul>
+      </li>
+      <li> <a href = "../../security/security.html"> Security </a> </li>
+      <li id="sidetoggle" class="icon-bg">
+  <label for="chmode" id="chmode-cont">
+  <input type="checkbox" id="chmode" name="chmode"
+  value="dark" onclick="toggleRoot('chmode','--main-col', '--dark-main-cl', '--light-main-cl');
+                        toggleRoot('chmode','--second-col', '--dark-second-cl', '--light-second-cl')">
+                        <span id="mark" class="icon-bg"></span>
+                        </label>
+  <input type="search" id=searchBar class="icon-bg"></li>
+    </ul>
+    </nav>
+    <main id="main">
+      <table>
+        <th class="imghead">
+          <h1 class="subsubtitle"> <i> <u> BOOTSECTOR VIRUSES</u></i></h1>
+
+          <p class="text"> A boot sector virus is malware that infects the computer storage
+            sector where startup files are found. The boot sector contains all the
+             files required to start the operating system (OS) and other bootable programs.
+               <br>
+
+      </p>
+          </th>
+          <th> </th>
+
+        </table>
+        <hr><hr>
+
+        <!-- second part of the page-->
+
+        <table>
+          <th class="imghead2">
+            <h3 class="subtitle"></h3>
+            <br>
+            <h1 class="subsubtitle"> <i> <u> What is a boot sector?</u></i></h1>
+
+            <p class="text2">A boot sector is a physical sector, or section, on a
+              hard drive that includes information about how to start the boot
+               process in order to load an operating system.
+               It stores boot record data that gives instructions
+               to a computer when it is started, there are two types of boot systems
+                Master boot record and Volume boot record for a partitioned disk,
+                the boot sector consists of a master boot record.
+              A non-partitioned disk consists of a volume boot record.
+              The boot sector usually has boot sequence info, such as a list
+              of disk partitions, startup program location or operating system (OS).
+               When a computer is started, the data in the boot sector is loaded
+                into the computer memory. Since it contains the main informations
+                for booting a pc if a virus takes over the boot sector it takes the Computer
+                from the "heart"
+              </p></th>
+
+              <th> <img src="../images/Bootsector/boot.jpg" width="600" height="400"></img> </th>
+            </table>
+            <hr>
+
+            <table>
+              <th class="imghead2">
+                <h3 class="subtitle"></h3>
+                <br>
+                <h1 class="subsubtitle"> <i> <u> How does it work?</u></i></h1>
+                Boot sector viruses can be the most privileged and damaging type of Viruses.
+                 Because boot sector viruses affect the location
+                  where the computer stores essential start up files,
+                  they can make a computer unbootable.
+          Boot sector viruses are frequently spread through physical media such as USB drives.
+          once you connect an infected media to the computer it  will
+          transfer when the drive’s code is read, then modify or replace the
+          existing boot code. The next time someone tries to boot their desktop,
+           the virus will be loaded and run immediately as part of the master boot.
+           It’s also possible for email attachments and spam pop-upsto contain boot viruses.
+            If opened, these attachments infect the host computer and may contain
+            instructions to send out further emails to others trough the infected computers
+            contact list to spread the virus even more.
+               <th> <img src="../images/Bootsector/bootvir.png" width="600" h </th>
+             </table>
+             <hr>
+         <table width="100%;" class="footer">
+         <th class="space" width="33%"><h1 class="chapter">Chapter n'</h1></th>
+         <th class="name" width="33%"> <h1>Filippo Baracca</h1></th>
+         <th width="33%"></th>
+         <th width="33%"><a href="#.html" class="arrow" title="next article" target=_blank><img src="../images/arrow.svg" height="45" width="125" alt="next article"></a></th>
+         </table>
+
+
+    </main>
+  </body>
+</html>

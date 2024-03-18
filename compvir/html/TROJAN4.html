@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Raffaele Perri">
+    <link rel="icon" type="image/x-icon" href="../../favicon.png">
+    <meta name="keywords" content="trojan, do’s, don’ts, protection">
+    <title>Group 1 progect | malware</title>
+    <link rel="stylesheet" href="../../general/index.css">
+    <style>
+    th{
+      text-align: center
+    }
+
+    .title{
+        color: #fff;
+        color: var(--second-col);
+        font-size: 3.5em;
+        font-style: bold;
+        text-align: justify;
+
+    }
+    .subtitle{
+        color: #fff;
+        color: var(--second-col);
+        font-size: 40px;
+        font-style: bold;
+        text-align: justify;
+    }
+    .subsubtitle{
+        color: #fff;
+        color: var(--second-col);
+        font-size: 1.2em;
+        font-style: italic;
+        text-align: justify;
+    }
+
+    .title > a, .subtitle > a, .subsubtitle > a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .chapter{
+        color: #fff;
+        color: var(--second-col);
+        font-size: 1.7em;
+    }
+
+    .space{
+
+    }
+     .name{
+        color: #fff;
+        color: var(--second-col);
+        font-size: 0.5em;
+    }
+
+
+
+    p{
+        color: #fff;
+        color: var(--second-col);
+        font-size: 30px;
+        text-align: justify;
+
+    }
+    .arrow{
+        float: right;
+    }
+
+
+    hr{
+        height: 0.02em;
+        border: 0.1em solid white;
+        border: 0.1em solid var(--second-col);
+        background: #fff;
+        background: var(--second-col);
+    }
+
+    .half{
+        width: 40%;
+        float: left;
+        border: 0.1em solid white;
+        border: 0.1em solid var(--second-col);
+        background: #fff;
+        background: var(--second-col);
+    }
+
+    img{
+        width: 100%;
+    }
+
+    .text{
+        width: 80%;
+        padding-right: 1em;
+    }
+    .text2{
+        width: 80%;
+        padding-right: 1em;
+    }
+
+    .text3{
+        width: 80%;
+        padding-left: 1em;
+    }
+
+    .imghead{
+        width: 60%;
+        padding-right: 1em;
+    }
+
+    .imghead2{
+
+        width: 70%;
+        padding-right: 1em;
+    }
+
+    .imghead3{
+
+        width: 70%;
+        padding-left: 1em;
+    }
+
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript" src="../../general/index.js"></script>
+
+    <nav>
+      <ul id="main_nav_bar">
+        <!-- main navigation bar; these methods are used to move resize and move
+      the main content, without overlapping it with the sidebar -->
+        <li id='nav_img' class="icon-bg"
+        onmouseover="setStyle('main', 'width','calc(100% - 150px)');
+                      setStyle('main','left','150px');"
+        onmouseout="setStyle('main','width','calc(98% - 51px)');
+                    setStyle('main','left','50px')"
+        ondblclick="window.location = '../../index.html'">
+        <div id="sidebar">
+          <ul id="sidebar-cont">
+            <li> <a href='#1'>1</a></li>
+            <li> <a href='#2'>2</a></li>
+            <li> <a href='#3'>3</a></li>
+          </ul>
+          </div>
+        </li>
+        <!-- main header and navigation bar links of the rest of the page -->
+      <li id="main_header">
+        <a href="">
+          <header>
+            <b>About</b>
+          </header>
+        </a>
+      </li>
+      <li> <a href= "../../history/history.html">History</a> <br>
+      </li>
+      <li> <a href = "../../compvir/compvir.html">Computer Viruses</a> <br>
+        <ul class="dropdown">
+          <li><a href="../../compvir/compvir.html">Virus</a>
+            <ul class="dropdown2">
+              <li> <a href="../../compvir/html/BackDoor.html"> Backdoor</a></li>
+              <li> <a href="../../compvir/html/bug.html"> Bugs</a></li>
+              <li> <a href="../../compvir/html/bug2.html"> Bugs II</a></li>
+              <li> <a href="../../compvir/html/CompanionVirus.html"> Companion Virus</a></li>
+              <li> <a href="../../compvir/html/ComputerWorm.html"> Computer Worm</a></li>
+              <li> <a href="../../compvir/html/Directory Virus.html"> Directory Virus</a></li>
+              <li> <a href="../../compvir/html/MULTIPARTITE-VIRUS.html"> Multipartite Virus</a></li>
+              <li> <a href="../../compvir/html/MULTIPARTITE-VIRUS-2.html"> Multipartite Virus II</a></li>
+              <li> <a href="../../compvir/html/polymorphicvirus.html"> Polymorphic Virus</a></li>
+              <li> <a href="../../compvir/html/polyvirus2.html"> Polymorphic Virus II</a></li>
+              <li> <a href="../../compvir/html/residentvirus.html"> Resident Virus</a></li>
+              <li> <a href="../../compvir/html/Social Engineering and Phishing.html"> Social Engineering <br> & Phishing</a></li>
+              <li> <a href="../../malware/html/TROJANS.html"> Trojans</a></li>
+              <li> <a href="../../malware/html/TROJAN2.html"> Trojans II</a></li>
+              <li> <a href="../../malware/html/TROJAN3.html"> Trojans III</a></li>
+              <li> <a href="../../malware/html/TROJAN4.html"> Trojans IV</a></li>
+              <li> <a href="../../compvir/html/Web Scripting Virus.html"> WebScripting Virus</a></li>
+              <li> <a href="../../malware/html/Macrovirus.html"> MacroVirus</a></li>
+              <li> <a href="../../malware/html/overwritingvirus.html"> Overwrite virus</a></li>
+              <li> <a href="../../malware/html/Bootsector_viruses.html"> Bootsector Viruses</a></li>
+              <li> <a href="../../compvir/html/CarbanakAPT.html"> CarbanakAPT</a></li>
+              <li> <a href="../../compvir/html/WannaCryy-1.html"> WannaCry I</a></li>
+              <li> <a href="../../compvir/html/WannaCry-2.html"> WannaCry II</a></li>
+              <li> <a href="../../compvir/html/Zeus.html"> Zeus</a></li>
+            </ul>
+          </li>
+          <li><a href="../../malware/malware.html"> Malware</a>
+            <ul class="dropdown2">
+              <li> <a href="../../malware/html/Adware_Rerevisioned.html"> Adware Revisioned</a></li>
+              <li> <a href="../../malware/html/botnet.html"> Botnet</a></li>
+              <li> <a href="../../malware/html/botnet2.html"> Botnet II</a></li>
+              <li> <a href="../../malware/html/cryptojacking.html"> Cryptojacking</a></li>
+              <li> <a href="../../malware/html/cyberwarfare.html"> Cyberwarfare</a></li>
+              <li> <a href="../../malware/html/Data_Breach.html"> Data Breach</a></li>
+              <li> <a href="../../malware/html/Fileless_malware.html"> Fileless Malware</a></li>
+              <li> <a href="../../malware/html/Fileless_malware2.html"> Fileless Malware II</a></li>
+              <li> <a href="../../malware/html/Greyware.html"> Greyware</a></li>
+              <li> <a href="../../malware/html/keylogger.html"> Keylogger</a></li>
+              <li> <a href="../../compvir/html/ScareWare.html"> ScareWare</a></li>
+              <li> <a href="../../malware/html/maliciousapps.html"> Malicious Apps</a></li>
+              <li> <a href="../../malware/html/maliciousapps2.html"> Malicious Apps II</a></li>
+              <li> <a href="../../malware/html/Malware_Rerevisioned.html"> Malware re-revisioned</a></li>
+              <li> <a href="../../compvir/html/videogamesMalware.html"> Malware in videogames</a></li>
+              <li> <a href="../../malware/html/RAMscrapper.html"> RamScraper</a></li>
+              <li> <a href="../../malware/html/ransomware.html"> Ransomware</a></li>
+              <li> <a href="../../compvir/html/EffectRansomware.html"> EffectRansomWare</a></li>
+              <li> <a href="../../malware/html/rootkits.html"> Rootkit</a></li>
+              <li> <a href="../../malware/html/Spam.html"> Spam</a></li>
+              <li> <a href="../../malware/html/Spyware_Rerevisioned.html"> Spyware Revisioned</a></li>
+              <li> <a href="../../malware/html/Trickbot.html"> Trickbot</a></li>
+              <li> <a href="../../compvir/html/appliance-based malware.html"> Appliance-Based Malware</a></li>
+              <li> <a href="../../malware/html/DDoS.html"> DDOS</a></li>
+              <li> <a href="../../malware/html/Emotet.html"> Emotet</a></li>
+              <li> <a href="../../malware/html/cyberwarfare.html"> Cryptocurrency scam</a></li>
+              <li> <a href="../../malware/html/twitchhack.html"> Twitch Hack</a></li>
+              <li> <a href="../../malware/html/malware_in_cars.html"> Malware in cars</a></li>
+              <li> <a href="../../malware/html/yahoohack.html"> Yahoo Hack</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li> <a href = "../../security/security.html"> Security </a> </li>
+      <li id="Search" class="icon-bg">
+        <input type="search" id=searchBar class="icon-bg"
+        incremental="incremental" onsearch="search()">
+        <ul id="search_results"></ul>
+      </li>
+      <li id="sidetoggle" class="icon-bg">
+        <label for="chmode" id="chmode-cont">
+          <input type="checkbox" id="chmode" name="chmode"
+          value="dark" onclick="toggleRoot('chmode','--main-col', '--dark-main-cl', '--light-main-cl');
+                              toggleRoot('chmode','--second-col', '--dark-second-cl', '--light-second-cl')">
+          <span id="mark" class="icon-bg"></span>
+        </label>
+      </li>
+    </ul>
+    </nav>
+
+    <main id="main">
+      <table>
+        <!-- Main paragraph -->
+       <th class="imghead">
+           <h1 class="title">HOW TO DEFEND AGAINST TROJANS</h1>
+           <p class="text">Trojans get their name from the fact that they require your permission to run on your computer,
+              either when you execute the program yourself or when you view a document or picture that runs the program for you. </p>
+       </th>
+       <!-- Image -->
+       <th> <img src="../images/TROJAN/lock.png" alt="security"> </th>
+
+       </table>
+       <hr>
+       <br>
+       <hr>
+       <br>
+       <br>
+       <br>
+       <table>
+         <!-- Subparagraph as list of blockquotes -->
+         <tr>
+           <th class="imghead2">
+             <h2 class="subtitle">DO'S</h2>
+             <br>
+
+             <p class="text2"> INSTALL AND RUN AN INTERNET SECURITY SUITE
+             <blockquote> Use your program to run diagnostic scans on a regular basis. It's possible to program the program to run scans at predetermined intervals.</blockquote></p>
+             <p class="text2">OPERATING SYSTEM SOFTWARE
+             <blockquote>As soon as the software company releases updates, update your operating system's software. Cybercriminals frequently take advantage of security flaws in out-of-date software.</blockquote></p>
+             <p class="text2">PASSWORD
+             <blockquote>Use a complicated combination of letters, numbers, and symbols to create a unique password for each account.</blockquote></p>
+             <p class="text2">FIREWALL
+             <blockquote>Firewalls protect your personal information.</blockquote></p>
+             <p class="text2">RESTORING
+             <blockquote>Make regular backups of your files. If your computer is infected with a Trojan, this will assist you in recovering your data. </blockquote></p>
+             <p class="text2">PROTECT E-MAILS
+             <blockquote>Scanning an email attachment first can help you remain secure.</blockquote></p>
+
+           </th>
+           <!-- Gif converted to a video and put in loop -->
+           <th> <video muted loop autoplay>
+               <source src="../images/TROJAN/tick.mp4" type="video/mp4">
+             </video></th>
+
+
+        </tr>
+
+
+        <tr>
+          <!-- Gif converted to a video and put in loop -->
+           <th><video width="70%" muted loop autoplay>
+               <source src="../images/TROJAN/error.mp4" type="video/mp4">
+             </video></th>
+          <th class="imghead3">
+            <!-- Subparagraph as list of blockquotes -->
+         <h2 class="subtitle">DON'TS</h2>
+         <br>
+
+         <p class="text3"> VISIT UNSAFE WEBSITES
+         <blockquote>Some internet security software will warn you if you are going to visit a potentially dangerous website.</blockquote></p>
+         <p class="text3">E-MAIL LINKS
+         <blockquote>Don't click on a link in an email unless you're sure it's from a trustworthy source. In general, don't open unsolicited emails from unknown senders.</blockquote></p>
+         <p class="text3">DOWNLOAD PROGRAMS
+         <blockquote>If you don't trust the publisher, don't download or install the software.</blockquote></p>
+         <p class="text3">POP-UP
+         <blockquote>Don't click on pop-up windows that claim to offer free apps that will help you.</blockquote></p>
+         Read more on cyber security <a href="../../security/security.html">here!</a>
+         </th>
+
+
+         </tr>
+         </table>
+         <hr>
+         <table width="100%;" class="footer">
+         <th class="space" width="33%"><h1 class="chapter">Trojan</h1></th>
+         <th class="name" width="33%"><a href="../../general/about-us.html#Raffaele Perri"> <h1>Raffaele Perri</h1></th>
+         <th width="33%"> <a href="../../compvir/html/Web Scripting Virus.html" class="arrow" title="next article">
+           <img src="../../general/icons/arrow.svg" height="45" width="125" alt="next article" class="icon-img"></a>
+         </th>
+         <address hidden>
+           <a href="perrir@usi.ch">perrir@usi.ch</a><br>
+           <a href="tel:+393393248671">+393393248671</a><br>
+         </address>
+         </table>
+
+    </main>
+  </body>
+</html>

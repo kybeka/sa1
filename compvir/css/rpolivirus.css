@@ -1,0 +1,42 @@
+/*CSS Classes for residentVirus page Edoardo Salvioni*/
+
+/*Disable decorators in hyperlinks*/
+.nodecorator:visited{
+    color:white;
+    color: var(--second-col);
+}
+
+.nodecorator {
+    color:white;
+    color: var(--second-col);
+}
+/*Disable dots in unordered lists Center aligned*/
+.nodots {
+    list-style-type: none;
+    width: 90%;
+}
+
+/*Disable dots in unordered lists, left aligned*/
+.nodotsaligned {
+    list-style-type:disc;
+    width: 90%;
+    text-align: left;
+}
+/*limit width of the image*/
+.imageHeader {
+    max-width:300px;
+}
+/*limit width of image and round the edges*/
+.imageHeaderrounded {
+    max-width:300px;
+    border-radius: 50%;
+}
+/*Text aligned to the left to use with images*/
+.txt2 {
+    text-align: left;
+}
+/*Image limited to 300px but that scales with the page */
+.anchoredimg {
+    max-width:300px;
+    width:auto;
+}

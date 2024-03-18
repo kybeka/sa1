@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Raffaele Perri">
+    <link rel="icon" type="image/x-icon" href="../../favicon.png">
+      <meta name="keywords" content="trojan, Trojans types">
+    <title>Group 1 progect | malware</title>
+    <link rel="stylesheet" href="../../general/index.css">
+    <style>
+    th{
+      text-align: center
+    }
+
+    .title{
+        color: #fff;
+        color: var(--second-col);
+        font-size: 3.5em;
+        font-style: bold;
+        text-align: justify;
+
+    }
+    .subtitle{
+        color: #fff;
+        color: var(--second-col);
+        font-size: 2em;
+        font-style: bold;
+        text-align: justify;
+    }
+    .subsubtitle{
+        color: #fff;
+        color: var(--second-col);
+        font-size: 1.2em;
+        font-style: italic;
+        text-align: justify;
+    }
+    .chapter{
+        color: #fff;
+        color: var(--second-col);
+        font-size: 1.7em;
+    }
+
+    .space{
+
+    }
+     .name{
+        color: #fff;
+        color: var(--second-col);
+        font-size: 0.5em;
+    }
+
+
+    p{
+        color: #fff;
+        color: var(--second-col);
+        font-size: 1.1em;
+        text-align: justify;
+
+    }
+    .arrow{
+        float: right;
+    }
+
+
+    hr{
+        height: 0.02em;
+        border: 0.1em solid white;
+        border: 0.1em solid var(--second-col);
+        background: #fff;
+        background: var(--second-col);
+    }
+
+    .half{
+        width: 40%;
+        float: left;
+        border: 0.1em solid white;
+        border: 0.1em solid var(--second-col);
+        background: #fff;
+        background: var(--second-col);
+    }
+
+    .img{
+        width: 50%;
+    }
+
+    .img2{
+        width: 40%;
+    }
+
+    .img3{
+        width: 80%;
+    }
+
+
+    .text{
+        width: 80%;
+        padding-right: 0.5em;
+    }
+    .text2{
+        width: 80%;
+        padding-right: 0.5em;
+    }
+
+    .imghead{
+        width: 50%;
+        padding-right: 1em;
+    }
+
+    .imghead2{
+
+        width: 70%;
+        padding-right: 1em;
+    }
+
+    .right{
+      padding-left: 10%;
+    }
+
+    .top{
+      padding-bottom: 20%;
+    }
+
+
+    /* for letter link to malwares */
+    #link{
+    position: absolute;
+    bottom: 98.8%;
+    left: 20%;
+    background: black;
+    background: var(--main-col);
+    display: flex;
+
+    align-items: center;
+    }
+
+    #link:hover{
+      background: ivory;
+    }
+
+    #link a{
+      text-decoration: none ;
+      height: 40px;
+      width: 40px;
+      font-size: 23px;
+    color: ivory;
+      display: grid;
+      place-items: center;
+    }
+
+    #link a:hover{
+      color: black;
+      color: var(--main-col);
+    }
+
+
+    /* footer button */
+    button{
+      position: absolute;
+      bottom: 5%;
+      left: 5;
+      background: grey ;
+      font-size: 20px;
+    }
+
+    button:hover{
+      background: ivory;
+    }
+
+    button a{
+      text-decoration: none ;
+      height: 40px;
+      width: 40px;
+      font-size: 23px;
+    color: ivory;
+    }
+
+    button a:hover{
+      color: black;
+      color: var(--main-col);
+    }
+
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript" src="../../general/index.js"></script>
+
+    <nav>
+      <ul id="main_nav_bar">
+        <!-- main navigation bar; these methods are used to move resize and move
+      the main content, without overlapping it with the sidebar -->
+        <li id='nav_img' class="icon-bg"
+        onmouseover="setStyle('main', 'width','calc(100% - 150px)');
+                      setStyle('main','left','150px');"
+        onmouseout="setStyle('main','width','calc(98% - 51px)');
+                    setStyle('main','left','50px')"
+        ondblclick="window.location = '../../index.html'">
+        <div id="sidebar">
+          <ul id="sidebar-cont">
+            <li> <a href='#1'>1</a></li>
+            <li> <a href='#2'>2</a></li>
+            <li> <a href='#3'>3</a></li>
+          </ul>
+          </div>
+        </li>
+        <!-- main header and navigation bar links of the rest of the page -->
+      <li id="main_header">
+        <a href="">
+          <header>
+            <b>About</b>
+          </header>
+        </a>
+      </li>
+      <li> <a href= "../../history/history.html">History</a> <br>
+      </li>
+      <li> <a href = "../../compvir/compvir.html">Computer Viruses</a> <br>
+        <ul class="dropdown">
+          <li><a href="../../compvir/compvir.html">Virus</a>
+            <ul class="dropdown2">
+              <li> <a href="../../compvir/html/BackDoor.html"> Backdoor</a></li>
+              <li> <a href="../../compvir/html/bug.html"> Bugs</a></li>
+              <li> <a href="../../compvir/html/bug2.html"> Bugs II</a></li>
+              <li> <a href="../../compvir/html/CompanionVirus.html"> Companion Virus</a></li>
+              <li> <a href="../../compvir/html/ComputerWorm.html"> Computer Worm</a></li>
+              <li> <a href="../../compvir/html/Directory Virus.html"> Directory Virus</a></li>
+              <li> <a href="../../compvir/html/MULTIPARTITE-VIRUS.html"> Multipartite Virus</a></li>
+              <li> <a href="../../compvir/html/MULTIPARTITE-VIRUS-2.html"> Multipartite Virus II</a></li>
+              <li> <a href="../../compvir/html/polymorphicvirus.html"> Polymorphic Virus</a></li>
+              <li> <a href="../../compvir/html/polyvirus2.html"> Polymorphic Virus II</a></li>
+              <li> <a href="../../compvir/html/residentvirus.html"> Resident Virus</a></li>
+              <li> <a href="../../compvir/html/Social Engineering and Phishing.html"> Social Engineering <br> & Phishing</a></li>
+              <li> <a href="../../malware/html/TROJANS.html"> Trojans</a></li>
+              <li> <a href="../../malware/html/TROJAN2.html"> Trojans II</a></li>
+              <li> <a href="../../malware/html/TROJAN3.html"> Trojans III</a></li>
+              <li> <a href="../../malware/html/TROJAN4.html"> Trojans IV</a></li>
+              <li> <a href="../../compvir/html/Web Scripting Virus.html"> WebScripting Virus</a></li>
+              <li> <a href="../../malware/html/Macrovirus.html"> MacroVirus</a></li>
+              <li> <a href="../../malware/html/overwritingvirus.html"> Overwrite virus</a></li>
+              <li> <a href="../../malware/html/Bootsector_viruses.html"> Bootsector Viruses</a></li>
+              <li> <a href="../../compvir/html/CarbanakAPT.html"> CarbanakAPT</a></li>
+              <li> <a href="../../compvir/html/WannaCryy-1.html"> WannaCry I</a></li>
+              <li> <a href="../../compvir/html/WannaCry-2.html"> WannaCry II</a></li>
+              <li> <a href="../../compvir/html/Zeus.html"> Zeus</a></li>
+            </ul>
+          </li>
+          <li><a href="../../malware/malware.html"> Malware</a>
+            <ul class="dropdown2">
+              <li> <a href="../../malware/html/Adware_Rerevisioned.html"> Adware Revisioned</a></li>
+              <li> <a href="../../malware/html/botnet.html"> Botnet</a></li>
+              <li> <a href="../../malware/html/botnet2.html"> Botnet II</a></li>
+              <li> <a href="../../malware/html/cryptojacking.html"> Cryptojacking</a></li>
+              <li> <a href="../../malware/html/cyberwarfare.html"> Cyberwarfare</a></li>
+              <li> <a href="../../malware/html/Data_Breach.html"> Data Breach</a></li>
+              <li> <a href="../../malware/html/Fileless_malware.html"> Fileless Malware</a></li>
+              <li> <a href="../../malware/html/Fileless_malware2.html"> Fileless Malware II</a></li>
+              <li> <a href="../../malware/html/Greyware.html"> Greyware</a></li>
+              <li> <a href="../../malware/html/keylogger.html"> Keylogger</a></li>
+              <li> <a href="../../compvir/html/ScareWare.html"> ScareWare</a></li>
+              <li> <a href="../../malware/html/maliciousapps.html"> Malicious Apps</a></li>
+              <li> <a href="../../malware/html/maliciousapps2.html"> Malicious Apps II</a></li>
+              <li> <a href="../../malware/html/Malware_Rerevisioned.html"> Malware re-revisioned</a></li>
+              <li> <a href="../../compvir/html/videogamesMalware.html"> Malware in videogames</a></li>
+              <li> <a href="../../malware/html/RAMscrapper.html"> RamScraper</a></li>
+              <li> <a href="../../malware/html/ransomware.html"> Ransomware</a></li>
+              <li> <a href="../../compvir/html/EffectRansomware.html"> EffectRansomWare</a></li>
+              <li> <a href="../../malware/html/rootkits.html"> Rootkit</a></li>
+              <li> <a href="../../malware/html/Spam.html"> Spam</a></li>
+              <li> <a href="../../malware/html/Spyware_Rerevisioned.html"> Spyware Revisioned</a></li>
+              <li> <a href="../../malware/html/Trickbot.html"> Trickbot</a></li>
+              <li> <a href="../../compvir/html/appliance-based malware.html"> Appliance-Based Malware</a></li>
+              <li> <a href="../../malware/html/DDoS.html"> DDOS</a></li>
+              <li> <a href="../../malware/html/Emotet.html"> Emotet</a></li>
+              <li> <a href="../../malware/html/cyberwarfare.html"> Cryptocurrency scam</a></li>
+              <li> <a href="../../malware/html/twitchhack.html"> Twitch Hack</a></li>
+              <li> <a href="../../malware/html/malware_in_cars.html"> Malware in cars</a></li>
+              <li> <a href="../../malware/html/yahoohack.html"> Yahoo Hack</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li> <a href = "../../security/security.html"> Security </a> </li>
+      <li id="Search" class="icon-bg">
+        <input type="search" id=searchBar class="icon-bg"
+        incremental="incremental" onsearch="search()">
+        <ul id="search_results"></ul>
+      </li>
+      <li id="sidetoggle" class="icon-bg">
+        <label for="chmode" id="chmode-cont">
+          <input type="checkbox" id="chmode" name="chmode"
+          value="dark" onclick="toggleRoot('chmode','--main-col', '--dark-main-cl', '--light-main-cl');
+                              toggleRoot('chmode','--second-col', '--dark-second-cl', '--light-second-cl')">
+          <span id="mark" class="icon-bg"></span>
+        </label>
+      </li>
+    </ul>
+    </nav>
+
+   <!-- This page is divided in tables -->
+    <main id="main">
+       <table>
+           <th class="imghead2">
+             <h1 class="subtitle">TROJAN MALWARE</h1></th>
+            </table>
+
+             <!-- Links to go directly to the malware type -->
+              <table border="1" class="subtitle" id="link">
+                 <th><a href="#1">B</a></th>
+                 <th><a href="#2">D</a></th>
+                 <th><a href="#3">F</a></th>
+                 <th><a href="#4">G</a></th>
+                 <th><a href="#5">I</a></th>
+                 <th><a href="#6">M</a></th>
+                 <th><a href="#7">R</a></th>
+                 <th><a href="#8">S</a></th>
+                 <th><a href="#9">T</a></th>
+               </table>
+
+
+          <!-- First table -->
+           <table id="1">
+              <th class="imghead2">
+             <h2 class="subtitle"> <i> <u> BACKDOOR TROJAN </u></i></h2>
+
+             <p class="text">This Trojan has the ability to install a <a href="BackDoor.html">backdoor</a> on your machine.
+                It allows an attacker to get access to and control your machine.
+                Your data could be accessed and stolen by a third party, or new malware could be downloaded and installed on your device.  </p>
+         </th>
+         <!-- Image -->
+         <th> <img src="../images/TROJAN/BACKDOOR.png" alt="backdoor image" class="img3"> </th>
+         </tr>
+</table>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+          <!-- Second table -->
+       <table id="2">
+         <tr>
+           <!-- Gif converted to a video and put in loop -->
+           <th> <video muted loop autoplay>
+               <source src="../images/TROJAN/DDOS.mp4" type="video/mp4">
+             </video></th>
+        <th class="imghead">
+          <h2 class="subtitle"> <i> <u> DISTRIBUTED DENIAL OF SERVICE (DDoS)</u></i></h2>
+            <p class="text">DDoS attacks are carried out via this Trojan.
+The goal is to overwhelm a network with traffic and bring it down.
+This traffic is generated by your infected computer as well as others.  </p>
+        </th>
+
+        </tr>
+
+         </table>
+
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+
+          <!-- Third table -->
+         <table>
+           <th class="imghead2">
+             <br>
+             <h2 class="subtitle"> <i> <u> DOWNLOADER TROJAN </u></i></h2>
+
+             <p class="text">This Trojan is designed to attack a computer that has already been infected.
+It downloads and installs fresh malicious application versions.  </p>
+         </th>
+         <th>
+           <!-- Gif converted to a video and put in loop -->
+            <video muted loop autoplay>
+             <source src="../images/TROJAN/LOADER.mp4" type="video/mp4">
+           </video> </th>
+         </tr>
+       </table>
+
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+
+        <!-- Fourth table -->
+       <table id="3">
+         <tr>
+           <th>
+             <!-- Image -->
+             <img src="../images/TROJAN/FAKE.png" alt="fake image" class="img"> </th>
+        <th class="imghead">
+          <h2 class="subtitle"> <i> <u> FAKE AV TROJAN</u></i></h2>
+            <p class="text">This Trojan imitates antivirus software, but it wants money in exchange for detecting and removing threats,
+              whether real or phony.</p>
+        </th>
+
+        </tr>
+
+         </table>
+
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+
+          <!-- Fifth table -->
+         <table id="4"  width="90%">
+           <th class="imghead2">
+             <br>
+             <h2 class="subtitle"> <i> <u> GAME-THIEF TROJAN </u></i></h2>
+
+             <p class="text"> This Trojan aims to steal their login credentials.
+It's possible that the targets are online gamers.</p>
+         </th>
+         <th>
+            <!-- Image -->
+            <img src="../images/TROJAN/HACKED.png" alt="hacked image"> </th>
+         </tr>
+       </table>
+
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+
+          <!-- Sixth table -->
+        <table id="5" width="100%">
+         <tr>
+           <th>
+               <!-- Image -->
+             <img src="../images/TROJAN/infected.png" alt="infected image" class="img2"> </th>
+        <th class="imghead right">
+          <h2 class="subtitle"> <i> <u>INFOSTEALER TROJAN</u></i></h2>
+            <p class="">The data on your compromised machine is what this Trojan is after. </p>
+        </th>
+
+        </tr>
+
+         </table>
+
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+
+         <!-- Seventh table -->
+         <table id="6">
+           <th class="imghead2">
+             <br>
+             <h2 class="subtitle"> <i> <u> MAIL-FINDER TROJAN </u></i></h2>
+
+             <p class="text">This Trojan is designed to steal the email addresses you've saved on your computer. </p>
+         </th>
+         <th>
+             <!-- Image -->
+            <img src="../images/TROJAN/email.png" alt="email image" class="img2"> </th>
+         </tr>
+       </table>
+
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+
+          <!-- Eightth table -->
+         <table id="7">
+         <tr>
+           <th>
+              <!-- Image -->
+             <img src="../images/TROJAN/ransom.png" alt="money image" class="img2"> </th>
+        <th class="imghead">
+          <h2 class="subtitle"> <i> <u>RANSOM TROJAN</u></i></h2>
+            <p class="text">This Trojan demands a ransom in exchange for repairing the harm it has caused to your machine.
+This can include encrypting your data or reducing the speed of your machine. </p>
+        </th>
+
+        </tr>
+
+         </table>
+
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+
+           <!-- Nineth table -->
+         <table>
+           <th class="imghead2">
+             <br>
+             <h2 class="subtitle"> <i> <u> REMOTE ACCESS TROJAN </u></i></h2>
+
+             <p class="text">Through a remote network connection, this Trojan can allow an attacker complete control over a computer.
+It can be used for stealing information or spying.</p>
+         </th>
+         <th>
+            <!-- Image -->
+           <img src="../images/TROJAN/remote.png" alt="controller image" class="img3"> </th>
+         </tr>
+       </table>
+
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+
+          <!-- Tenth table -->
+         <table>
+         <tr>
+           <th>
+              <!-- Image -->
+             <img src="../images/TROJAN/hiding.png" alt="mask image" class="img2"> </th>
+        <th class="imghead">
+          <h2 class="subtitle"> <i> <u>ROOTKIT TROJAN</u></i></h2>
+            <p class="text">The goal of a rootkit is to disguise or hide an object on your infected machine.
+The goal is to make a malicious program run longer on a device. </p>
+        </th>
+
+        </tr>
+
+         </table>
+
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+
+         <!-- ELeventh table -->
+         <table id="8">
+           <th class="imghead2">
+             <br>
+             <h2 class="subtitle"> <i> <u> SMS TROJAN </u></i></h2>
+
+             <p class="text">This Trojan infects mobile devices and has the ability to send and receive text messages.
+Texting premium-rate numbers might increase your phone bill.  </p>
+         </th>
+          <!-- Gif converted to a video and put in loop -->
+         <th>  <video muted loop autoplay>
+             <source src="../images/TROJAN/text.mp4" type="video/mp4">
+           </video></th>
+         </tr>
+      </table>
+
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+
+          <!-- Twelveth table -->
+         <table id="9">
+         <tr>
+           <th>
+               <!-- Image -->
+             <img width="30%" src="../images/TROJAN/bank.png" alt="bank image"> </th>
+        <th class="imghead">
+          <h2 class="subtitle"> <i> <u>TROJAN BANKER</u></i></h2>
+            <p class="text">This Trojan is designed to target bank accounts.
+Its purpose is to steal account information for whatever you do online.
+This includes information about banking, credit cards, and bill payments. </p>
+        </th>
+
+        </tr>
+</table>
+
+          <!-- Thirteenth table -->
+         <table>
+          <th class="imghead2 top">
+             <br>
+             <h2 class="subtitle"> <i> <u> TROJAN IM </u></i></h2>
+
+             <p class="text">Instant messaging is the objective of this Trojan.
+On IM systems, it takes usernames and passwords.  </p>
+         </th>
+         <th class="top">
+                <!-- Image -->
+            <img src="../images/TROJAN/whatsapp.png" alt="article image"> </th>
+         </tr>
+        </table>
+
+
+        <!-- Back to top button, if clicked brigns you to the top of the page -->
+        <footer class="container">
+        <p><a href="#"><button type="button">Back to top</button></a></p>
+          </footer>
+
+         <hr>
+
+       <table width="100%;">
+<!--HEAD:compvir/html/TROJAN2.html-->
+         <th class="space" width="33%"><h1 class="chapter">Trojan</h1></th>
+         <th class="name" width="33%"><a href="../../general/about-us.html#Raffaele Perri"> <h1>Raffaele Perri</h1></th>
+         <th width="33%"> <a href="TROJAN3.html" class="arrow" title="next article" target=_blank>
+           <img src="../../general/icons/arrow.svg" height="45" width="125" alt="next article" class="icon-img"></a>
+<!-- 8567b17abd51669b5c627c142cf906e76934e8f3:malware/html/TROJAN2.html -->
+         </th>
+         <address hidden>
+           <a href="perrir@usi.ch">perrir@usi.ch</a><br>
+           <a href="tel:+393393248671">+393393248671</a><br>
+         </address>
+       </table>
+    </main>
+  </body>
+</html>

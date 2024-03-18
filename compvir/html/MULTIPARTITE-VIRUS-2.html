@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Raffaele Perri">
+    <link rel="icon" type="image/x-icon" href="../../favicon.png">
+    <meta name="keywords" content="multipartite virus, boot, propagation, files, infective">
+    <title>Group 1 progect | computer virus</title>
+    <link rel="stylesheet" href="../../general/index.css">
+    <style>
+
+
+    .title{
+        color: #fff;
+        color: var(--second-col);
+        font-size: 3.5em;
+        font-style: bold;
+        text-align: justify;
+
+    }
+    .subtitle{
+      color: #fff;
+      color: var(--second-col);
+        font-size: 2em;
+        font-style: bold;
+        text-align: justify;
+    }
+    .subsubtitle{
+      color: #fff;
+      color: var(--second-col);
+        font-size: 1.5em;
+        font-style: italic;
+        text-align: justify;
+    }
+    .chapter{
+      color: #fff;
+      color: var(--second-col);
+        font-size: 1.7em;
+    }
+
+    .space{
+
+    }
+     .name{
+       color: #fff;
+       color: var(--second-col);
+        font-size: 0.5em;
+    }
+
+
+
+    p{
+      color: #fff;
+      color: var(--second-col);
+        font-size: 1.1em;
+        text-align: justify;
+
+    }
+    .arrow{
+        float: right;
+    }
+
+
+    hr{
+        height: 0.02em;
+        border: 0.1em solid white;
+        border: 0.1em solid var(--second-col);
+        background: #fff;
+        background: var(--second-col);
+    }
+
+    .half{
+        width: 40%;
+        float: left;
+        border: 0.1em solid white;
+        border: 0.1em solid var(--second-col);
+        background: #fff;
+        background: var(--second-col);
+    }
+    /*
+    .vertical{
+        transform:rotate(90deg);
+        top: 100em;
+        width:40em;
+        border: 0.1em solid white;
+        background: #fff;
+
+    }
+
+    */
+    /* NOTE: not in article.css */
+    .video1{
+    padding-right: 70%;
+
+    }
+
+
+    img{
+        width: 100%;
+    }
+
+    .text{
+        width: 80%;
+        padding-right: 1em;
+    }
+    .text2{
+        width: 80%;
+        padding-right: 1em;
+    }
+
+    .imghead{
+        width: 60%;
+        padding-right: 1em;
+    }
+
+    .imghead2{
+
+        width: 70%;
+        padding-right: 1em;
+    }
+
+
+    /*
+    table, th{
+        border: 1px solid white;
+    }
+
+      righe tabella */
+    /* NOTE: not in article.css */
+    ul{
+     text-align: left;
+    }
+    /* WARNING: difference */
+    /* NOTE: not in article.css */
+    blockquote{
+      font-size: 20px;
+      font-style: italic;
+    }
+
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript" src="../../general/index.js"></script>
+
+    <nav>
+      <ul id="main_nav_bar">
+        <!-- main navigation bar; these methods are used to move resize and move
+      the main content, without overlapping it with the sidebar -->
+        <li id='nav_img' class="icon-bg"
+        onmouseover="setStyle('main', 'width','calc(100% - 150px)');
+                      setStyle('main','left','150px');"
+        onmouseout="setStyle('main','width','calc(98% - 51px)');
+                    setStyle('main','left','50px')"
+        ondblclick="window.location = '../../index.html'">
+        <div id="sidebar">
+          <ul id="sidebar-cont">
+            <li> <a href='#1'>1</a></li>
+            <li> <a href='#2'>2</a></li>
+            <li> <a href='#3'>3</a></li>
+          </ul>
+          </div>
+        </li>
+        <!-- main header and navigation bar links of the rest of the page -->
+      <li id="main_header">
+        <a href="">
+          <header>
+            <b>About</b>
+          </header>
+        </a>
+      </li>
+      <li> <a href= "../../history/history.html">History</a> <br>
+      </li>
+      <li> <a href = "../../compvir/compvir.html">Computer Viruses</a> <br>
+        <ul class="dropdown">
+          <li><a href="../../compvir/compvir.html">Virus</a>
+            <ul class="dropdown2">
+              <li> <a href="../../compvir/html/BackDoor.html"> Backdoor</a></li>
+              <li> <a href="../../compvir/html/bug.html"> Bugs</a></li>
+              <li> <a href="../../compvir/html/bug2.html"> Bugs II</a></li>
+              <li> <a href="../../compvir/html/CompanionVirus.html"> Companion Virus</a></li>
+              <li> <a href="../../compvir/html/ComputerWorm.html"> Computer Worm</a></li>
+              <li> <a href="../../compvir/html/Directory Virus.html"> Directory Virus</a></li>
+              <li> <a href="../../compvir/html/MULTIPARTITE-VIRUS.html"> Multipartite Virus</a></li>
+              <li> <a href="../../compvir/html/MULTIPARTITE-VIRUS-2.html"> Multipartite Virus II</a></li>
+              <li> <a href="../../compvir/html/polymorphicvirus.html"> Polymorphic Virus</a></li>
+              <li> <a href="../../compvir/html/polyvirus2.html"> Polymorphic Virus II</a></li>
+              <li> <a href="../../compvir/html/residentvirus.html"> Resident Virus</a></li>
+              <li> <a href="../../compvir/html/Social Engineering and Phishing.html"> Social Engineering <br> & Phishing</a></li>
+              <li> <a href="../../malware/html/TROJANS.html"> Trojans</a></li>
+              <li> <a href="../../malware/html/TROJAN2.html"> Trojans II</a></li>
+              <li> <a href="../../malware/html/TROJAN3.html"> Trojans III</a></li>
+              <li> <a href="../../malware/html/TROJAN4.html"> Trojans IV</a></li>
+              <li> <a href="../../compvir/html/Web Scripting Virus.html"> WebScripting Virus</a></li>
+              <li> <a href="../../malware/html/Macrovirus.html"> MacroVirus</a></li>
+              <li> <a href="../../malware/html/overwritingvirus.html"> Overwrite virus</a></li>
+              <li> <a href="../../malware/html/Bootsector_viruses.html"> Bootsector Viruses</a></li>
+              <li> <a href="../../compvir/html/CarbanakAPT.html"> CarbanakAPT</a></li>
+              <li> <a href="../../compvir/html/WannaCryy-1.html"> WannaCry I</a></li>
+              <li> <a href="../../compvir/html/WannaCry-2.html"> WannaCry II</a></li>
+              <li> <a href="../../compvir/html/Zeus.html"> Zeus</a></li>
+            </ul>
+          </li>
+          <li><a href="../../malware/malware.html"> Malware</a>
+            <ul class="dropdown2">
+              <li> <a href="../../malware/html/Adware_Rerevisioned.html"> Adware Revisioned</a></li>
+              <li> <a href="../../malware/html/botnet.html"> Botnet</a></li>
+              <li> <a href="../../malware/html/botnet2.html"> Botnet II</a></li>
+              <li> <a href="../../malware/html/cryptojacking.html"> Cryptojacking</a></li>
+              <li> <a href="../../malware/html/cyberwarfare.html"> Cyberwarfare</a></li>
+              <li> <a href="../../malware/html/Data_Breach.html"> Data Breach</a></li>
+              <li> <a href="../../malware/html/Fileless_malware.html"> Fileless Malware</a></li>
+              <li> <a href="../../malware/html/Fileless_malware2.html"> Fileless Malware II</a></li>
+              <li> <a href="../../malware/html/Greyware.html"> Greyware</a></li>
+              <li> <a href="../../malware/html/keylogger.html"> Keylogger</a></li>
+              <li> <a href="../../compvir/html/ScareWare.html"> ScareWare</a></li>
+              <li> <a href="../../malware/html/maliciousapps.html"> Malicious Apps</a></li>
+              <li> <a href="../../malware/html/maliciousapps2.html"> Malicious Apps II</a></li>
+              <li> <a href="../../malware/html/Malware_Rerevisioned.html"> Malware re-revisioned</a></li>
+              <li> <a href="../../compvir/html/videogamesMalware.html"> Malware in videogames</a></li>
+              <li> <a href="../../malware/html/RAMscrapper.html"> RamScraper</a></li>
+              <li> <a href="../../malware/html/ransomware.html"> Ransomware</a></li>
+              <li> <a href="../../compvir/html/EffectRansomware.html"> EffectRansomWare</a></li>
+              <li> <a href="../../malware/html/rootkits.html"> Rootkit</a></li>
+              <li> <a href="../../malware/html/Spam.html"> Spam</a></li>
+              <li> <a href="../../malware/html/Spyware_Rerevisioned.html"> Spyware Revisioned</a></li>
+              <li> <a href="../../malware/html/Trickbot.html"> Trickbot</a></li>
+              <li> <a href="../../compvir/html/appliance-based malware.html"> Appliance-Based Malware</a></li>
+              <li> <a href="../../malware/html/DDoS.html"> DDOS</a></li>
+              <li> <a href="../../malware/html/Emotet.html"> Emotet</a></li>
+              <li> <a href="../../malware/html/cyberwarfare.html"> Cryptocurrency scam</a></li>
+              <li> <a href="../../malware/html/twitchhack.html"> Twitch Hack</a></li>
+              <li> <a href="../../malware/html/malware_in_cars.html"> Malware in cars</a></li>
+              <li> <a href="../../malware/html/yahoohack.html"> Yahoo Hack</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li> <a href = "../../security/security.html"> Security </a> </li>
+      <li id="Search" class="icon-bg">
+        <input type="search" id=searchBar class="icon-bg"
+        incremental="incremental" onsearch="search()">
+        <ul id="search_results"></ul>
+      </li>
+      <li id="sidetoggle" class="icon-bg">
+        <label for="chmode" id="chmode-cont">
+          <input type="checkbox" id="chmode" name="chmode"
+          value="dark" onclick="toggleRoot('chmode','--main-col', '--dark-main-cl', '--light-main-cl');
+                              toggleRoot('chmode','--second-col', '--dark-second-cl', '--light-second-cl')">
+          <span id="mark" class="icon-bg"></span>
+        </label>
+      </li>
+    </ul>
+    </nav>
+
+<!-- 1st subsection of previous page -->
+    <main id="main">
+      <table>
+       <th class="imghead">
+           <h1 class="title">BOOT SECTOR VIRUS</h1>
+           <p class="text">A boot sector virus is a computer <a href="../compvir.html"> virus</a> that infects the master boot record of a storage device (MBR).
+A boot sector virus does not have to successfully boot the victim's computer in order to infect it.
+As a result, boot sector viruses can spread even on non-bootable media.
+These viruses copy their infected code to the boot sector of a floppy disk or the partition table of a hard drive.
+           <br><br>
+           The virus is loaded into the computer's memory upon startup.
+As soon as the virus is saved to memory, it infects the system's non-infected drives.
+          </p>
+       </th>
+       <th> <video muted loop autoplay>
+             <source src="../images/MULTIPARTITE-VIRUS/boot.mp4" type="video/mp4">
+         </video> </th>
+
+       </table>
+
+       <table>
+         <tr>
+           <!--  Subsection of previous subsection -->
+        <th class="imghead2">
+       <h2 class="subtitle">PROPAGATION</h2>
+
+       <p class="text2">Since the demise of floppy disks, boot sector infections have become extremely rare.
+Furthermore, modern operating systems feature boot-sector protections that make it impossible for boot sector viruses to infect them.
+         <br><br>
+         Boot sectors can be found on hard drives, floppies, and, on rare occasions, CDs and DVDs.
+The boot sector program is automatically located and loaded by the hardware during the booting process.
+Following that, the boot sector loads the rest of the operating system into memory. Without a boot sector, a computer cannot load the operating system.
+         <br><br>
+         Typically, a boot sector virus infects a computer via modifying the boot sector program.
+The virus overwrites the default program with a tainted version of its own.
+A boot sector virus can only infect a computer if it is utilized to start up the computer.
+If the virus is injected after the computer has booted up or is running the operating system, the computer will not be infected.
+        </p>
+         </th>
+      </tr>
+     </table>
+
+     <br>
+     <br>
+     <hr>
+     <br>
+     <hr>
+     <br>
+     <br>
+     <br>
+
+     <table>
+       <!-- 2nd subsection of previous page -->
+      <th class="imghead">
+          <h1 class="title">PROGRAM FILES</h1>
+          <p class="text">The directory or standard folder in Windows where third-party software are installed by default is called Program Files. All of the program data for an application installed in this folder is stored in its own subfolder.
+There are two Program Files directories in 64-bit versions of Windows, one for 64-bit programs and the other for 32-bit programs:</p>
+
+            <br>
+
+           <blockquote> <p> "Program Files", by default
+             <br><br>
+             "Program Files(x86)", for 32-bit programs </p></blockquote>
+
+           <br><br>
+
+          <p class="text">
+            Most programs' installers allow users to choose or establish their own path for the application's install directory during the installation process.
+    This means that the Program Files directory is only a convenience and orderly addition to the system, rather than a requirement.
+          <br><br>
+          There are a few exceptions to the rule that an application or program can run regardless of where it was installed.
+ Some programs require installation in the Program Files directory, frequently due to hard-coded locations, environment variable requirements, or other unknown circumstances.
+         <br>
+        These apps, on the other hand, often do not allow users to install them elsewhere and hence do not provide that choice during installation.
+        Other programs may also require the installation of a certain folder. A device driver installer, for example, does not provide the user the choice of choosing an install location;
+        instead, it usually only asks for permission to be installed or not, then installs and finishes. </p>
+      </th>
+      <th> <video width="90%" muted loop autoplay>
+          <source src="../images/MULTIPARTITE-VIRUS/file.mp4" type="video/mp4">
+        </video> </th>
+
+      </table>
+
+      <table>
+        <tr>
+           <!--  Subsection of previous subsection -->
+       <th class="imghead2">
+      <h2 class="subtitle">FILE-INFECTING VIRUS</h2>
+
+      <p class="text2">A file-infecting virus, sometimes known as a file injector, infects executable files with the purpose of causing lasting damage or rendering them unusable.
+A virus that infects files overwrites or inserts infected code into executable files is known as a file-infecting virus.
+             <br>
+             This virus is capable of infecting a variety of operating systems, including Macintosh, Windows, and Unix.
+It usually infects files with the extensions.exe or.com. The virus may partially or totally overwrite the infected file when it is accessed or executed.
+              <br>
+              A virus that infects files can also travel across the system and across the network, infecting other computers. Furthermore, a severe file-infecting virus has the ability to totally reformat a hard drive.</p>
+              <blockquote><p>
+                Win32.Sality.BK is a well-known file-infecting virus that ranked in the top ten malware infestations in 2011 and 2012. Read more on history of malware <a href="../../history/history.html"> here.</a>
+                 </p></blockquote>
+
+        </th>
+        <th> <video muted loop autoplay class="video1">
+            <source src="../images/TROJAN/trojan-working.mp4" type="video/mp4">
+          </video> </th></tr>
+    </table>
+
+
+
+         <hr>
+         <table width="100%;">
+         <th class="space" width="33%"><h1 class="chapter">Multipartite Virus</h1></th>
+         <th class="name" width="33%"> <a href="../../general/about-us.html#Raffaele Perri"><h1>Raffaele Perri</h1></th>
+         <th width="33%"> <a href="./polymorphicvirus.html" class="arrow" title="next article">
+           <img src="../../general/icons/arrow.svg" height="45" width="125" alt="next article" class="icon-img"></a>
+         </th>
+         <address hidden>
+           <a href="perrir@usi.ch">perrir@usi.ch</a><br>
+           <a href="tel:+393393248671">+393393248671</a><br>
+         </address>
+         </table>
+
+    </main>
+  </body>
+</html>
