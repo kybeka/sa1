@@ -1,0 +1,111 @@
+
+*{
+    font-family: "Helvetica Neue", Helvetica,  serif, sans-serif;
+}
+
+
+
+body{
+    background-color: #000 ;
+    
+}
+
+
+.title{
+    color: #fff;   
+    font-size: 3.5em;
+    font-style: bold;
+    text-align: justify;
+    
+}
+.subtitle{
+    color: #fff; 
+    font-size: 2em;
+    font-style: bold;
+    text-align: justify;
+}
+.subsubtitle{
+    color: #fff;
+    font-size: 1.2em;
+    font-style: italic;
+    text-align: justify;
+}
+.chapter{
+    color: #fff;
+    font-size: 1.7em;
+}
+
+
+ .name{
+    color: #fff;
+    font-size: 0.5em;
+}
+
+
+
+p{
+    color: #fff;
+    font-size: 1.1em;
+    text-align: justify;
+    
+}
+.arrow{
+    float: right;
+}
+
+
+hr{
+    height: 0.02em;
+    border: 0.1em solid white;
+    background: #fff;
+}
+
+.half{
+    width: 40%;
+    float: left;
+    border: 0.1em solid white;
+    background: #fff;
+}
+/*
+.vertical{
+    transform:rotate(90deg);
+    top: 100em;
+    width:40em;
+    border: 0.1em solid white;
+    background: #fff;
+
+}
+*/
+img{
+    width: 100%;
+}
+
+.text{
+    width: 80%;
+    padding-right: 1em;
+}
+.text2{
+    width: 80%;
+    padding-right: 1em;
+}
+
+.imghead{
+    width: 60%;
+    padding-right: 1em;
+}
+
+.imghead2{
+    
+    width: 70%;
+    padding-right: 1em;
+}
+
+
+/*
+table, th{
+    border: 1px solid white;
+}
+
+  righe tabella */
+
+

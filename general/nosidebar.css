@@ -1,0 +1,8 @@
+#nav_img:hover #sidebar{
+  left: -100px;
+}
+
+#nav_img:hover #sidebar > li{
+  display: block;
+  width: 78%;
+}

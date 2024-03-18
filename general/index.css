@@ -1,0 +1,631 @@
+
+/* testing */
+.testing1{
+  border: 3px solid red;
+}
+
+.testing2{
+  border: 3px solid blue;
+}
+
+.testing3{
+  border: 3px solid green;
+}
+
+
+/* root */
+ :root{
+  /* global variables */
+  --dark-main-cl: #000;
+  --dark-second-cl: #fff;
+
+  --light-main-cl: #fff;
+  --light-second-cl: #000;
+
+  --main-col: var(--dark-main-cl);
+  --second-col: var(--dark-second-cl);
+}
+
+
+
+/* * means all elements */
+*{
+    font-family: "Helvetica Neue", Helvetica,  serif, sans-serif;
+    transition: color 0.5s;
+    text-align: left;
+    line-height: 1.4;
+    color: #fff;
+    color: var(--second-col);
+}
+
+
+body{
+  min-width: 670px;
+  background-color: #000;
+  background-color: var(--main-col);
+  margin: 0px;
+  padding-top: 0px;
+  color: #fff;
+  color: var(--second-col);
+  overflow-x: hidden;
+}
+
+/* paragraph */
+p{
+  color: inherit;
+  color: var(--second-col);
+  background-color: #000;
+  background-color: var(--main-col);
+}
+
+/* navbar */
+nav{
+  z-index: 100;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  height: max(3rem, 10%);
+  margin-top: 0px;
+  color: inherit;
+  color: var(--second-col);
+}
+
+nav > ul{
+  width:100%;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  color: var(--second-col);
+  background-color: inherit;
+  background-color: var(--main-col);
+  height: 3rem;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+nav > ul > li{
+  color: inherit;
+  color: var(--second-col);
+  background-color: inherit;
+  background-color: var(--main-col);
+  text-align: center;
+  display: block;
+  float: left;
+  margin: 0px;
+  padding: 16px 16px;
+  height: 1rem;
+  min-width: 0.7rem;
+  text-decoration: none;
+}
+
+nav > ul > li > a{
+  text-decoration: none;
+  color: inherit;
+  color: var(--second-col);
+}
+
+/* selects all li elements of the navigation bar, except the main header, the sidebar image and the sidetoggle*/
+nav > ul > li:not(#main_header, #nav_img, #Search, #sidetoggle):hover{
+  background: #aaa;
+}
+
+nav > ul > li > a:hover{
+  background: #aaa;
+}
+
+
+
+/* WARNING: interfeeres with history.html */
+.text-cont{
+  padding-left: 20px;
+  margin-top: 2em;
+}
+
+.sect{
+  margin-top: 3em;
+}
+#sidetoggle{
+  float: right;
+  display: inline-block;
+  background-color: #000;
+  background-color: var(--main-col);
+}
+
+#sidetoggle:hover{
+  max-width: 23%;
+  display: inline;
+  vertical-align: middle;
+  background-color: #000;
+  background-color: var(--main-col);
+}
+
+
+#chmode-cont{
+  margin-right: 3px;
+  width: 15px;
+  height: 15px;
+  position: relative;
+
+  background: inherit;
+  background: var(--main-col);
+}
+
+#chmode{
+  display: inline;
+  width: 15px;
+  height: 15px;
+  z-index: 0;
+}
+
+#chmode:checked ~ #mark{
+  background-image: url("icons/toggle-light.svg");
+}
+
+#mark{
+  display: block;
+  width: 1.7rem;
+  height: 1.7rem;
+  position: absolute;
+  left: 0px;
+  top: -3px;
+
+  background-color: inherit;
+  background-color: var(--main-col);
+  background-image: url("icons/toggle.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-clip: border-box;
+}
+
+
+#Search{
+  position: relative;
+  max-width: 16%;
+  background: url("icons/lente.svg");
+  background-repeat: no-repeat;
+  background-size: 13%;
+  padding-top: 1em;
+  background-origin: padding-box;
+  background-position: left;
+  margin-right: 1rem;
+
+  float: right;
+  color: inherit;
+  color: var(--second-col);
+  text-align: right;
+}
+
+#searchBar{
+  width: 0%;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: inherit;
+  background-color: var(--main-col);
+  border: 3px solid #000;
+  border-color: var(--main-col); /*allows to hide the searcbar*/
+  border-radius: 25px;
+  color: inherit;
+  color: var(--second-col);
+
+  transition: width 0.5s;
+}
+
+
+
+#Search:hover > ul{
+  display: block;
+}
+
+
+#searchBar{
+  width: 0%;
+}
+
+#search_results{
+  list-style-type: none;
+  display: none;
+  height: 7em;
+  overflow: hidden;
+}
+#search_results:hover{
+  overflow-x: none;
+  overflow-y: scroll;
+  height: 7em;
+}
+
+
+.sres{
+  color: #fff;
+  color: var(--second-col);
+
+  background-color: #000;
+  background-color: var(--main-col);
+}
+
+/* sidetoggle */
+#Search:hover #searchBar{
+  width: 80%;
+  background-color: #777;
+  border: 3px solid #fff;
+  border: 3px solid var(--second-col);
+}
+
+#searchBar:hover ~ ul, #searchBar:focus ~ ul{
+  display: block;
+}
+
+#searchBar:hover, #searchBar:focus{
+  width: 80%;
+  background-color: #777;
+  border: 3px solid #fff;
+  border: 3px solid var(--second-col);
+}
+
+
+
+/* left sidebar related stuff */
+#nav_img{
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-origin: content-box;
+  background-image: url("icons/logo plus.svg");
+  max-width: 1rem;
+
+  transition: transform 1s;
+}
+
+#nav_img:hover{
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#nav_img::before{
+  content: "";
+  position: absolute;
+  left:35%;
+  top:31%;
+  width: 80%;
+  max-width: 0.8rem;
+  height: 80%;
+  max-height: 0.8rem;
+
+  padding: 3px;
+
+  z-index: 10;
+  background-color: inherit;
+  background-color: var(--main-col);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-origin: padding-box;
+  background-image: url("icons/logo plus.svg");
+  background-image: inherit;
+
+  transition: transform 1s;
+  transition-delay: 0.3s;
+}
+
+#nav_img:hover::before{
+  content: "";
+  transform: rotate(-45deg);
+  z-index: 10;
+}
+
+#nav_img:hover #sidebar{
+  left: 0px;
+}
+
+#nav_img:hover #sidebar > li{
+  display: inline-block;
+  width: 78%;
+}
+
+
+
+/* sidebar */
+
+#sidebar{
+  display: inline-block;
+  background-color: inherit;
+  background-color: var(--main-col);
+  color: inherit;
+  color: var(--second-col);
+  border-right: 3px solid white;
+  border-right: 3px solid  var(--second-col);
+  position: fixed;
+
+  padding: 0px;
+  margin: 0px;
+  width: 150px;
+  height: 1500px;
+
+  left: -100px;
+  top: 3.1em;
+  transition: left 0.5s;
+}
+
+#sidebar-cont{
+  list-style-type: none;
+  overflow: hidden;
+  position: relative;
+  padding-left: 0px;
+  height: 60em;
+  width: 50%;
+}
+
+#sidebar-cont:hover{
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: auto;
+}
+
+#sidebar-cont > li{
+    background-color: #000;
+    background-color: var(--main-col);
+    color: inherit;
+    color: var(--main-col);
+    text-align: left;
+    display: block;
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    height: 0.5em;
+    overflow: hidden;
+    float: left;
+
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    width: 78%;
+    min-width: 4rem;
+
+    transition: height 0.5s;
+}
+
+#sidebar-cont > li > *{
+  text-decoration: none;
+}
+
+#sidebar-cont > li:not(#empty):hover{
+    background-color: #aaa;
+    height: 2em;
+    padding: 16px 16px 16px 16px;
+}
+
+
+
+#sidebar-cont > li:not(#empty) > a{
+    text-decoration: none;
+    color: inherit;
+    color: var(--second-col);
+    background-color: inherit;
+    /* background-color: var(--main-col); */
+    padding: 3px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 50%;
+
+    transition: color 0s;
+    transition-delay: 0s;
+}
+
+
+
+/* dropdown related stuff */
+.dropdown{
+  z-index: -10;
+  max-height: 0px;
+  width: 7.5em;
+  list-style-type: none;
+  display: block;
+  position: fixed;
+  top: 1em;
+  overflow: hidden;
+
+  color: inherit;
+  color: var(--second-col);
+  background-color: inherit;
+  background-color: var(--main-col);
+
+  /* border: 1px solid red; */
+  transition: max-height 2s, top 1s;
+}
+
+nav > ul > li:hover .dropdown{
+  max-height: 10rem;
+  top: 3em;
+}
+
+.dropdown:hover .dropdown{
+  z-index: 1;
+  width: 100%;
+  top: 1em;
+
+}
+
+nav > ul > li:hover .dropdown > li, .dropdown > li > a{
+  color: rgba(255, 255, 255, 1.0);
+  background-color: var(--main-col);
+  /* height: 1em; */
+}
+
+.dropdown > li{
+  display: inline-block;
+  margin: 0px;
+  padding: 12px;
+  width: inherit;
+  background-color: rgba(var(--main-col),0);
+  height: 0em;
+  color: rgba(255, 255, 255, 0);
+
+  position: relative;
+  left: -3.5em;
+  top: 0rem;
+
+  transition: height 1s;
+  transition-delay: 1s;
+}
+.dropdown > li:hover{
+  background-color: #aaa;
+  /* height: 3em; */
+}
+.dropdown > li > a{
+  height: 0em;
+  text-decoration: none;
+  color: inherit;
+  color: var(--second-col);
+  background-color: inherit;
+  background-color: var(--main-col);
+  margin: 4px;
+}
+
+/* subdropdown related stuff */
+.dropdown > li > .dropdown2{
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 0em;
+  max-height: 4em;
+  z-index: 10;
+  width: 100%;
+  transition: max-height 1s;
+  transition-delay: 2s;
+  border-bottom: #fff;
+  border-bottom: var(--second-col);
+}
+
+.dropdown > li:hover .dropdown2{
+  height: auto;
+  z-index: 10;
+  width: 140%;
+}
+/* .dropdown2 {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 4em;
+} */
+
+.dropdown2 > li{
+  height: 0px;
+  width: inherit;
+  max-height: 0em;
+  display: none;
+  position: relative;
+  left: -2em;
+  transition: max-height 1s;
+  background-color: #000;
+  background-color: var(--main-col);
+}
+
+.dropdown2 > li > a{
+  width: inherit;
+}
+
+.dropdown2 > li:hover{
+  height: 100%;
+  max-height: 1em;
+  display: inline-block;
+  background-color: #aaa;
+}
+
+/*
+.dropdown > li > .dropdown2:hover{
+  height: auto;
+  z-index: 10;
+  width: 100%;
+} */
+
+.dropdown > li:hover .dropdown > li > .dropdown2{
+  height: auto;
+  max-height: 200px;
+  z-index: 10;
+  width: 100%;
+}
+
+.dropdown > li:hover .dropdown2 > li{
+  height: 100%;
+  max-height: 1em;
+  display: inline-block;
+}
+
+
+/* miscellanius */
+#main{
+  border-left: 3px solid white;
+  border-left-color:  var(--second-col);
+  position: relative;
+  left: 50px;
+  width: calc(98% - 51px);
+  padding-left: 1em;
+  transition: width , 0.5s, left 0.5s;
+}
+
+/* background image */
+.bg-image{
+  background-image: url();
+}
+
+.img-opacity{
+  opacity: 0.5;
+}
+
+section.generic > h3{
+    padding-left: 0.5em;
+    margin: 0px;
+    padding-top: 15px;
+}
+
+kbd {
+  border-radius: 2px;
+  padding: 2px;
+  border: 1px solid black;
+  background-color: rgba(200, 200, 200, 0.5);
+}
+
+/* footer */
+footer{
+  border-top: 1px solid black;
+  top: 100%;
+  position: relative;
+}
+
+li{
+  text-align: left;
+}
+
+header > *{
+  color: inherit;
+  color: var(--second-col);
+  background-color: inherit;
+  background-color: var(--main-col);
+
+}
+
+img{
+  margin-left: 2em;
+  margin-right: 2em;
+}
+/* Color text selector */
+p::selection {
+  color: rgb(22, 255, 224);
+}
+
+a::selection {
+  color: rgb(22, 255, 224);
+}
+
+h1::selection {
+  color: rgb(22, 255, 224);
+}
+
+img::selection {
+  color: rgb(22, 255, 224);
+}
+
+/* a:visited {
+  color: #fff;
+  color: var(--second-col);
+
+  background-color: inherit;
+  background-color: var(--main-col)
+} */

@@ -1,0 +1,58 @@
+.left{
+  text-align: left;
+}
+
+.right{
+  text-align: right;
+}
+
+.centerize{
+  text-align: center;
+}
+
+@keyframes pulse {
+  0% {
+    width: 15%;
+  }
+
+  100% {
+    width: 70%;
+  }
+}
+
+.imghead2{
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.animlogo{
+  width: 10%;
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function:ease-out;
+}
+
+.tr-cont{
+  min-height: 500px;
+}
+
+.portrait-cont{
+  padding-top: 2em;
+  padding-bottom: 0px;
+  border-radius: 5px;
+}
+
+.portrait-cont > img, h3 {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.portrait-img{
+  height: auto;
+
+  border: 0.5em solid #fff;
+  border: 0.5em solid var(--second-col);
+  border-radius: 10px;
+}
