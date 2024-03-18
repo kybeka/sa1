@@ -1,0 +1,120 @@
+
+
+.title{
+    color: #fff;
+    color: var(--second-col);
+    font-size: 3.5em;
+    font-style: bold;
+    text-align: justify;
+
+}
+.subtitle{
+    color: #fff;
+    color: var(--second-col);
+    font-size: 2em;
+    font-style: bold;
+    text-align: justify;
+}
+.subsubtitle{
+    color: #fff;
+    color: var(--second-col);
+    font-size: 1.2em;
+    font-style: italic;
+    text-align: justify;
+}
+.chapter{
+    color: #fff;
+    color: var(--second-col);
+    font-size: 1.7em;
+}
+
+.space{
+
+}
+ .name{
+  color: #fff;
+  color: var(--second-col);
+  font-size: 0.5em;
+}
+
+
+p{
+  color: #fff;
+  color: var(--second-col);
+  font-size: 1.1em;
+  text-align: justify;
+
+}
+.arrow{
+    float: right;
+}
+
+
+hr{
+    height: 0.02em;
+    border: 0.1em solid #fff;
+    border: 0.1em solid var(--second-col);
+    border-color: var(--second-col);
+    background: #fff;
+    background: var(--second-col);
+}
+
+.half{
+    width: 40%;
+    float: left;
+    border: 0.1em solid white;
+    border: 0.1em solid var(--second-col);
+    background: #fff;
+    background: var(--second-col);
+}
+/*
+.vertical{
+    transform:rotate(90deg);
+    top: 100em;
+    width:40em;
+    border: 0.1em solid white;
+    background: #fff;
+
+}
+*/
+img{
+    width: 100%;
+}
+
+.text{
+    width: 80%;
+    padding-right: 1em;
+}
+.text2{
+    width: 80%;
+    padding-right: 1em;
+}
+
+.imghead{
+    width: 60%;
+    padding-right: 1em;
+}
+
+.imghead2{
+
+    width: 70%;
+    padding-right: 1em;
+}
+
+a{
+  background: #000;
+  background: var(--main-col);
+}
+
+a:visited{
+  background: #000;
+  background: var(--main-col);
+}
+
+
+/*
+table, th{
+    border: 1px solid white;
+}
+
+  righe tabella */

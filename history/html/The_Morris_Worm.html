@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title> Group 1 project | History | The Morris Worm </title>
+  <meta name="keyword" content="The Morris Worm, Robert Morris, Worm, Computer Worm">
+  <meta name="description" content="This page is about The Morris Worm, a virus from Robert Morris">
+  <meta name="author" content="Mattia Gianinazzi">
+  <link rel="icon" type="image/x-icon" href="../../favicon.png">
+  <link rel="stylesheet" href="../../general/index.css">
+  <link rel="stylesheet" href="../css/article.css">
+</head>
+
+<!--This enviroment is to add a more specific style for my image's page-->
+<style>
+.subtitle{
+  font-size: 2.0em;
+  border: solid 2px #FFFF;
+  border: solid 2px var(--second-col);
+  border-radius: 5px;
+  padding: 3px 3px 3px 3px;
+  color: #FFFF;
+  color: var(--second-col);
+}
+.money {
+  width: 80%;
+  padding-right: 15em;
+}
+</style>
+
+<!--Here begin the page enviroment-->
+<body>
+  <script type="text/javascript" src="../../general/index.js"></script>
+  <nav>
+    <ul id="main_nav_bar">
+      <!-- main navigation bar; these methods are used to move resize and move
+      the main content, without overlapping it with the sidebar -->
+      <li id='nav_img' class="icon-bg"
+      onmouseover="setStyle('main', 'width','calc(100% - 150px)');
+      setStyle('main','left','150px');"
+      onmouseout="setStyle('main','width','calc(98% - 51px)');
+      setStyle('main','left','50px')"
+      ondblclick="window.location = '../../index.html'">
+      <div id="sidebar">
+        <ul id="sidebar-cont">
+          <li> <a href='#1'>1</a></li>
+          <li> <a href='#2'>2</a></li>
+          <li> <a href='#3'>3</a></li>
+        </ul>
+      </div>
+    </li>
+    <!-- main header and navigation bar links of the rest of the page -->
+    <li id="main_header">
+      <a href="">
+        <header>
+          <b>About</b>
+        </header>
+      </a>
+    </li>
+    <li> <a href= "../../history/history.html">History</a> <br>
+    </li>
+    <li> <a href = "../../compvir/compvir.html">Computer Viruses</a> <br>
+      <ul class="dropdown">
+        <li><a href="../../compvir/compvir.html">Virus</a>
+          <ul class="dropdown2">
+            <li> <a href="../../compvir/html/BackDoor.html"> Backdoor</a></li>
+            <li> <a href="../../compvir/html/bug.html"> Bugs</a></li>
+            <li> <a href="../../compvir/html/bug2.html"> Bugs II</a></li>
+            <li> <a href="../../compvir/html/CompanionVirus.html"> Companion Virus</a></li>
+            <li> <a href="../../compvir/html/ComputerWorm.html"> Computer Worm</a></li>
+            <li> <a href="../../compvir/html/Directory Virus.html"> Directory Virus</a></li>
+            <li> <a href="../../compvir/html/MULTIPARTITE-VIRUS.html"> Multipartite Virus</a></li>
+            <li> <a href="../../compvir/html/MULTIPARTITE-VIRUS-2.html"> Multipartite Virus II</a></li>
+            <li> <a href="../../compvir/html/polymorphicvirus.html"> Polymorphic Virus</a></li>
+            <li> <a href="../../compvir/html/polyvirus2.html"> Polymorphic Virus II</a></li>
+            <li> <a href="../../compvir/html/residentvirus.html"> Resident Virus</a></li>
+            <li> <a href="../../compvir/html/Social Engineering and Phishing.html"> Social Engineering <br> & Phishing</a></li>
+            <li> <a href="../../malware/html/TROJANS.html"> Trojans</a></li>
+            <li> <a href="../../malware/html/TROJAN2.html"> Trojans II</a></li>
+            <li> <a href="../../malware/html/TROJAN3.html"> Trojans III</a></li>
+            <li> <a href="../../malware/html/TROJAN4.html"> Trojans IV</a></li>
+            <li> <a href="../../compvir/html/Web Scripting Virus.html"> WebScripting Virus</a></li>
+            <li> <a href="../../malware/html/Macrovirus.html"> MacroVirus</a></li>
+            <li> <a href="../../malware/html/overwritingvirus.html"> Overwrite virus</a></li>
+            <li> <a href="../../malware/html/Bootsector_viruses.html"> Bootsector Viruses</a></li>
+            <li> <a href="../../compvir/html/CarbanakAPT.html"> CarbanakAPT</a></li>
+            <li> <a href="../../compvir/html/WannaCryy-1.html"> WannaCry I</a></li>
+            <li> <a href="../../compvir/html/WannaCry-2.html"> WannaCry II</a></li>
+            <li> <a href="../../compvir/html/Zeus.html"> Zeus</a></li>
+          </ul>
+        </li>
+        <li><a href="../../malware/malware.html"> Malware</a>
+          <ul class="dropdown2">
+            <li> <a href="../../malware/html/Adware_Rerevisioned.html"> Adware Revisioned</a></li>
+            <li> <a href="../../malware/html/botnet.html"> Botnet</a></li>
+            <li> <a href="../../malware/html/botnet2.html"> Botnet II</a></li>
+            <li> <a href="../../malware/html/cryptojacking.html"> Cryptojacking</a></li>
+            <li> <a href="../../malware/html/cyberwarfare.html"> Cyberwarfare</a></li>
+            <li> <a href="../../malware/html/Data_Breach.html"> Data Breach</a></li>
+            <li> <a href="../../malware/html/Fileless_malware.html"> Fileless Malware</a></li>
+            <li> <a href="../../malware/html/Fileless_malware2.html"> Fileless Malware II</a></li>
+            <li> <a href="../../malware/html/Greyware.html"> Greyware</a></li>
+            <li> <a href="../../malware/html/keylogger.html"> Keylogger</a></li>
+            <li> <a href="../../compvir/html/ScareWare.html"> ScareWare</a></li>
+            <li> <a href="../../malware/html/maliciousapps.html"> Malicious Apps</a></li>
+            <li> <a href="../../malware/html/maliciousapps2.html"> Malicious Apps II</a></li>
+            <li> <a href="../../malware/html/Malware_Rerevisioned.html"> Malware re-revisioned</a></li>
+            <li> <a href="../../compvir/html/videogamesMalware.html"> Malware in videogames</a></li>
+            <li> <a href="../../malware/html/RAMscrapper.html"> RamScraper</a></li>
+            <li> <a href="../../malware/html/ransomware.html"> Ransomware</a></li>
+            <li> <a href="../../compvir/html/EffectRansomware.html"> EffectRansomWare</a></li>
+            <li> <a href="../../malware/html/rootkits.html"> Rootkit</a></li>
+            <li> <a href="../../malware/html/Spam.html"> Spam</a></li>
+            <li> <a href="../../malware/html/Spyware_Rerevisioned.html"> Spyware Revisioned</a></li>
+            <li> <a href="../../malware/html/Trickbot.html"> Trickbot</a></li>
+            <li> <a href="../../compvir/html/appliance-based malware.html"> Appliance-Based Malware</a></li>
+            <li> <a href="../../malware/html/DDoS.html"> DDOS</a></li>
+            <li> <a href="../../malware/html/Emotet.html"> Emotet</a></li>
+            <li> <a href="../../malware/html/cyberwarfare.html"> Cryptocurrency scam</a></li>
+            <li> <a href="../../malware/html/twitchhack.html"> Twitch Hack</a></li>
+            <li> <a href="../../malware/html/malware_in_cars.html"> Malware in cars</a></li>
+            <li> <a href="../../malware/html/yahoohack.html"> Yahoo Hack</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li> <a href = "../../security/security.html"> Security </a> </li>
+    <li id="Search" class="icon-bg">
+      <input type="search" id=searchBar class="icon-bg"
+      incremental="incremental" onsearch="search()">
+      <ul id="search_results"></ul>
+    </li>
+    <li id="sidetoggle" class="icon-bg">
+      <label for="chmode" id="chmode-cont">
+        <input type="checkbox" id="chmode" name="chmode"
+        value="dark" onclick="toggleRoot('chmode','--main-col', '--dark-main-cl', '--light-main-cl');
+        toggleRoot('chmode','--second-col', '--dark-second-cl', '--light-second-cl')">
+        <span id="mark" class="icon-bg"></span>
+      </label>
+    </li>
+  </ul>
+</nav>
+<main id="main">
+
+  <!--Here we have the Title for this page, that is an h2, that have an in-line style to increase the font size-->
+  <h2 style="font-size:60px">1988 - The Morris Worm </h2>
+  <hr>
+
+  <!--Here begin the table-->
+  <table>
+
+    <!--Here begin the 1st enviroment of this page. It contains text and image-->
+    <tr>
+      <th class="imghead">
+        <h3><i class="subtitle">Why and how?</i></h3>
+        <p class="text">
+          Robert Morris was interessed to learn the potential of computers and to learn he thought to develop a virus. In fact the virus was created only to understand if it could be developed or not.
+          <br><br>
+          The worm exploits various vulnerabilities to gain access to certain systems, for example a hole in the debug mode of the Unix application sendmail, a buffer overflow or a hole in the digital network service. The worm was programmed to check each computer it found to determine if the infections was already present.
+          <br><br>
+          To develop the worm, Morris, concealed his activities by hacking into the MIT network to launch his worm, attempting to cover his tracks but one of his friends tell to the New York Times the plan.
+        </p>
+      </th>
+      <th> <img src="../images/questionmark.jpg" alt="Why and how?"> </th>
+    </tr>
+
+    <!--Here begin the 2nd enviroment of this page. It contains text and image-->
+    <tr>
+      <th> <img class="money" src="../images/Money_Cash.jpg"
+        alt="Causes and damages"> </th>
+        <th class="imghead">
+          <h3><i class="subtitle">Causes and Damages</i></h3>
+          <p class="text">
+            <a href="https://en.wikipedia.org/wiki/Clifford_Stoll" target="_blank">Clifford Stoll </a>, a system administrator, helped fight the worm and in 1989 he wrote that found 2'000 computers that was been infected within 15 hours and removing the virus can took 2 days.
+            <br><br>
+            The Morris Worm is called the <em> Great worm </em> due the devastating effect it had on the internet at that time.
+            <br><br>
+            The virus possessed a capability at its core that was perhaps the most problematic, namely, the virus's ability to reinfect the computer once its infection was eradicated. If the computer had already been infected, the chances of infection returning were 1 in 7 times. This was done to hasten the virus's transmission and prevent a user from imitating a worm process to fake an infection in order to avoid being infected. The virus is said to have affected around 6'000 systems in all, which is three times what Clifford predicted.
+            <br><br>
+            The average of the cost of the damage, valued from the <a href="https://en.wikipedia.org/wiki/Government_Accountability_Office" target="_blank"> U.S. Governament Accountability Office </a>, is between $100'000 - $10'000'000.
+          </p>
+        </th>
+      </tr>
+    </table>
+    <hr>
+    <table width="100%;" class="footer">
+      <th class="space" width="33%"><h1 class="chapter">The_Morris_Worm</h1></th>
+      <th class="name" width="33%"> <a href="../../general/about-us.html#Mattia Gianinazzi"><h1>Mattia Gianinazzi</h1></a></th>
+      <th width="33%"> <a href="Michelangelo_virus.html" class="arrow" title="next article">
+        <img src="../../general/icons/arrow.svg" height="45" width="125" alt="next article" class="icon-img">
+      </a>
+      </th>
+    </table>
+  </main>
+</body>
+</html>

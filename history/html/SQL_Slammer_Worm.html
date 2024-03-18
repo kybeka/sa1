@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title> Group 1 project | History | SQL Slammer Worm</title>
+  <meta name="keyword" content="SQL Slammer, SQL worm, worm on Microsoft, Microsoft SQL Server">
+  <meta name="description" content="This page is about SQL Slammer more in depth">
+  <link rel="icon" type="image/x-icon" href="../../favicon.png">
+  <meta name="author" content="Mattia Gianinazzi">
+  <link rel="stylesheet" href="../../general/index.css">
+  <link rel="stylesheet" href="../css/article.css">
+</head>
+
+<!--This enviroment is to add a more specific style for my image's page-->
+<style>
+.subtitle{
+  font-size: 2.0em;
+  border: solid 2px #FFFF;
+  border: solid 2px var(--second-col);
+  border-radius: 5px;
+  padding: 3px 3px 3px 3px;
+  color: #FFFF;
+  color: var(--second-col);
+}
+.codeworm {
+  width: 80%;
+  padding-right: 15em;
+}
+.desktopworm {
+  width: 80%;
+  padding-right: 15em;
+}
+</style>
+
+<!-- Here begin the page enviroment-->
+<body>
+  <script type="text/javascript" src="../../general/index.js"></script>
+  <nav>
+    <ul id="main_nav_bar">
+      <!-- main navigation bar; these methods are used to move resize and move
+      the main content, without overlapping it with the sidebar -->
+      <li id='nav_img' class="icon-bg"
+      onmouseover="setStyle('main', 'width','calc(100% - 150px)');
+      setStyle('main','left','150px');"
+      onmouseout="setStyle('main','width','calc(98% - 51px)');
+      setStyle('main','left','50px')"
+      ondblclick="window.location = '../../index.html'">
+      <div id="sidebar">
+        <ul id="sidebar-cont">
+          <li> <a href='#1'>1</a></li>
+          <li> <a href='#2'>2</a></li>
+          <li> <a href='#3'>3</a></li>
+        </ul>
+      </div>
+    </li>
+    <!-- main header and navigation bar links of the rest of the page -->
+    <li id="main_header">
+      <a href="">
+        <header>
+          <b>About</b>
+        </header>
+      </a>
+    </li>
+    <li> <a href= "../../history/history.html">History</a> <br>
+    </li>
+    <li> <a href = "../../compvir/compvir.html">Computer Viruses</a> <br>
+      <ul class="dropdown">
+        <li><a href="../../compvir/compvir.html">Virus</a>
+          <ul class="dropdown2">
+            <li> <a href="../../compvir/html/BackDoor.html"> Backdoor</a></li>
+            <li> <a href="../../compvir/html/bug.html"> Bugs</a></li>
+            <li> <a href="../../compvir/html/bug2.html"> Bugs II</a></li>
+            <li> <a href="../../compvir/html/CompanionVirus.html"> Companion Virus</a></li>
+            <li> <a href="../../compvir/html/ComputerWorm.html"> Computer Worm</a></li>
+            <li> <a href="../../compvir/html/Directory Virus.html"> Directory Virus</a></li>
+            <li> <a href="../../compvir/html/MULTIPARTITE-VIRUS.html"> Multipartite Virus</a></li>
+            <li> <a href="../../compvir/html/MULTIPARTITE-VIRUS-2.html"> Multipartite Virus II</a></li>
+            <li> <a href="../../compvir/html/polymorphicvirus.html"> Polymorphic Virus</a></li>
+            <li> <a href="../../compvir/html/polyvirus2.html"> Polymorphic Virus II</a></li>
+            <li> <a href="../../compvir/html/residentvirus.html"> Resident Virus</a></li>
+            <li> <a href="../../compvir/html/Social Engineering and Phishing.html"> Social Engineering <br> & Phishing</a></li>
+            <li> <a href="../../malware/html/TROJANS.html"> Trojans</a></li>
+            <li> <a href="../../malware/html/TROJAN2.html"> Trojans II</a></li>
+            <li> <a href="../../malware/html/TROJAN3.html"> Trojans III</a></li>
+            <li> <a href="../../malware/html/TROJAN4.html"> Trojans IV</a></li>
+            <li> <a href="../../compvir/html/Web Scripting Virus.html"> WebScripting Virus</a></li>
+            <li> <a href="../../malware/html/Macrovirus.html"> MacroVirus</a></li>
+            <li> <a href="../../malware/html/overwritingvirus.html"> Overwrite virus</a></li>
+            <li> <a href="../../malware/html/Bootsector_viruses.html"> Bootsector Viruses</a></li>
+            <li> <a href="../../compvir/html/CarbanakAPT.html"> CarbanakAPT</a></li>
+            <li> <a href="../../compvir/html/WannaCryy-1.html"> WannaCry I</a></li>
+            <li> <a href="../../compvir/html/WannaCry-2.html"> WannaCry II</a></li>
+            <li> <a href="../../compvir/html/Zeus.html"> Zeus</a></li>
+          </ul>
+        </li>
+        <li><a href="../../malware/malware.html"> Malware</a>
+          <ul class="dropdown2">
+            <li> <a href="../../malware/html/Adware_Rerevisioned.html"> Adware Revisioned</a></li>
+            <li> <a href="../../malware/html/botnet.html"> Botnet</a></li>
+            <li> <a href="../../malware/html/botnet2.html"> Botnet II</a></li>
+            <li> <a href="../../malware/html/cryptojacking.html"> Cryptojacking</a></li>
+            <li> <a href="../../malware/html/cyberwarfare.html"> Cyberwarfare</a></li>
+            <li> <a href="../../malware/html/Data_Breach.html"> Data Breach</a></li>
+            <li> <a href="../../malware/html/Fileless_malware.html"> Fileless Malware</a></li>
+            <li> <a href="../../malware/html/Fileless_malware2.html"> Fileless Malware II</a></li>
+            <li> <a href="../../malware/html/Greyware.html"> Greyware</a></li>
+            <li> <a href="../../malware/html/keylogger.html"> Keylogger</a></li>
+            <li> <a href="../../compvir/html/ScareWare.html"> ScareWare</a></li>
+            <li> <a href="../../malware/html/maliciousapps.html"> Malicious Apps</a></li>
+            <li> <a href="../../malware/html/maliciousapps2.html"> Malicious Apps II</a></li>
+            <li> <a href="../../malware/html/Malware_Rerevisioned.html"> Malware re-revisioned</a></li>
+            <li> <a href="../../compvir/html/videogamesMalware.html"> Malware in videogames</a></li>
+            <li> <a href="../../malware/html/RAMscrapper.html"> RamScraper</a></li>
+            <li> <a href="../../malware/html/ransomware.html"> Ransomware</a></li>
+            <li> <a href="../../compvir/html/EffectRansomware.html"> EffectRansomWare</a></li>
+            <li> <a href="../../malware/html/rootkits.html"> Rootkit</a></li>
+            <li> <a href="../../malware/html/Spam.html"> Spam</a></li>
+            <li> <a href="../../malware/html/Spyware_Rerevisioned.html"> Spyware Revisioned</a></li>
+            <li> <a href="../../malware/html/Trickbot.html"> Trickbot</a></li>
+            <li> <a href="../../compvir/html/appliance-based malware.html"> Appliance-Based Malware</a></li>
+            <li> <a href="../../malware/html/DDoS.html"> DDOS</a></li>
+            <li> <a href="../../malware/html/Emotet.html"> Emotet</a></li>
+            <li> <a href="../../malware/html/cyberwarfare.html"> Cryptocurrency scam</a></li>
+            <li> <a href="../../malware/html/twitchhack.html"> Twitch Hack</a></li>
+            <li> <a href="../../malware/html/malware_in_cars.html"> Malware in cars</a></li>
+            <li> <a href="../../malware/html/yahoohack.html"> Yahoo Hack</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li> <a href = "../../security/security.html"> Security </a> </li>
+    <li id="Search" class="icon-bg">
+      <input type="search" id=searchBar class="icon-bg"
+      incremental="incremental" onsearch="search()">
+      <ul id="search_results"></ul>
+    </li>
+    <li id="sidetoggle" class="icon-bg">
+      <label for="chmode" id="chmode-cont">
+        <input type="checkbox" id="chmode" name="chmode"
+        value="dark" onclick="toggleRoot('chmode','--main-col', '--dark-main-cl', '--light-main-cl');
+        toggleRoot('chmode','--second-col', '--dark-second-cl', '--light-second-cl')">
+        <span id="mark" class="icon-bg"></span>
+      </label>
+    </li>
+  </ul>
+</nav>
+<main id="main">
+  <!--Here we have the Title for this page, that is an h2, that have an in-line style to increase the font size-->
+  <h2 style="font-size:60px"> SQL Slammer technical details </h2>
+  <hr>
+
+  <!--Here begin the table-->
+  <table>
+
+    <!--Here begin the 1st enviroment of this page. It contains text and image-->
+    <tr>
+      <th class="imghead">
+        <h3><i class="subtitle">Effect of the Worm</i></h3>
+        <p class="text">
+          Detected for the first time on internet on January 25, 2003 at 5:30 am (GTM). It was too late discovered in most countries of the world. Hoverwer, there are unconfirmed reports that traces of worms were detected as early as January 20. The worm creates a large amount of network packets, overloads servers and routers, and slows down netrwork traffic.
+          <br><br>
+          The worm doesn't infect the standard pc that we have at home but only infect computers that run Microsoft SQL Server 2000 or MSDE 2000.
+          <br><br>
+          End users can only detect this worm due to the slowness of the network.
+          The worm only spreads as a process to memory: it never wirtes to the hard drive. Since the worm does not infect any files, it is possible to clean the infected machine simply by restarting it. If the device connects to the network without applying the proper MS SQL Server fixes, it will be infected again soon.
+          Since the worm does not infect any files, it is possible to clean the infected machine simply by restarting it.
+        </p>
+      </th>
+      <th> <img class="codeworm" src="../images/worm.gif" alt="Code with a worm"> </th>
+    </tr>
+
+    <!--Here begin the 2nd enviroment of this page. It contanis text and image-->
+    <tr>
+      <th> <img class="desktopworm" src="../images/desktop_worm.jpg" alt="Desktop with a worm"> </th>
+      <th class="imghead">
+        <h3><i class="subtitle">Technical details</i></h3>
+        <p class="text">
+          The worm's code is 376 bytes long, which means it was handwritten and optimized in assembly language. As already mentioned, the worm doesn't write itself to the hard drive, but only exixts as network packets and in current processes on infected machines. In that sense, Slammer is like <a href="https://en.wikipedia.org/wiki/Code_Red_(computer_worm)" target="_blank">CodeRed</a>.
+          <br><br>
+          When a SQL server gets a malicious request, the server's buffer violation allows the worm's code to execute, thanks to a vulnerability in MS SQL Server 2000. After scanning the system for vulnerabilities for the first time, the worm discovers the addresses of particular system functions and begins a endless cycle by scanning another vulnerable host on the Internet.
+          <br><br>
+          The Slammers uses the <a href="https://en.wikipedia.org/wiki/Windows_API" target="_blank">WIN32 API</a> function GetTickCount to start its random number generator. Use the random numbers as IP addresses to find susceptible host. The woem doesn't test IP addresses sequentially, it obtains a new random address for each infected attempt. The worm uses a connector to send itself to vulnerable computers. The socket connected to <a href="https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers" target="_blank">UDP port 1434</a> on the remote computer. If the computer has Microsoft SQL Server 2000, it will run on this port.
+        </p>
+      </th>
+    </tr>
+  </table>
+  <hr>
+  <table width="100%;" class="footer">
+    <th class="space" width="33%"><h1 class="chapter">SQL_Slammer_Worm</h1></th>
+    <th class="name" width="33%"> <a href="../../general/about-us.html#Mattia Gianinazzi"><h1>Mattia Gianinazzi</h1></a></th>
+    <th width="33%"> <a href="socialnetwork_virus.html" class="arrow" title="next article">
+      <img src="../../general/icons/arrow.svg" height="45" width="125" alt="next article" class="icon-img">
+    </a></th>
+    </table>
+  </main>
+</body>
+</html>

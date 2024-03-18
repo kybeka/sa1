@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Group 1 progect | homepage</title>
+    <link rel="stylesheet" href="../general/index.css">
+    <link rel="stylesheet" href="css/history.css">
+  </head>
+  <body>
+    <script type="text/javascript" src="../general/index.js"></script>
+    <nav>
+      <ul id="main_nav_bar">
+        <li id='nav_img' class="icon-bg"
+        onmouseover="setStyle('main', 'width','calc(100% - 150px)');
+                      setStyle('main','left','150px')"
+        onmouseout="setStyle('main','width','calc(98% - 51px)');
+                    setStyle('main','left','50px')"
+        ondblclick="window.location = '../index.html'">
+
+          <ul id="sidebar">
+            <li><a href='#History'>History</a></li>
+            <li><a href='#Computer Viruses'>Computer Viruses</a></li>
+            <li><a href='#Security'>Security</a></li>
+
+          </ul>
+        </li>
+      <li id="main_header">
+        <a href="">
+          <header>
+            <b>History</b>
+          </header>
+        </a>
+      </li>
+      <li> <a href= "../history/history.html"> History </a> <br>
+        <ul class="dropdown">
+          <li> <a href="#"> dropdown1</a> </li>
+          <li><a href="#"> dropdown1</a></li>
+        </ul>
+      </li>
+      <li> <a href = "../compvir/compvir.html"> Computer Viruses </a> <br>
+        <ul class="dropdown">
+          <li><a href="#"> dropdown1</a></li>
+          <li><a href="#"> dropdown1</a></li>
+          <li><a href="#"> dropdown1</a></li>
+        </ul>
+      </li>
+      <li> <a href = "../security/security.html"> Security </a> </li>
+      <li id="sidetoggle" class="icon-bg">
+  <label for="chmode" id="chmode-cont">
+  <input type="checkbox" id="chmode" name="chmode"
+  value="dark" onclick="toggleRoot('chmode','--main-col', '--dark-main-cl', '--light-main-cl');
+                        toggleRoot('chmode','--second-col', '--dark-second-cl', '--light-second-cl')">
+                        <span id="mark" class="icon-bg"></span>
+                        </label>
+  <input type="search" id=searchBar class="icon-bg"></li>
+    </ul>
+    </nav>
+<!-- TODO: if we change the tag to a div, we could avoid problems with footer in the main tag and similar -->
+    <main id="main">
+      <div class="timeline">
+        <table style="width: 100%">
+          <tr>
+            <th style="width: 40%"></th> <th style="width: 10%"></th> <th style="width: 10%"></th> <th style="width: 40%"></th>
+          </tr>
+
+          <tr>
+            <td class="leftcol testing">
+              <img src="images/bug.jpeg" alt="testing" width="3em" height="3em" class="time-image testing">
+
+              <div class="text-cont">
+              <h2>1984</h2>
+              <p>stuff happened</p>
+            </div>
+            </td>
+            <td> <hr> </td>
+            <td></td>
+            <td></td>
+          </tr>
+
+          <tr>
+            <td></td>
+            <td></td>
+            <td> <hr> </td>
+            <td class="rightcol testing">
+              <img src="images/bug.jpeg" alt="testing" width="3em" height="3em" class="time-image testing">
+
+              <div class="text-cont">
+              <h2>2001</h2>
+              <p>stuff happened</p>
+            </div> </td>
+          </tr>
+
+
+        </table>
+      </div>
+
+      <hr>
+      <table width="100%;">
+      <th class="space" width="33%"><h1 class="chapter">Chapter n'</h1></th>
+      <th class="name" width="33%"> <h1>Name Surname</h1></th>
+      <th width="33%"></th>
+      </table>
+    </main>
+  </body>
+</html>

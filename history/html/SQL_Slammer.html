@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title> Group 1 project | History | SQL Slammer </title>
+  <meta name="keyword" content="The SQL Slammer, SQL, Microsoft SQL Server, MSDE">
+  <meta name="description" content="This page is about the SQL Slammer">
+  <meta name="author" content="Mattia Gianinazzi">
+  <link rel="icon" type="image/x-icon" href="../../favicon.png">
+  <link rel="stylesheet" href="../../general/index.css">
+  <link rel="stylesheet" href="../css/article.css">
+</head>
+
+<!-- This enviroment is to add a more specific style for my page -->
+<style>
+.subtitle{
+  font-size: 2.0em;
+  border: solid 2px #FFFF;
+  border: solid 2px var(--second-col);
+  border-radius: 5px;
+  padding: 3px 3px 3px 3px;
+  color: #FFFF;
+  color: var(--second-col);
+}
+.expansion {
+  width: 75%;
+  padding-right: 20em;
+}
+</style>
+
+<!-- Here begin the page enviroment-->
+
+<body>
+  <script type="text/javascript" src="../../general/index.js"></script>
+  <nav>
+    <ul id="main_nav_bar">
+      <!-- main navigation bar; these methods are used to move resize and move
+      the main content, without overlapping it with the sidebar -->
+      <li id='nav_img' class="icon-bg"
+      onmouseover="setStyle('main', 'width','calc(100% - 150px)');
+      setStyle('main','left','150px');"
+      onmouseout="setStyle('main','width','calc(98% - 51px)');
+      setStyle('main','left','50px')"
+      ondblclick="window.location = '../../index.html'">
+      <div id="sidebar">
+        <ul id="sidebar-cont">
+          <li> <a href='#1'>1</a></li>
+          <li> <a href='#2'>2</a></li>
+          <li> <a href='#3'>3</a></li>
+        </ul>
+      </div>
+    </li>
+    <!-- main header and navigation bar links of the rest of the page -->
+    <li id="main_header">
+      <a href="">
+        <header>
+          <b>About</b>
+        </header>
+      </a>
+    </li>
+    <li> <a href= "../../history/history.html">History</a> <br>
+    </li>
+    <li> <a href = "../../compvir/compvir.html">Computer Viruses</a> <br>
+      <ul class="dropdown">
+        <li><a href="../../compvir/compvir.html">Virus</a>
+          <ul class="dropdown2">
+            <li> <a href="../../compvir/html/BackDoor.html"> Backdoor</a></li>
+            <li> <a href="../../compvir/html/bug.html"> Bugs</a></li>
+            <li> <a href="../../compvir/html/bug2.html"> Bugs II</a></li>
+            <li> <a href="../../compvir/html/CompanionVirus.html"> Companion Virus</a></li>
+            <li> <a href="../../compvir/html/ComputerWorm.html"> Computer Worm</a></li>
+            <li> <a href="../../compvir/html/Directory Virus.html"> Directory Virus</a></li>
+            <li> <a href="../../compvir/html/MULTIPARTITE-VIRUS.html"> Multipartite Virus</a></li>
+            <li> <a href="../../compvir/html/MULTIPARTITE-VIRUS-2.html"> Multipartite Virus II</a></li>
+            <li> <a href="../../compvir/html/polymorphicvirus.html"> Polymorphic Virus</a></li>
+            <li> <a href="../../compvir/html/polyvirus2.html"> Polymorphic Virus II</a></li>
+            <li> <a href="../../compvir/html/residentvirus.html"> Resident Virus</a></li>
+            <li> <a href="../../compvir/html/Social Engineering and Phishing.html"> Social Engineering <br> & Phishing</a></li>
+            <li> <a href="../../malware/html/TROJANS.html"> Trojans</a></li>
+            <li> <a href="../../malware/html/TROJAN2.html"> Trojans II</a></li>
+            <li> <a href="../../malware/html/TROJAN3.html"> Trojans III</a></li>
+            <li> <a href="../../malware/html/TROJAN4.html"> Trojans IV</a></li>
+            <li> <a href="../../compvir/html/Web Scripting Virus.html"> WebScripting Virus</a></li>
+            <li> <a href="../../malware/html/Macrovirus.html"> MacroVirus</a></li>
+            <li> <a href="../../malware/html/overwritingvirus.html"> Overwrite virus</a></li>
+            <li> <a href="../../malware/html/Bootsector_viruses.html"> Bootsector Viruses</a></li>
+            <li> <a href="../../compvir/html/CarbanakAPT.html"> CarbanakAPT</a></li>
+            <li> <a href="../../compvir/html/WannaCryy-1.html"> WannaCry I</a></li>
+            <li> <a href="../../compvir/html/WannaCry-2.html"> WannaCry II</a></li>
+            <li> <a href="../../compvir/html/Zeus.html"> Zeus</a></li>
+          </ul>
+        </li>
+        <li><a href="../../malware/malware.html"> Malware</a>
+          <ul class="dropdown2">
+            <li> <a href="../../malware/html/Adware_Rerevisioned.html"> Adware Revisioned</a></li>
+            <li> <a href="../../malware/html/botnet.html"> Botnet</a></li>
+            <li> <a href="../../malware/html/botnet2.html"> Botnet II</a></li>
+            <li> <a href="../../malware/html/cryptojacking.html"> Cryptojacking</a></li>
+            <li> <a href="../../malware/html/cyberwarfare.html"> Cyberwarfare</a></li>
+            <li> <a href="../../malware/html/Data_Breach.html"> Data Breach</a></li>
+            <li> <a href="../../malware/html/Fileless_malware.html"> Fileless Malware</a></li>
+            <li> <a href="../../malware/html/Fileless_malware2.html"> Fileless Malware II</a></li>
+            <li> <a href="../../malware/html/Greyware.html"> Greyware</a></li>
+            <li> <a href="../../malware/html/keylogger.html"> Keylogger</a></li>
+            <li> <a href="../../compvir/html/ScareWare.html"> ScareWare</a></li>
+            <li> <a href="../../malware/html/maliciousapps.html"> Malicious Apps</a></li>
+            <li> <a href="../../malware/html/maliciousapps2.html"> Malicious Apps II</a></li>
+            <li> <a href="../../malware/html/Malware_Rerevisioned.html"> Malware re-revisioned</a></li>
+            <li> <a href="../../compvir/html/videogamesMalware.html"> Malware in videogames</a></li>
+            <li> <a href="../../malware/html/RAMscrapper.html"> RamScraper</a></li>
+            <li> <a href="../../malware/html/ransomware.html"> Ransomware</a></li>
+            <li> <a href="../../compvir/html/EffectRansomware.html"> EffectRansomWare</a></li>
+            <li> <a href="../../malware/html/rootkits.html"> Rootkit</a></li>
+            <li> <a href="../../malware/html/Spam.html"> Spam</a></li>
+            <li> <a href="../../malware/html/Spyware_Rerevisioned.html"> Spyware Revisioned</a></li>
+            <li> <a href="../../malware/html/Trickbot.html"> Trickbot</a></li>
+            <li> <a href="../../compvir/html/appliance-based malware.html"> Appliance-Based Malware</a></li>
+            <li> <a href="../../malware/html/DDoS.html"> DDOS</a></li>
+            <li> <a href="../../malware/html/Emotet.html"> Emotet</a></li>
+            <li> <a href="../../malware/html/cyberwarfare.html"> Cryptocurrency scam</a></li>
+            <li> <a href="../../malware/html/twitchhack.html"> Twitch Hack</a></li>
+            <li> <a href="../../malware/html/malware_in_cars.html"> Malware in cars</a></li>
+            <li> <a href="../../malware/html/yahoohack.html"> Yahoo Hack</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li> <a href = "../../security/security.html"> Security </a> </li>
+    <li id="Search" class="icon-bg">
+      <input type="search" id=searchBar class="icon-bg"
+      incremental="incremental" onsearch="search()">
+      <ul id="search_results"></ul>
+    </li>
+    <li id="sidetoggle" class="icon-bg">
+      <label for="chmode" id="chmode-cont">
+        <input type="checkbox" id="chmode" name="chmode"
+        value="dark" onclick="toggleRoot('chmode','--main-col', '--dark-main-cl', '--light-main-cl');
+        toggleRoot('chmode','--second-col', '--dark-second-cl', '--light-second-cl')">
+        <span id="mark" class="icon-bg"></span>
+      </label>
+    </li>
+  </ul>
+</nav>
+<main id="main">
+
+  <!--Here we have the Title for this page, that is an h2, that have an in-line style to increase the font size-->
+  <h2 style="font-size:60px"> 2003 - SQL Slammer </h2>
+  <hr>
+
+  <!--Here begin the table-->
+  <table>
+
+    <!--Here begin the 1st enviroment of this page. It contanins text and image-->
+    <tr>
+      <th class="imghead">
+        <h3><i class="subtitle">How was it born?</i></h3>
+        <p class="text">
+          In June 2002, Microsoft realesed a patch that fixed the bug that the worm exploited six months later: a buffer
+          overflow bug affecting <a href="https://en.wikipedia.org/wiki/MSDE" target="_blank"> Microsoft's database based
+          on Desktop Engine and SQL Server </a> products. Hoverwer many people didn't find the patch necessary, leaving
+          their system vulnerable.
+          <br><br>
+          In January 2003, the worm was released. It has already attacked and infected 75'000 internet servers within 10 minutes of its release. With 13'000 ATMs no longer working for customers, Bank of America is one of the largest firms afflicted by the infection.
+          <br><br>
+          The damage worsened when the worm caused a global Internet slowdown on January 25. It has been reported that the
+          worm interfered with calls to the 911 emergency number and was responsable for many canceled flights.
+        </p>
+      </th>
+      <th> <img src="../images/dead_worm.jpg" alt="Worm"> </th>
+    </tr>
+
+      <!--Here begin the 2nd enviroment of this page. It contanins text and image-->
+      <tr>
+        <th> <img class="expansion" src="../images/SQLSlammer.jpg" alt="Causes and damages"> </th>
+        <th class="imghead">
+          <h3><i class="subtitle">How does it work?</i></h3>
+          <p class="text">
+            The worm was noticed in early January 25, 2003, when it was slowing down system around the world. The slowdown was due to
+            the breakdown of many routers under the weight of extremely high traffic from infected servers. Typically, when the traffic
+            is too high for the routers, this one should delay or temporarily stop network traffic. Instead, some routers have crashed
+            that have been stopped and should not be contacted. Routers began sending notifications to the other known routers for this
+            purpose. The deluge of routing table update notifications caused some additional routers to fail, making the problem worse.
+            Soon, routers communicating with each other to update routing tables were consuming a significant amount of Internet badnwidth,
+            and regular traffic slowerd or, in some cases, stopped altogheter.
+          </p>
+        </th>
+      </tr>
+    </table>
+    <hr>
+    <table width="100%;" class="footer">
+      <th class="space" width="33%"><h1 class="chapter">SQL_Slammer</h1></th>
+      <th class="name" width="33%"> <a href="../../general/about-us.html#Mattia Gianinazzi"><h1>Mattia Gianinazzi</h1></a></th>
+      <th width="33%"> <a href="SQL_Slammer_Worm.html" class="arrow" title="next article">
+        <img src="../../general/icons/arrow.svg" height="45" width="125" alt="next article" class="icon-img"></a></th>
+    </table>
+  </main>
+</body>
+</html>
